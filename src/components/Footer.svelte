@@ -32,7 +32,7 @@
   }
 
   section {
-    max-width: var(--max-width);
+    width: var(--max-width);
   }
 
   a {
