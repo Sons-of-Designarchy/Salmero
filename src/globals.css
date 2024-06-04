@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url('./assets/fonts/UniversLTStd.otf') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green-500: rgba(188, 198, 188, 1);
+  --black-500: rgba(47, 47, 37, 1);
+  --black-700: rgba(29, 22, 22, 1);
+  --gray-100: rgba(236, 236, 233, 1);
+
+  --bg-black: var(--black-700);
+
+  --max-width: 1250px;
+
+  --spacing-unit: 0.5rem;
+  --spacing-xs: var(--spacing-unit);
+  --spacing-sm: calc(var(--spacing-unit) * 2);
+  --spacing-md: calc(var(--spacing-unit) * 3);
+  --spacing-lg: calc(var(--spacing-unit) * 4);
+  --spacing-xl: calc(var(--spacing-unit) * 5);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+  text-transform: uppercase;
+  font-family: 'Univers LT Std';
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {
+  letter-spacing: 2.25px;
+}
