@@ -5,12 +5,12 @@
 <header>
   <section class="header-inner">
     <Logo fill="#2F2F25" height="4.5rem" width="28rem" />
-    <div class="header-links">
-      <a href="/"><p>Home</p></a>
-      <a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a>
-      <a href="/nuestros-procesos"><p>Nuestros procesos</p></a>
-      <a href="/encuentranos"><p>Encuentranos</p></a>
-    </div>
+    <ul class="header-links">
+      <li><a href="/"><p>Home</p></a></li>
+      <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
+      <li><a href="/nuestros-procesos"><p>Nuestros procesos</p></a></li>
+      <li><a href="/encuentranos"><p>Encuentranos</p></a></li>
+    </ul>
   </section>
 </header>
 
@@ -36,5 +36,9 @@
   .header-links {
     display: flex;
     gap: var(--spacing-md);
+  }
+
+  ul {
+    list-style: none;
   }
 </style>

@@ -39,6 +39,9 @@
     letter-spacing: 2.25px;
   }
 
+  p {
+    color: var(--text-color-light);
+  }
   .head {
     width: 100%;
     display: flex;
