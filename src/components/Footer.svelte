@@ -1,5 +1,6 @@
 <script>
   import Logo from '../assets/svg/Logo.svelte';
+  import Jabali from '../assets/svg/Jabali.svelte';
 </script>
 
 <footer>
@@ -10,6 +11,7 @@
         <p>Guadalupe</p>
         <p>Panamericano</p>
       </div>
+      <Jabali fill="#ECECE9" />
       <div class="head-socials">
         <a href="/">Instagram</a>
         <a href="/">Facebook</a>
@@ -46,6 +48,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .head div {

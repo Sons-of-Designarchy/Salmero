@@ -1,3 +1,9 @@
+<script lang="ts">
+  export let width: number | string = 62.7;
+  export let height: number | string = 83.16;
+  export let fill: string = '#2F2F25';
+</script>
+
 <svg
   version="1.1"
   id="Layer_1"
@@ -8,13 +14,16 @@
   viewBox="0 0 64 85"
   style="enable-background:new 0 0 64 85;"
   xml:space="preserve"
+  {width}
+  {height}
+  {fill}
 >
   <style type="text/css">
     .st0 {
       clip-path: url(#SVGID_00000107558810433665020460000002938370177106970531_);
     }
     .st1 {
-      fill: #2f2f25;
+      {fill};
     }
   </style>
   <g>
