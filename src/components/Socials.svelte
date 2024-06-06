@@ -44,7 +44,7 @@
     background-image: url('../assets/img/jabali.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 50%;
+    background-size: 65%;
   }
 
   .socials-content-inner {
