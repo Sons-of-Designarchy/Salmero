@@ -27,6 +27,7 @@
   --red-300: rgba(221, 88, 87, 1);
 
   --bg-black: var(--black-700);
+  --bg-light: rgba(242, 241, 241, 1);
 
   --text-color-black: var(--black-500);
   --text-color-light: var(--gray-100);
@@ -41,6 +42,10 @@
   --spacing-xl: calc(var(--spacing-unit) * 5);
 
   --caption: 15px;
+}
+
+body {
+  background: var(--bg-light);
 }
 
 h1,
