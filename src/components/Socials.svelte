@@ -24,6 +24,8 @@
     grid-template-columns: repeat(2, 50%);
     align-items: center;
 
+    height: 55rem;
+
     background: var(--green-500);
   }
 
