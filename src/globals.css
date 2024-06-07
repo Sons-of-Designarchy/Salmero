@@ -18,10 +18,13 @@
 }
 
 :root {
-  --green-500: rgba(188, 198, 188, 1);
   --black-500: rgba(47, 47, 37, 1);
   --black-700: rgba(29, 22, 22, 1);
   --gray-100: rgba(236, 236, 233, 1);
+
+  --salmon: rgba(210, 198, 195, 1);
+  --green-500: rgba(188, 198, 188, 1);
+  --red-300: rgba(221, 88, 87, 1);
 
   --bg-black: var(--black-700);
 
@@ -36,6 +39,8 @@
   --spacing-md: calc(var(--spacing-unit) * 3);
   --spacing-lg: calc(var(--spacing-unit) * 4);
   --spacing-xl: calc(var(--spacing-unit) * 5);
+
+  --caption: 15px;
 }
 
 h1,
@@ -60,6 +65,11 @@ h5 {
 
 h1 {
   font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 110%;
 }
 
 p,
