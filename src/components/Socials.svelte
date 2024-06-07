@@ -19,10 +19,6 @@
 </section>
 
 <style>
-  h1 {
-    width: 40rem;
-  }
-
   .socials {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -50,20 +46,22 @@
   .socials-content-inner {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
 
-    width: min-content;
+    padding: var(--spacing-lg);
+
+    min-width: min-content;
   }
 
   .socials-links {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
-
-    width: 100%;
+    gap: 8vw;
   }
 
   img {
     width: 100%;
+    height: 100%;
   }
 </style>
