@@ -1,5 +1,5 @@
 <script lang="ts">
-  import VerticalCard from '../components/VerticalCard.svelte';
+  import VerticalCard from './VerticalCard.svelte';
 
   interface Card {
     index: number;

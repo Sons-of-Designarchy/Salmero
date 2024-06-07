@@ -1,5 +1,5 @@
 <script lang="ts">
-  import PlaceholderImage from '../assets/img/placeholder.png';
+  import PlaceholderImage from '../../assets/img/placeholder.png';
   export let title: string = 'Guadalupe';
   export let description: string =
     '50% Salmiana, 50% Espadin. Un exuberante olor floral con notas herbales.';

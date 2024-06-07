@@ -1,5 +1,5 @@
 <script lang="ts">
-  import VerticalCardsGrid from '../components/VerticalCardsGrid.svelte';
+  import VerticalCardsGrid from '../components/home/VerticalCardsGrid.svelte';
 </script>
 
 <header>
