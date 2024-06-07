@@ -1,6 +1,7 @@
 <script lang="ts">
   import VerticalCardsGrid from '../components/home/VerticalCardsGrid.svelte';
   import Header from '../components/Header.svelte';
+  import Origenes from '../components/home/Origenes.svelte';
 </script>
 
 <Header
@@ -11,3 +12,4 @@ del Altiplano."
 />
 
 <VerticalCardsGrid />
+<Origenes />
