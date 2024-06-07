@@ -1,44 +1,36 @@
-<script>
-  import Logo from '../assets/svg/Logo.svelte';
+<script lang="ts">
+  export let title: string = '';
+  export let caption: string = '';
+  export let description: string = '';
 </script>
 
 <header>
-  <section class="header-inner">
-    <Logo fill="#2F2F25" height="4.5rem" width="28rem" />
-    <ul class="header-links">
-      <li><a href="/"><p>Home</p></a></li>
-      <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-      <li><a href="/nuestros-procesos"><p>Nuestros procesos</p></a></li>
-      <li><a href="/encuentranos"><p>Encuentranos</p></a></li>
-    </ul>
-  </section>
+  <p class="caption">{caption}</p>
+  <h1>{title}</h1>
+  <p class="header-description">
+    {description}
+  </p>
 </header>
 
 <style>
   header {
     display: flex;
-    align-items: center;
+    margin: auto;
+    max-width: var(--max-width);
+
     justify-content: center;
-
-    background: var(--green-500);
-
-    padding: var(--spacing-sm);
-  }
-
-  .header-inner {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
 
-    width: var(--max-width);
+    text-align: center;
   }
 
-  .header-links {
-    display: flex;
-    gap: var(--spacing-md);
+  header {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: var(--spacing-xl);
   }
 
-  ul {
-    list-style: none;
+  .header-description {
+    max-width: 110ch;
   }
 </style>
