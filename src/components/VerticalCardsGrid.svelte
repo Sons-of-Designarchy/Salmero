@@ -8,7 +8,7 @@
     title: string;
     description: string;
   }
-  let cardsText: Card[] = [
+  let cards: Card[] = [
     {
       index: 1,
       color: 'salmon',
@@ -37,7 +37,7 @@
 </script>
 
 <section class="vertical-cards-grid">
-  {#each cardsText as card}
+  {#each cards as card}
     <VerticalCard
       title={card.title}
       description={card.description}
