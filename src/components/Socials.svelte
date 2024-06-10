@@ -1,6 +1,5 @@
 <script>
   import PlaceholderImage from '../assets/img/placeholder.png';
-  import Jabali from '../assets/svg/Jabali.svelte';
 </script>
 
 <section class="socials">
