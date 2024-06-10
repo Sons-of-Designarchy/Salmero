@@ -30,7 +30,7 @@
     position: relative;
 
     max-width: 30rem;
-    max-height: 40rem;
+    height: fit-content;
 
     border-radius: 20px;
   }
@@ -59,7 +59,7 @@
 
   .image {
     width: 100%;
-    height: 20rem;
+    height: 36rem;
     position: relative;
   }
 </style>
