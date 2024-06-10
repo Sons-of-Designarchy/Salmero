@@ -1,14 +1,14 @@
 <script lang="ts">
-  import PlaceholderImage from '../assets/img/placeholder.png';
-
   export let title: string = '';
   export let caption: string = '';
   export let description: string = '';
-  // export let image: 'valle' | 'mezcales' = 'valle';
+  export let ImageComponent;
 </script>
 
 <header>
-  <img src={PlaceholderImage} alt="" />
+  <section class="header-img">
+    <ImageComponent />
+  </section>
   <section class="header-content">
     <p class="caption">{caption}</p>
     <h1>{title}</h1>
@@ -31,7 +31,6 @@
     flex-direction: column;
     gap: 1.5rem;
 
-    margin: auto;
     text-align: center;
   }
 
@@ -45,8 +44,7 @@
     max-width: 110ch;
   }
 
-  img {
-    max-height: 36rem;
+  .header-img {
     width: 100%;
     padding: 0.4rem;
 
