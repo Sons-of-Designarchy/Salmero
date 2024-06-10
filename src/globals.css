@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Univers LT Std 67';
+  src: url('./assets/fonts/UniversLTStd-BoldCn.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -26,8 +33,9 @@
   --green-500: rgba(188, 198, 188, 1);
   --red-300: rgba(221, 88, 87, 1);
 
+  --bg-default: rgba(242, 241, 241, 1);
   --bg-black: var(--black-700);
-  --bg-light: rgba(242, 241, 241, 1);
+  --bg-light-yellow: rgba(236, 236, 233, 1);
 
   --text-color-black: var(--black-500);
   --text-color-light: var(--gray-100);
@@ -45,7 +53,7 @@
 }
 
 body {
-  background: var(--bg-light);
+  background: var(--bg-default);
 }
 
 h1,
