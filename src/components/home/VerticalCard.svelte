@@ -1,5 +1,4 @@
 <script lang="ts">
-  import PlaceholderImage from '../../assets/img/placeholder.png';
   export let title: string = 'Guadalupe';
   export let description: string =
     '50% Salmiana, 50% Espadin. Un exuberante olor floral con notas herbales.';
@@ -14,7 +13,9 @@
 </script>
 
 <article style="background-color: {bgColors[bgColor]}">
-  <img src={PlaceholderImage} alt="Placeholder" />
+  <div class="image">
+    <slot name="image"></slot>
+  </div>
   <section class="vertical-card-inner">
     <p class="vertical-card-caption">{caption}</p>
     <h2>{title}</h2>
@@ -26,17 +27,12 @@
   article {
     display: flex;
     flex-direction: column;
+    position: relative;
 
     max-width: 30rem;
     max-height: 40rem;
 
     border-radius: 20px;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px 20px 0 0;
   }
 
   .vertical-card-inner {
@@ -59,5 +55,11 @@
 
   .vertical-card-description {
     max-width: 80%;
+  }
+
+  .image {
+    width: 100%;
+    height: 20rem;
+    position: relative;
   }
 </style>
