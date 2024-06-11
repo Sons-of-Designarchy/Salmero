@@ -2,7 +2,7 @@
   import PlaceholderImage from '../assets/img/placeholder.png';
 </script>
 
-<section class="socials">
+<section class="socials" id="encuentranos">
   <article class="socials-content">
     <div class="socials-content-inner">
       <p>Nuestros amigos</p>

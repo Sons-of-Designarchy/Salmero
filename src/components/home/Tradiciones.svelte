@@ -3,7 +3,7 @@
   import Placeholder from '../../assets/img/placeholder.png';
 </script>
 
-<div class="tradiciones-wrapper">
+<div class="tradiciones-wrapper" id="tradiciones">
   <section class="tradiciones">
     <section class="tradiciones-intro">
       <div class="tradiciones-intro-content">

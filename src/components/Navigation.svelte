@@ -8,8 +8,8 @@
     <ul class="nav-links">
       <li><a href="/"><p>Home</p></a></li>
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-      <li><a href="/nuestros-procesos"><p>Nuestros procesos</p></a></li>
-      <li><a href="/encuentranos"><p>Encuentranos</p></a></li>
+      <li><a href="#tradiciones"><p>Nuestros procesos</p></a></li>
+      <li><a href="#encuentranos"><p>Encuentranos</p></a></li>
     </ul>
   </section>
 </nav>

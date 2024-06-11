@@ -2,7 +2,7 @@
   import PlaceholderImg from '../../assets/img/placeholder.png';
 </script>
 
-<div class="origenes-wrapper">
+<div class="origenes-wrapper" id="#origenes">
   <div class="origenes">
     <section>
       <p>Del norte de México</p>
