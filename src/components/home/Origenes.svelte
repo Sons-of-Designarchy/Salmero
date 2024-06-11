@@ -1,9 +1,13 @@
+<script>
+  import PlaceholderImg from '../../assets/img/placeholder.png';
+</script>
+
 <div class="origenes-wrapper">
   <div class="origenes">
     <section>
       <p>Del norte de México</p>
       <h1>ORIGENES DEL ALTIPLANO POTOSINO</h1>
-      <p class="origenes-description">
+      <p class="origenes-intro">
         Hace más de 200 años, donde comienza el gran desierto de chihuahua, su
         gente comenzó a transformar un agave que sobrevivía al igual que ellos a
         esa dura tierra: el salmiana.
@@ -18,24 +22,61 @@
       </p>
     </section>
 
-    <section class="origenes-intro">
-      <p>
-        En El Altiplano, el <span class="bold accent-text"
-          >agave Salmiana
-        </span>
-        vive
-        <span>besando el rocío de cada mañana</span>, porque sabe que no contarÁ
-        con lluvia.
-      </p>
-      <p>
-        Amanece siempre a dos mil metros de altura, donde pasa frio en el alba y
-        donde aguanta el sol de esas alturas.
-      </p>
+    <section class="origenes-description">
+      <div class="origenes-description-section">
+        <section>
+          <p>
+            En El Altiplano, el <span class="bold accent-text"
+              >agave Salmiana
+            </span>
+            vive
+            <span class="bold">besando el rocío de cada mañana</span>, porque
+            sabe que no contarÁ con lluvia.
+          </p>
+          <p>
+            Amanece siempre a dos mil metros de altura, donde pasa frio en el
+            alba y donde aguanta el sol de esas alturas.
+          </p>
+        </section>
+        <img class="vertical-img" src={PlaceholderImg} alt="placeholder" />
+      </div>
+      <div class="origenes-description-section">
+        <img class="vertical-img" src={PlaceholderImg} alt="placeholder" />
+        <section>
+          <p>
+            En este <span class="bold accent-text">Idilio Salvaje</span>, el
+            Agave Salmiana
+            <span class="bold">se nutre por mas de 12 años</span> de la rica tierra
+            Agreste que tiene a sus pies.
+          </p>
+          <p>
+            Así, solo así, se logra tener un agave capaz de darnos el <span
+              class="bold accent-text"
+            >
+              Mezcal Salmero</span
+            >, digno representante del <span class="bold">Altiplano</span>.
+          </p>
+          <img class="horizontal-img" src={PlaceholderImg} alt="placeholder" />
+        </section>
+      </div>
     </section>
   </div>
 </div>
 
 <style>
+  .origenes-image h1,
+  .origenes-image p {
+    color: var(--text-color-light);
+  }
+
+  .bold {
+    font-family: 'Univers LT Std 67';
+    font-weight: 500;
+  }
+
+  .accent-text {
+    color: var(--green-500);
+  }
   .origenes-wrapper {
     background: var(--bg-light-yellow);
     padding: var(--spacing-lg) 0;
@@ -48,14 +89,14 @@
     gap: 1rem;
 
     max-width: var(--max-width);
+    padding: var(--spacing-xl);
 
     text-align: center;
 
-    padding: var(--spacing-lg);
     margin: auto;
   }
 
-  .origenes-description {
+  .origenes-intro {
     margin: auto;
     max-width: 110ch;
   }
@@ -79,17 +120,57 @@
     max-width: 50ch;
   }
 
-  .origenes-image h1,
-  .origenes-image p {
-    color: var(--text-color-light);
+  .vertical-img {
+    min-width: 26rem;
+    height: 15rem;
   }
 
-  .bold {
-    font-family: 'Univers LT Std 67';
-    font-weight: 500;
+  .horizontal-img {
+    width: 12rem;
+    height: 19rem;
   }
 
-  .accent-text {
-    color: var(--green-500);
+  .origenes-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    padding: var(--spacing-xl) 0;
+
+    gap: var(--spacing-xl);
+  }
+
+  .origenes-description-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    gap: 3rem;
+  }
+
+  .origenes-description-section section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .origenes-description-section section p {
+    max-width: 45ch;
+    text-align: start;
+    font-size: 1.6rem;
+  }
+
+  .origenes-description-section img:nth-child(2) {
+    left: 65%;
+    position: absolute;
+  }
+
+  .origenes-description-section img:nth-child(3) {
+    margin-top: -8rem;
+    left: 83%;
+    position: absolute;
   }
 </style>
