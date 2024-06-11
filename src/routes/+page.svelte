@@ -3,6 +3,7 @@
   import Header from '../components/Header.svelte';
   import Origenes from '../components/home/Origenes.svelte';
   import Altiplano from '../components/home/Altiplano.svelte';
+  import Tradiciones from '../components/home/Tradiciones.svelte';
 </script>
 
 <Header
@@ -14,3 +15,4 @@ del Altiplano."
 />
 <VerticalCardsGrid />
 <Origenes />
+<Tradiciones />
