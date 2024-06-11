@@ -91,9 +91,12 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    gap: 1rem;
+    gap: calc(var(--spacing-xl) * 2);
 
     text-align: center;
+    overflow: hidden;
+
+    padding: calc(var(--spacing-xl) * 2) 0;
 
     margin: auto;
   }
@@ -115,8 +118,9 @@
     padding: var(--spacing-lg);
     max-width: var(--max-width);
 
-    background: url('../../assets/img/placeholder.png') lightgray 0px -760.454px /
-      100% 241.766% no-repeat;
+    background: url('../../assets/img/placeholder.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .origenes-image-description {
@@ -143,11 +147,11 @@
     align-items: center;
     width: 100%;
 
-    padding: var(--spacing-xl) 0;
+    padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
     max-width: var(--max-width);
     margin: auto;
 
-    gap: 5rem;
+    gap: calc(var(--spacing-xl) * 2);
   }
 
   .origenes-description-section {
