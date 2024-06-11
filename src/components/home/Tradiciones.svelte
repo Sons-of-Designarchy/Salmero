@@ -3,25 +3,101 @@
   import Placeholder from '../../assets/img/placeholder.png';
 </script>
 
-<section>
-  <div>
-    <Jabali />
-    <p class="caption">Nuestro proceso de producción</p>
-    <h1>Expresión de nuestras tradiciones</h1>
-    <p>
-      Salmero se produce en el histórico límite de mesoamérica con aridoamérica,
-      donde se unen las avanzadas civilizaciones con las nómadas.
-    </p>
-    <p>
-      realizado con respeto a sus tradiciones, salmero es nuestro mezcal para el
-      mundo.
-    </p>
-  </div>
-  <img src={Placeholder} alt="placeholder" />
-</section>
+<div class="tradiciones-wrapper">
+  <section class="tradiciones">
+    <section class="tradiciones-intro">
+      <div class="tradiciones-intro-content">
+        <Jabali />
+        <p class="caption">Nuestro proceso de producción</p>
+        <h1>Expresión de nuestras tradiciones</h1>
+        <p>
+          Salmero se produce en el histórico límite de mesoamérica con
+          aridoamérica, donde se unen las avanzadas civilizaciones con las
+          nómadas.
+        </p>
+        <p>
+          realizado con respeto a sus tradiciones, salmero es nuestro mezcal
+          para el mundo.
+        </p>
+      </div>
+      <img src={Placeholder} alt="placeholder" />
+    </section>
 
-<section>
-  <img src={Placeholder} alt="placeholder" />
-  <img src={Placeholder} alt="placeholder" />
-  <img src={Placeholder} alt="placeholder" />
-</section>
+    <section class="tradiciones-images">
+      <img src={Placeholder} alt="placeholder" />
+      <img src={Placeholder} alt="placeholder" />
+      <img src={Placeholder} alt="placeholder" />
+    </section>
+  </section>
+</div>
+
+<style>
+  .tradiciones-wrapper {
+    background-color: var(--bg-light-yellow);
+    background-image: url('../../assets/img/jabali.svg');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 55% 50%;
+  }
+
+  .tradiciones {
+    max-width: var(--max-width);
+    margin: auto;
+
+    padding: var(--spacing-xl);
+  }
+  .tradiciones-intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 3rem;
+
+    text-align: center;
+  }
+  .tradiciones-intro img {
+    width: 100%;
+  }
+
+  .tradiciones-intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: var(--spacing-md);
+  }
+
+  .tradiciones-intro-content p,
+  .tradiciones-intro-content h1 {
+    max-width: 80ch;
+  }
+
+  .tradiciones-images {
+    position: relative;
+    padding-top: calc(var(--spacing-xl) * 3);
+
+    overflow: hidden;
+  }
+
+  .tradiciones-images img:first-child {
+    width: 27rem;
+    height: 42rem;
+  }
+
+  .tradiciones-images img:nth-child(2) {
+    width: 42rem;
+    height: 24rem;
+
+    position: absolute;
+    right: 0;
+  }
+
+  .tradiciones-images img:nth-child(3) {
+    width: 40rem;
+    height: 18rem;
+
+    position: absolute;
+    right: 24rem;
+    bottom: 10rem;
+  }
+</style>
