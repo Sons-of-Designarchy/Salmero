@@ -2,12 +2,11 @@
   export let title: string = '';
   export let caption: string = '';
   export let description: string = '';
-  export let ImageComponent;
 </script>
 
 <header>
   <section class="header-img">
-    <ImageComponent />
+    <slot name="image"></slot>
   </section>
   <section class="header-content">
     <p class="caption">{caption}</p>
@@ -46,6 +45,7 @@
 
   .header-img {
     width: 100%;
+    height: 46rem;
     padding: 0.4rem;
 
     box-sizing: border-box;

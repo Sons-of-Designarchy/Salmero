@@ -2,8 +2,8 @@
   export let src: string;
   export let alt: string = '';
   export let fallbackSrc: string = '../assets/img/placeholder.png';
-  export let styles: string;
-  let imageSrc: string;
+  export let styles: string = '';
+  let imageSrc: string = '';
 
   // Update the image source based on the given src
   $: imageSrc = src;
