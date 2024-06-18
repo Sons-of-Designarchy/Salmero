@@ -9,24 +9,24 @@
 
   import { onMount } from 'svelte';
 
-  let container = [];
-  let cardHeight = '590';
+  let cards = [];
+  let lastCard = [];
+  let count;
 
   onMount(() => {
-    container = document.querySelectorAll('#card');
+    cards = document.querySelectorAll('#card');
+    lastCard = document.querySelector('.card3');
+    const nodesArray = Array.from(cards);
 
     enterView({
-      selector: container,
+      selector: cards,
       enter: function (el) {
-        cardHeight = el.cardHeight;
         el.classList.add('entered');
-        el.classList.remove('removed');
-        // count.innerHTML = el.id;
+        count = nodesArray.indexOf(el) + 1;
       },
       exit: function (el) {
         el.classList.remove('entered');
-        el.classList.add('removed');
-        // count.innerHTML = el.id - 1;
+        count = nodesArray.indexOf(el);
       },
     });
   });
@@ -39,6 +39,7 @@
 >
   <ImageComponent slot="image" src={Placeholder} />
 </Header>
+<div><h2>{count}<span>/3</span></h2></div>
 <section id="upper-container">
   <HorizontalCard title="Original" id="card" additionalClass="card1">
     <ImageComponent slot="image" src={Placeholder} />
@@ -57,7 +58,7 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card">
+  <HorizontalCard title="Original" id="card" additionalClass="card2">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -74,7 +75,7 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card">
+  <HorizontalCard title="Original" id="card" additionalClass="card3">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -98,10 +99,6 @@
     position: relative; /* Needed for sticky positioning */
     overflow: scroll;
     height: 40.2rem;
-
-    align-items: center;
-
-    margin: var(--spacing-lg);
 
     -ms-overflow-style: none; /* IE */
     scrollbar-width: none; /* Firefox */
