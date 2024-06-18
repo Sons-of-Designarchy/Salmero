@@ -10,6 +10,7 @@
   import { onMount } from 'svelte';
 
   let container = [];
+  let cardHeight = '590';
 
   onMount(() => {
     container = document.querySelectorAll('#card');
@@ -17,11 +18,14 @@
     enterView({
       selector: container,
       enter: function (el) {
+        cardHeight = el.cardHeight;
         el.classList.add('entered');
+        el.classList.remove('removed');
         // count.innerHTML = el.id;
       },
       exit: function (el) {
         el.classList.remove('entered');
+        el.classList.add('removed');
         // count.innerHTML = el.id - 1;
       },
     });
@@ -35,8 +39,8 @@
 >
   <ImageComponent slot="image" src={Placeholder} />
 </Header>
-<section class="cards-container" id="upper-container">
-  <HorizontalCard title="Original" id="card">
+<section id="upper-container">
+  <HorizontalCard title="Original" id="card" additionalClass="card1">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -91,13 +95,19 @@
 
 <style>
   #upper-container {
-    height: 800px; /* Example height */
     position: relative; /* Needed for sticky positioning */
-  }
-  .cards-container {
-    position: relative;
-    height: 50rem;
     overflow: scroll;
+    height: 40.2rem;
+
+    align-items: center;
+
+    margin: var(--spacing-lg);
+
+    -ms-overflow-style: none; /* IE */
+    scrollbar-width: none; /* Firefox */
+  }
+  #upper-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
   }
   .horizontal-card-description {
     display: flex;

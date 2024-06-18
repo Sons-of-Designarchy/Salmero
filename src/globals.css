@@ -119,5 +119,5 @@ img {
 
 .entered {
   position: sticky !important;
-  top: 0px;
+  top: 0;
 }
