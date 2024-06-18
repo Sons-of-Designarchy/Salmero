@@ -1,17 +1,16 @@
-<script>
-  // @ts-nocheck
-
+<script lang="ts">
   import Header from '../../components/Header.svelte';
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
   import Placeholder from '../../assets/img/placeholder.png';
+  // @ts-ignore
   import enterView from 'enter-view';
 
   import { onMount } from 'svelte';
 
-  let cards = [];
-  let lastCard = [];
-  let count;
+  let cards;
+  let lastCard;
+  let count = 0;
 
   onMount(() => {
     cards = document.querySelectorAll('#card');
@@ -20,14 +19,15 @@
 
     enterView({
       selector: cards,
-      enter: function (el) {
+      enter: function (el: Element) {
         el.classList.add('entered');
         count = nodesArray.indexOf(el) + 1;
       },
-      exit: function (el) {
+      exit: function (el: Element) {
         el.classList.remove('entered');
         count = nodesArray.indexOf(el);
       },
+      offset: 0.25,
     });
   });
 </script>
