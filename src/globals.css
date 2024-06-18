@@ -121,8 +121,3 @@ img {
   position: sticky !important;
   top: 0;
 }
-
-.fixed {
-  position: relative !important;
-  top: 1rem;
-}
