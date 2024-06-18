@@ -456,6 +456,11 @@ devalue@^5.0.0:
   resolved "https://registry.yarnpkg.com/devalue/-/devalue-5.0.0.tgz#1ca0099a7d715b4d6cac3924e770ccbbc584ad98"
   integrity sha512-gO+/OMXF7488D+u3ue+G7Y4AA3ZmUnB3eHJXmBTgNHvr4ZNzl36A0ZtG+XCRNYCkYx/bFmw4qtkoFLa+wSrwAA==
 
+enter-view@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/enter-view/-/enter-view-2.0.1.tgz#d7ae6e93cccfd72548c7b2fb41c93224c5b57d80"
+  integrity sha512-/+oieMLxMI793kCTFG2vEgtGcjUqNyneBerhF+40ZVG8RtwGgWTDoC3RGfW5dKO6aacIKIgV4xqAp6bpjoRvjA==
+
 es6-promise@^3.1.2:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-3.3.1.tgz#a08cdde84ccdbf34d027a1451bc91d4bcd28a613"

@@ -5,6 +5,7 @@
   export let title: string = '';
   export let subtitle: string = '';
   export let bgColor: 'salmon' | 'green' | 'red' = 'salmon';
+  export let id = '';
 
   let bgColors = {
     salmon: 'var(--salmon)',
@@ -13,7 +14,11 @@
   };
 </script>
 
-<article class="horizontal-card" style="background-color: {bgColors[bgColor]}">
+<article
+  {id}
+  class="horizontal-card"
+  style="background-color: {bgColors[bgColor]}"
+>
   <div class="image"><slot name="image"></slot></div>
   <div class="horizontal-card-inner">
     <p>{caption}</p>
@@ -25,6 +30,9 @@
 </article>
 
 <style>
+  #card1 {
+    position: fixed;
+  }
   .horizontal-card {
     display: flex;
     max-width: var(--max-width);
