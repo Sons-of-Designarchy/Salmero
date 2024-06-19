@@ -20,7 +20,5 @@
 		"vite": "^5.0.3"
 	},
 	"type": "module",
-	"dependencies": {
-		"enter-view": "^2.0.1"
-	}
+	"dependencies": {}
 }
