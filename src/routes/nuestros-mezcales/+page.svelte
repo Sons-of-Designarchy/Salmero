@@ -12,9 +12,8 @@
 >
   <ImageComponent slot="image" src={Placeholder} />
 </Header>
-<!-- <div><h2>{count}<span>/3</span></h2></div> -->
 <section class="card-container">
-  <HorizontalCard title="Original" id="card1" additionalClass="card1">
+  <HorizontalCard title="Original" id="card1" bgColor="salmon">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -31,37 +30,36 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card2" additionalClass="card2">
+  <HorizontalCard title="Guadalupe" id="card2" bgColor="green">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
-      <p>Era mi destino.</p>
+      <p>Guadalupe, escuchaste la noticia del concurso.</p>
       <p>
-        En una tierra de poca agua, apagaría algunas sedes, despertaría otras.
-      </p>
-      <p>De joven no tengo nada, pues más de 200 años llevo en mi andar.</p>
-      <p>
-        Fusión de dos mundos, tenacidad y supervivencia, arte agreste en
-        evolución.
+        Sabías que tu novio Francisco Bocanegra tenía el talento para ganarlo.
       </p>
       <p>
-        Soy el mezcal del Altiplano Potosino, tradición mexicana por excelencia.
+        En tu honor, nombramos este mezcal que une dos regiones mezcaleras del
+        país en un ensamble de Salmiana potosino con Espadin oaxaqueño.
+      </p>
+      <p>
+        Por ti, y por el resto de mexicanas y mexicanos que siguen construyendo
+        nuestra historia, ¡Brindamos con orgullo con este Salmero Guadalupe en
+        mano!
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card3" additionalClass="card3">
+  <HorizontalCard title="Panamericano" id="card3" bgColor="red">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
-      <p>Era mi destino.</p>
       <p>
-        En una tierra de poca agua, apagaría algunas sedes, despertaría otras.
-      </p>
-      <p>De joven no tengo nada, pues más de 200 años llevo en mi andar.</p>
-      <p>
-        Fusión de dos mundos, tenacidad y supervivencia, arte agreste en
-        evolución.
+        La carretera panamericana nace de un sueño colectivo de unir el
+        continente más bello del mundo...
       </p>
       <p>
-        Soy el mezcal del Altiplano Potosino, tradición mexicana por excelencia.
+        Este ensamble de mezcales, como la carretera panamericana, unen el
+        mezcal Salmiana potosino con el mezcal mexicano oaxaqueño, de tal forma,
+        a las personas de dichos estados se les brinda respeto y admiración con
+        este ensamble hecho para ti.
       </p>
     </section>
   </HorizontalCard>
@@ -72,10 +70,12 @@
     z-index: 25;
     margin-top: 0;
     position: relative;
+    margin-bottom: var(--spacing-xl);
   }
   .horizontal-card-description {
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
     max-width: 50ch;
 
     padding: 2rem 0;
