@@ -52,7 +52,6 @@
     grid-template-columns: 1fr;
     align-items: center;
 
-    border: solid 2px green;
     width: 100%;
 
     gap: 2rem;
@@ -76,7 +75,7 @@
     gap: 1rem;
     padding: var(--spacing-md);
 
-    border: solid 2px red;
+    box-sizing: border-box;
   }
 
   .tradiciones-intro-content p,

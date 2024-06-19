@@ -37,6 +37,7 @@
     max-width: var(--max-width);
 
     padding: var(--spacing-xl);
+    box-sizing: border-box;
   }
 
   .header-description {

@@ -30,7 +30,6 @@
     position: relative;
 
     width: 100%;
-    min-width: 28rem;
     max-width: 30rem;
     height: fit-content;
 

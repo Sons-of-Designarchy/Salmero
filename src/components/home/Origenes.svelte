@@ -121,6 +121,8 @@
     background: url('../../assets/img/placeholder.png');
     background-size: cover;
     background-repeat: no-repeat;
+
+    box-sizing: border-box;
   }
 
   .origenes-image-description {
@@ -128,8 +130,11 @@
   }
 
   .vertical-img {
-    min-width: 26rem;
     height: 15rem;
+
+    @media only screen and (min-width: 48em) {
+      min-width: 26rem;
+    }
   }
 
   .horizontal-img {
@@ -152,6 +157,7 @@
     margin: auto;
 
     gap: calc(var(--spacing-xl) * 2);
+    box-sizing: border-box;
   }
 
   .origenes-description-section {
@@ -175,7 +181,6 @@
   }
 
   .origenes-description-section section p {
-    max-width: 100%;
     text-align: start;
     font-size: 1.6rem;
 
