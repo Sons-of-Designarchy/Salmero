@@ -65,6 +65,7 @@
 <style>
   .vertical-cards-grid {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     max-width: var(--max-width);
 
@@ -72,5 +73,7 @@
     align-items: center;
 
     text-align: center;
+
+    padding: var(--spacing-xl);
   }
 </style>

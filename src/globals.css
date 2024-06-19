@@ -77,16 +77,23 @@ h5 {
   font-family: 'Univers LT Std 59';
   text-transform: uppercase;
   letter-spacing: 0.6rem;
-  color: ;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3.25rem;
+
+  @media only screen and (min-width: 48em) {
+    font-size: 5rem;
+  }
 }
 
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 110%;
+
+  @media only screen and (min-width: 48em) {
+    font-size: 4.5rem;
+  }
 }
 
 p,
@@ -120,4 +127,20 @@ img {
 .entered {
   position: sticky !important;
   top: 0;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
 }

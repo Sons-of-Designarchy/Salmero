@@ -16,13 +16,17 @@
 
 <style>
   nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
     background: var(--green-500);
 
     padding: var(--spacing-sm);
+
+    @media only screen and (min-width: 64em) {
+      display: flex;
+    }
   }
 
   .nav-inner {

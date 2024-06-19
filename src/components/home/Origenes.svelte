@@ -161,27 +161,43 @@
   }
 
   .origenes-description-section:first-child {
-    grid-template-columns: minmax(300px, 80%) 1fr;
+    grid-template-columns: 1fr;
+    @media only screen and (min-width: 48em) {
+      grid-template-columns: minmax(300px, 80%) 1fr;
+    }
   }
 
   .origenes-description-section:nth-child(2) {
-    grid-template-columns: 1fr minmax(100px, 80%);
+    grid-template-columns: 1fr;
+    @media only screen and (min-width: 48em) {
+      grid-template-columns: 1fr minmax(100px, 80%);
+    }
   }
 
   .origenes-description-section section p {
-    max-width: 45ch;
+    max-width: 100%;
     text-align: start;
     font-size: 1.6rem;
+
+    @media only screen and (min-width: 48em) {
+      max-width: 45ch;
+    }
   }
 
   .origenes-description-section img:nth-child(2) {
-    left: 60%;
-    position: absolute;
+    @media only screen and (min-width: 48em) {
+      left: 60%;
+      position: absolute;
+    }
   }
 
   .origenes-description-section img:nth-child(3) {
-    margin-top: -20rem;
-    left: 78%;
-    position: absolute;
+    display: none;
+    @media only screen and (min-width: 64em) {
+      display: block;
+      margin-top: -20rem;
+      left: 78%;
+      position: absolute;
+    }
   }
 </style>

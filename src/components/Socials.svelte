@@ -20,12 +20,18 @@
 <style>
   .socials {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 1fr;
     align-items: center;
+    flex-direction: row;
 
-    height: 55rem;
+    height: fit-content;
 
     background: var(--green-500);
+
+    @media only screen and (min-width: 48em) {
+      grid-template-columns: repeat(2, 50%);
+      height: 55rem;
+    }
   }
 
   .socials-content {
@@ -58,7 +64,11 @@
   .socials-links {
     display: flex;
     justify-content: space-between;
-    gap: 8vw;
+    gap: 5vw;
+
+    @media only screen and (min-width: 48em) {
+      gap: 3vw;
+    }
   }
 
   img {

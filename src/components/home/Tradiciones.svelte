@@ -47,15 +47,25 @@
     padding: var(--spacing-xl);
   }
   .tradiciones-intro {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
     align-items: center;
 
-    gap: 3rem;
+    border: solid 2px green;
+    width: 100%;
+
+    gap: 2rem;
 
     text-align: center;
+
+    @media only screen and (min-width: 48em) {
+      grid-auto-flow: column;
+      grid-template-columns: 50% 50%;
+    }
   }
   .tradiciones-intro img {
+    height: 100%;
     width: 100%;
   }
 
@@ -65,6 +75,8 @@
     align-items: center;
     gap: 1rem;
     padding: var(--spacing-md);
+
+    border: solid 2px red;
   }
 
   .tradiciones-intro-content p,
@@ -73,10 +85,14 @@
   }
 
   .tradiciones-images {
+    display: none;
     position: relative;
     padding-top: calc(var(--spacing-xl) * 3);
 
-    overflow: hidden;
+    @media only screen and (min-width: 64em) {
+      display: block;
+      overflow: hidden;
+    }
   }
 
   .tradiciones-images img:first-child {
