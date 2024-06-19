@@ -31,6 +31,23 @@
 </article>
 
 <style>
+  #card1,
+  #card2,
+  #card3 {
+    position: sticky;
+  }
+
+  #card1 {
+    top: 0;
+  }
+
+  #card2 {
+    top: 5rem;
+  }
+
+  #card3 {
+    top: 10rem;
+  }
   .horizontal-card {
     display: flex;
     max-width: var(--max-width);

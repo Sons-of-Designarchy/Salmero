@@ -3,33 +3,6 @@
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
   import Placeholder from '../../assets/img/placeholder.png';
-  // @ts-ignore
-  import enterView from 'enter-view';
-
-  import { onMount } from 'svelte';
-
-  let cards;
-  let lastCard;
-  let count = 0;
-
-  onMount(() => {
-    cards = document.querySelectorAll('#card');
-    lastCard = document.querySelector('.card3');
-    const nodesArray = Array.from(cards);
-
-    enterView({
-      selector: cards,
-      enter: function (el: Element) {
-        el.classList.add('entered');
-        count = nodesArray.indexOf(el) + 1;
-      },
-      exit: function (el: Element) {
-        el.classList.remove('entered');
-        count = nodesArray.indexOf(el);
-      },
-      offset: 0.25,
-    });
-  });
 </script>
 
 <Header
@@ -39,9 +12,9 @@
 >
   <ImageComponent slot="image" src={Placeholder} />
 </Header>
-<div><h2>{count}<span>/3</span></h2></div>
-<section id="upper-container">
-  <HorizontalCard title="Original" id="card" additionalClass="card1">
+<!-- <div><h2>{count}<span>/3</span></h2></div> -->
+<section class="card-container">
+  <HorizontalCard title="Original" id="card1" additionalClass="card1">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -58,7 +31,7 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card" additionalClass="card2">
+  <HorizontalCard title="Original" id="card2" additionalClass="card2">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -75,7 +48,7 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Original" id="card" additionalClass="card3">
+  <HorizontalCard title="Original" id="card3" additionalClass="card3">
     <ImageComponent slot="image" src={Placeholder} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
@@ -95,16 +68,10 @@
 </section>
 
 <style>
-  #upper-container {
-    position: relative; /* Needed for sticky positioning */
-    overflow: scroll;
-    height: 40.2rem;
-
-    -ms-overflow-style: none; /* IE */
-    scrollbar-width: none; /* Firefox */
-  }
-  #upper-container::-webkit-scrollbar {
-    display: none; /* Safari and Chrome */
+  .card-container {
+    z-index: 25;
+    margin-top: 0;
+    position: relative;
   }
   .horizontal-card-description {
     display: flex;
