@@ -26,6 +26,8 @@
     padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
 
+    margin: auto;
+
     @media only screen and (min-width: 48em) {
       text-align: center;
       align-items: center;
