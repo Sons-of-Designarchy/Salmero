@@ -84,6 +84,8 @@
     height: 100%;
     max-width: 50ch;
 
+    padding-top: 1rem;
+
     box-sizing: border-box;
   }
 </style>
