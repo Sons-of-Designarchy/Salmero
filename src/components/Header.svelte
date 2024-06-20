@@ -1,5 +1,6 @@
 <script lang="ts">
   export let title: string = '';
+  export let textAlign: 'start' | 'center' = 'center';
   export let caption: string = '';
   export let description: string = '';
 </script>
@@ -8,12 +9,13 @@
   <section class="header-img">
     <slot name="image"></slot>
   </section>
-  <section class="header-content">
-    <p class="caption">{caption}</p>
-    <h1>{title}</h1>
+  <section class="header-content" style="text-align: {textAlign}">
+    <p class="caption" style="align-self: {textAlign}">{caption}</p>
+    <h1 style="align-self: {textAlign}">{title}</h1>
     <p class="header-description">
       {description}
     </p>
+    <slot name="custom-description"></slot>
   </section>
 </header>
 
@@ -28,7 +30,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 
     text-align: center;
   }
@@ -36,7 +38,7 @@
   .header-content {
     max-width: var(--max-width);
 
-    padding: var(--spacing-xl);
+    padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
   }
 
