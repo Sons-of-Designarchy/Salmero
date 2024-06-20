@@ -1,6 +1,5 @@
 <script>
   import Jabali from '../../assets/svg/Jabali.svelte';
-  import Placeholder from '../../assets/img/placeholder.png';
   import Agave from '../../assets/img/Agave.png';
   import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
   import Tradiciones_2 from '../../assets/img/Tradiciones_2.png';

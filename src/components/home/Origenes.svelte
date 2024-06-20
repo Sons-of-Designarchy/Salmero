@@ -1,9 +1,7 @@
 <script>
-  import PlaceholderImg from '../../assets/img/placeholder.png';
   import Altiplano_1 from '../../assets/img/Altiplano_1.png';
   import Altiplano_2 from '../../assets/img/Altiplano_2.png';
   import Altiplano_3 from '../../assets/img/Altiplano_3.png';
-  import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
 </script>
 
 <div class="origenes-wrapper" id="#origenes">

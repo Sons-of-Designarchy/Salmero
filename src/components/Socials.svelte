@@ -1,5 +1,4 @@
 <script>
-  import PlaceholderImage from '../assets/img/placeholder.png';
   import Sociales_1 from '../assets/img/Sociales_1.png';
   import Sociales_2 from '../assets/img/Sociales_2.png';
   import Sociales_3 from '../assets/img/Sociales_3.png';

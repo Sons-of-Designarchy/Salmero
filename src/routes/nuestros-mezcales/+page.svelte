@@ -2,7 +2,7 @@
   import Header from '../../components/Header.svelte';
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
-  import Placeholder from '../../assets/img/placeholder.png';
+
   import HeaderImg from '../../assets/img/Salmero_header.png';
   import Original from '../../assets/img/Original.png';
   import Guadalupe from '../../assets/img/Guadalupe.png';
