@@ -32,4 +32,8 @@
       flex-direction: row;
     }
   }
+
+  p {
+    max-width: 55ch;
+  }
 </style>
