@@ -3,6 +3,10 @@
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
   import Placeholder from '../../assets/img/placeholder.png';
+  import HeaderImg from '../../assets/img/Salmero_header.png';
+  import Original from '../../assets/img/Original.png';
+  import Guadalupe from '../../assets/img/Guadalupe.png';
+  import Panamericano from '../../assets/img/Panamericano.png';
 </script>
 
 <Header
@@ -10,11 +14,11 @@
   caption="Conoce la familia"
   description="El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su agave Salmiana silvestre, destilado con respeto y tradición."
 >
-  <ImageComponent slot="image" src={Placeholder} />
+  <ImageComponent slot="image" src={HeaderImg} />
 </Header>
 <section class="card-container">
   <HorizontalCard title="Original" id="card1" bgColor="salmon">
-    <ImageComponent slot="image" src={Placeholder} />
+    <ImageComponent slot="image" src={Original} />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
       <p>
@@ -31,7 +35,7 @@
     </section>
   </HorizontalCard>
   <HorizontalCard title="Guadalupe" id="card2" bgColor="green">
-    <ImageComponent slot="image" src={Placeholder} />
+    <ImageComponent slot="image" src={Guadalupe} />
     <section slot="description" class="horizontal-card-description">
       <p>Guadalupe, escuchaste la noticia del concurso.</p>
       <p>
@@ -49,7 +53,7 @@
     </section>
   </HorizontalCard>
   <HorizontalCard title="Panamericano" id="card3" bgColor="red">
-    <ImageComponent slot="image" src={Placeholder} />
+    <ImageComponent slot="image" src={Panamericano} />
     <section slot="description" class="horizontal-card-description">
       <p>
         La carretera panamericana nace de un sueño colectivo de unir el

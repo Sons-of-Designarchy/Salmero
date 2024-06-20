@@ -1,5 +1,9 @@
 <script>
   import PlaceholderImg from '../../assets/img/placeholder.png';
+  import Altiplano_1 from '../../assets/img/Altiplano_1.png';
+  import Altiplano_2 from '../../assets/img/Altiplano_2.png';
+  import Altiplano_3 from '../../assets/img/Altiplano_3.png';
+  import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
 </script>
 
 <div class="origenes-wrapper" id="#origenes">
@@ -39,10 +43,10 @@
               alba y donde aguanta el sol de esas alturas.
             </p>
           </section>
-          <img class="vertical-img" src={PlaceholderImg} alt="placeholder" />
+          <img class="vertical-img" src={Altiplano_3} alt="placeholder" />
         </div>
         <div class="origenes-description-section">
-          <img class="vertical-img" src={PlaceholderImg} alt="placeholder" />
+          <img class="vertical-img" src={Altiplano_2} alt="placeholder" />
           <section>
             <p>
               En este <span class="bold accent-text">Idilio Salvaje</span>, el
@@ -57,11 +61,7 @@
                 Mezcal Salmero</span
               >, digno representante del <span class="bold">Altiplano</span>.
             </p>
-            <img
-              class="horizontal-img"
-              src={PlaceholderImg}
-              alt="placeholder"
-            />
+            <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
           </section>
         </div>
       </div>
@@ -118,7 +118,7 @@
     padding: var(--spacing-lg);
     max-width: var(--max-width);
 
-    background: url('../../assets/img/placeholder.png');
+    background: url('../../assets/img/Agave_2.png');
     background-size: cover;
     background-repeat: no-repeat;
 

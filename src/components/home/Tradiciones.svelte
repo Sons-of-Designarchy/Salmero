@@ -1,6 +1,10 @@
 <script>
   import Jabali from '../../assets/svg/Jabali.svelte';
   import Placeholder from '../../assets/img/placeholder.png';
+  import Agave from '../../assets/img/Agave.png';
+  import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
+  import Tradiciones_2 from '../../assets/img/Tradiciones_2.png';
+  import Dron from '../../assets/img/Dron.png';
 </script>
 
 <div class="tradiciones-wrapper" id="tradiciones">
@@ -20,13 +24,13 @@
           para el mundo.
         </p>
       </div>
-      <img src={Placeholder} alt="placeholder" />
+      <img src={Agave} alt="Agave" />
     </section>
 
     <section class="tradiciones-images">
-      <img src={Placeholder} alt="placeholder" />
-      <img src={Placeholder} alt="placeholder" />
-      <img src={Placeholder} alt="placeholder" />
+      <img src={Tradiciones_2} alt="placeholder" />
+      <img src={Tradiciones_1} alt="placeholder" />
+      <img src={Dron} alt="placeholder" />
     </section>
   </section>
 </div>

@@ -1,5 +1,9 @@
 <script>
   import PlaceholderImage from '../assets/img/placeholder.png';
+  import Sociales_1 from '../assets/img/Sociales_1.png';
+  import Sociales_2 from '../assets/img/Sociales_2.png';
+  import Sociales_3 from '../assets/img/Sociales_3.png';
+  import Sociales_4 from '../assets/img/Sociales_4.png';
 </script>
 
 <section class="socials" id="encuentranos">
@@ -14,23 +18,28 @@
       </ul>
     </div>
   </article>
-  <img src={PlaceholderImage} alt="placeholder" />
+  <section class="socials-photo-grid">
+    <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
+    <img src={Sociales_2} alt="Panorama del altiplano" />
+    <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
+    <img src={Sociales_4} alt="Shots de mezcal" />
+  </section>
 </section>
 
 <style>
   .socials {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     flex-direction: row;
 
-    height: fit-content;
+    height: 100%;
 
     background: var(--green-500);
 
     @media only screen and (min-width: 48em) {
-      grid-template-columns: repeat(2, 50%);
-      height: 55rem;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 
@@ -71,7 +80,15 @@
     }
   }
 
-  img {
+  .socials-photo-grid {
+    display: grid;
+    width: 100%;
+    height: inherit;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+  }
+
+  .socials-photo-grid > img {
     width: 100%;
     height: 100%;
     object-fit: cover;

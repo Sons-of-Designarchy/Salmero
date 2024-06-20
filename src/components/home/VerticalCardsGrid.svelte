@@ -1,9 +1,9 @@
 <script lang="ts">
   import VerticalCard from './VerticalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
-  import PanamericanoImg from '../../assets/img/panamericano.jpeg';
-  import SalmianaImg from '../../assets/img/salmiana.jpeg';
-  import PlaceholderImg from '../../assets/img/placeholder.png';
+  import Panamericano from '../../assets/img/Panamericano.png';
+  import Guadalupe from '../../assets/img/Guadalupe.png';
+  import Original from '../../assets/img/Original.png';
 
   interface Card {
     index: number;
@@ -21,7 +21,7 @@
       title: 'Guadalupe',
       description:
         '50% Salmiana, 50% Espadin. Un exuberante olor floral con notas herbales.',
-      image: PlaceholderImg,
+      image: Guadalupe,
     },
     {
       index: 2,
@@ -30,7 +30,7 @@
       title: 'Original',
       description:
         '100% Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
-      image: SalmianaImg,
+      image: Original,
     },
     {
       index: 3,
@@ -39,7 +39,7 @@
       title: 'Panamericano',
       description:
         '50% Salmiana, 25% Espadin, 25% Mexicano. Intenso, de carácter fuerte, con un sabor único.',
-      image: PanamericanoImg,
+      image: Panamericano,
     },
   ];
 </script>
