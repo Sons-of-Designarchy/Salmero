@@ -67,11 +67,16 @@
 
     padding: var(--spacing-lg);
 
-    min-width: min-content;
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 48em) {
+      min-width: min-content;
+    }
   }
 
   .socials-links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 5vw;
 
@@ -80,12 +85,19 @@
     }
   }
 
+  .socials-links p {
+    text-align: center;
+  }
+
   .socials-photo-grid {
     display: grid;
-    width: 100%;
     height: inherit;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 50%);
+
+    @media only screen and (min-width: 48em) {
+      width: 100%;
+    }
   }
 
   .socials-photo-grid > img {
