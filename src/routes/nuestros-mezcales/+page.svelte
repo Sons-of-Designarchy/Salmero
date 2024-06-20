@@ -80,8 +80,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    width: 100%;
+    height: 100%;
     max-width: 50ch;
 
-    padding: 2rem 0;
+    box-sizing: border-box;
   }
 </style>
