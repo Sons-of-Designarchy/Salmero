@@ -124,9 +124,13 @@ img {
   object-fit: cover;
 }
 
-.entered {
-  position: sticky !important;
-  top: 0;
+.bold-text {
+  font-family: 'Univers LT Std 67';
+  font-weight: 500;
+}
+
+.accent-text {
+  color: var(--green-500);
 }
 
 /* Small devices such as large phones (640px and up) */

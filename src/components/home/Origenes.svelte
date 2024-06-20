@@ -31,12 +31,12 @@
         <div class="origenes-description-section">
           <section>
             <p>
-              En El Altiplano, el <span class="bold accent-text"
+              En El Altiplano, el <span class="bold-text accent-text"
                 >agave Salmiana
               </span>
               vive
-              <span class="bold">besando el rocío de cada mañana</span>, porque
-              sabe que no contarÁ con lluvia.
+              <span class="bold-text">besando el rocío de cada mañana</span>,
+              porque sabe que no contarÁ con lluvia.
             </p>
             <p>
               Amanece siempre a dos mil metros de altura, donde pasa frio en el
@@ -49,17 +49,18 @@
           <img class="vertical-img" src={Altiplano_2} alt="placeholder" />
           <section>
             <p>
-              En este <span class="bold accent-text">Idilio Salvaje</span>, el
-              Agave Salmiana
-              <span class="bold">se nutre por mas de 12 años</span> de la rica tierra
-              Agreste que tiene a sus pies.
+              En este <span class="bold-text accent-text">Idilio Salvaje</span>,
+              el Agave Salmiana
+              <span class="bold-text">se nutre por mas de 12 años</span> de la rica
+              tierra Agreste que tiene a sus pies.
             </p>
             <p>
               Así, solo así, se logra tener un agave capaz de darnos el <span
-                class="bold accent-text"
+                class="bold-text accent-text"
               >
                 Mezcal Salmero</span
-              >, digno representante del <span class="bold">Altiplano</span>.
+              >, digno representante del
+              <span class="bold-text">Altiplano</span>.
             </p>
             <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
           </section>
@@ -73,15 +74,6 @@
   .origenes-image h1,
   .origenes-image p {
     color: var(--text-color-light);
-  }
-
-  .bold {
-    font-family: 'Univers LT Std 67';
-    font-weight: 500;
-  }
-
-  .accent-text {
-    color: var(--green-500);
   }
   .origenes-wrapper {
     background: var(--bg-light-yellow);
