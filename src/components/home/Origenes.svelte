@@ -167,7 +167,11 @@
   .origenes-description-section {
     display: grid;
     width: 100%;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-md);
+
+    @media only screen and (min-width: 48em) {
+      gap: var(--spacing-lg);
+    }
   }
 
   .origenes-description-section:first-child {
@@ -186,11 +190,12 @@
 
   .origenes-description-section section p {
     text-align: start;
-    font-size: 1.6rem;
+
     padding: var(--spacing-sm) 0;
 
     @media only screen and (min-width: 48em) {
       max-width: 45ch;
+      font-size: 1.6rem;
     }
   }
 
