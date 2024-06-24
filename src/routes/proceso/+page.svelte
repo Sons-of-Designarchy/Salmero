@@ -8,6 +8,8 @@
   import Proceso_2 from '../../assets/img/Proceso_2.png';
   import Proceso_3 from '../../assets/img/Proceso_3.png';
   import HotStones from '../../assets/svg/HotStones.svelte';
+  import Destilacion from '../../assets/svg/Destilacion.svelte';
+  import Fermentacion from '../../assets/svg/Fermentacion.svelte';
   import Agave from '../../assets/svg/Agave.svelte';
 </script>
 
@@ -56,7 +58,7 @@
     </p>
   </article>
   <article>
-    <div class="proceso-steps-img"><HotStones /></div>
+    <div class="proceso-steps-img"><Fermentacion /></div>
     <p>3</p>
     <h3>Fermentación</h3>
     <p>
@@ -66,7 +68,7 @@
     </p>
   </article>
   <article>
-    <div class="proceso-steps-img"><HotStones /></div>
+    <div class="proceso-steps-img"><Destilacion /></div>
     <p>4</p>
     <h3>Destilación</h3>
     <p>
