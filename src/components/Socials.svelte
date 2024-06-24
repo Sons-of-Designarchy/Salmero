@@ -64,7 +64,7 @@
     align-items: center;
     gap: 1.5rem;
 
-    padding: var(--spacing-lg);
+    padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
 
     box-sizing: border-box;
 
