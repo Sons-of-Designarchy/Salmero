@@ -128,9 +128,12 @@
 
   .proceso-images-grid {
     display: grid;
-    grid-template-columns: repeat(1, 100%);
+
+    grid-template-columns: 100%;
     @media only screen and (min-width: 48em) {
       grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100%;
+      height: 30rem;
     }
   }
 
