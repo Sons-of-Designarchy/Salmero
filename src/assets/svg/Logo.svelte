@@ -2,10 +2,12 @@
   export let width: number | string = 1360;
   export let height: number | string = 196;
   export let fill: string = '#ECECE9';
+  export let className: string = '';
 </script>
 
 <svg
   xmlns="http://www.w3.org/2000/svg"
+  class={className}
   {width}
   {height}
   viewBox="0 0 1360 196"
