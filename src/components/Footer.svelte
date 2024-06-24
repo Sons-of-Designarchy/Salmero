@@ -48,6 +48,7 @@
   }
   .head {
     width: 100%;
+    align-items: center;
     @media only screen and (min-width: 48em) {
       display: flex;
       justify-content: space-between;
