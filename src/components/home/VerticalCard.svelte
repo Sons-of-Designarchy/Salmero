@@ -50,8 +50,12 @@
     text-align: center;
   }
 
-  .vertical-card-caption {
-    font-size: var(--caption);
+  h2 {
+    word-break: break-all;
+
+    @media only screen and (min-width: 48em) {
+      word-break: normal;
+    }
   }
 
   .vertical-card-description {
@@ -60,7 +64,12 @@
 
   .image {
     width: 100%;
-    height: 36rem;
+    height: 12rem;
+
     position: relative;
+
+    @media only screen and (min-width: 48em) {
+      height: 36rem;
+    }
   }
 </style>

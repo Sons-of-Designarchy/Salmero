@@ -74,6 +74,6 @@
 
     text-align: center;
 
-    padding: var(--spacing-xl) var(--spacing-md);
+    padding: 0 var(--spacing-md);
   }
 </style>

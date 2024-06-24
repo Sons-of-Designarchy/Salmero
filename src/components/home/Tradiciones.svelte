@@ -48,9 +48,11 @@
     margin: auto;
 
     padding-top: var(--spacing-xl);
+    padding-bottom: 0;
 
     @media only screen and (min-width: 48em) {
       padding-top: 0;
+      padding-bottom: calc(var(--spacing-xl) * 2);
     }
   }
   .tradiciones-intro {

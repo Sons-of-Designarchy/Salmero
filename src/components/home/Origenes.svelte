@@ -81,7 +81,6 @@
     flex-direction: column;
     align-items: center;
     align-content: center;
-    gap: calc(var(--spacing-xl) * 2);
 
     text-align: center;
     overflow: hidden;
@@ -91,7 +90,7 @@
     padding-top: calc(var(--spacing-xl));
 
     @media only screen and (min-width: 48em) {
-      padding: calc(var(--spacing-xl) * 2) 0;
+      padding-top: calc(var(--spacing-xl) * 2);
     }
   }
 
@@ -110,6 +109,8 @@
     justify-content: center;
 
     padding: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+
     max-width: var(--max-width);
 
     background: url('../../assets/img/Agave_2.png');
@@ -117,6 +118,10 @@
     background-repeat: no-repeat;
 
     box-sizing: border-box;
+
+    @media only screen and (min-width: 48em) {
+      margin: var(--spacing-xl) 0;
+    }
   }
 
   .origenes-image-description {
