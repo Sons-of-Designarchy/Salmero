@@ -50,12 +50,17 @@
 
   .header-img {
     width: 100%;
-    height: 46rem;
+    height: 20rem;
+
     padding: 0.4rem;
 
     box-sizing: border-box;
     border-radius: 10px;
 
     object-fit: cover;
+
+    @media only screen and (min-width: 48em) {
+      height: 46rem;
+    }
   }
 </style>

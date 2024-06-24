@@ -155,8 +155,13 @@
     max-width: var(--max-width);
     margin: auto;
 
-    gap: calc(var(--spacing-xl) * 2);
     box-sizing: border-box;
+
+    overflow: hidden;
+
+    @media only screen and (min-width: 48em) {
+      gap: calc(var(--spacing-xl) * 2);
+    }
   }
 
   .origenes-description-section {
@@ -182,26 +187,37 @@
   .origenes-description-section section p {
     text-align: start;
     font-size: 1.6rem;
+    padding: var(--spacing-sm) 0;
 
     @media only screen and (min-width: 48em) {
       max-width: 45ch;
     }
   }
 
-  .origenes-description-section img:nth-child(2) {
+  .origenes-description-section img:first-child {
+    width: 100%;
     @media only screen and (min-width: 48em) {
+      width: auto;
+    }
+  }
+
+  .origenes-description-section img:nth-child(2) {
+    width: 100%;
+    @media only screen and (min-width: 48em) {
+      width: auto;
       left: 60%;
       position: absolute;
     }
   }
 
   .origenes-description-section img:nth-child(3) {
-    display: none;
+    width: 100%;
     @media only screen and (min-width: 64em) {
       display: block;
-      margin-top: -20rem;
+      margin-top: -30rem;
       left: 78%;
       position: absolute;
+      width: auto;
     }
   }
 </style>
