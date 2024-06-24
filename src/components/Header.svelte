@@ -34,16 +34,16 @@
     text-align: center;
   }
 
+  h1 {
+    margin: 1rem 0;
+  }
+
   .header-content {
     max-width: var(--max-width);
 
     padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
   }
-  .header-description {
-    padding: 1rem 0;
-  }
-
   .header-description {
     max-width: 110ch;
   }

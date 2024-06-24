@@ -8,7 +8,7 @@
 <section class="socials" id="encuentranos">
   <article class="socials-content">
     <div class="socials-content-inner">
-      <p>Nuestros amigos</p>
+      <p class="caption">Nuestros amigos</p>
       <h1>Siguenos en nuestras redes sociales</h1>
       <ul class="socials-links">
         <li><a href="/"><p>Instagram</p></a></li>
