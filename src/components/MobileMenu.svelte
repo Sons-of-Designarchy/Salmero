@@ -13,7 +13,9 @@
 
 <div class="mobile-menu-container">
   <section class="mobile-menu-navbar">
-    <Logo className="logo" height="2rem" width="15rem" fill="#2F2F25" />
+    <a href="/">
+      <Logo className="logo" height="2rem" width="15rem" fill="#2F2F25" />
+    </a>
     <button on:click={toggleMenu}>
       <Hamburger />
     </button>

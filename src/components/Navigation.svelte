@@ -4,7 +4,7 @@
 
 <nav>
   <section class="nav-inner">
-    <Logo fill="#2F2F25" height="4.5rem" width="28rem" />
+    <a href="/"> <Logo fill="#2F2F25" height="4.5rem" width="28rem" /></a>
     <ul class="nav-links">
       <li><a href="/"><p>Home</p></a></li>
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
