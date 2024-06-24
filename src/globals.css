@@ -125,6 +125,11 @@ p {
   letter-spacing: 2.25px;
 }
 
+.caption {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
 ul {
   list-style: none;
 }

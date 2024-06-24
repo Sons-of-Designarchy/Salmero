@@ -40,12 +40,6 @@
     padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
   }
-
-  .header-content .caption {
-    font-size: 0.85rem;
-  }
-
-  .header-content .caption,
   .header-description {
     padding: 1rem 0;
   }

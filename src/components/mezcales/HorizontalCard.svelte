@@ -22,7 +22,7 @@
 >
   <div class="image"><slot name="image"></slot></div>
   <div class="horizontal-card-inner">
-    <p>{caption}</p>
+    <p class="caption">{caption}</p>
     <h1>{title}</h1>
     <p>{subtitle}</p>
     <Jabali />

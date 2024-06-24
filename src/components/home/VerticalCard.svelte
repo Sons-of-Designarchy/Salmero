@@ -17,7 +17,7 @@
     <slot name="image"></slot>
   </div>
   <section class="vertical-card-inner">
-    <p class="vertical-card-caption">{caption}</p>
+    <p class="caption">{caption}</p>
     <h2>{title}</h2>
     <p class="vertical-card-description">{description}</p>
   </section>

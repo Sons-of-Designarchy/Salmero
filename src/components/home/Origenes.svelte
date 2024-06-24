@@ -7,7 +7,7 @@
 <div class="origenes-wrapper" id="#origenes">
   <div class="origenes">
     <section>
-      <p>Del norte de México</p>
+      <p class="caption">Del norte de México</p>
       <h1>ORIGENES DEL ALTIPLANO POTOSINO</h1>
       <p class="origenes-intro">
         Hace más de 200 años, donde comienza el gran desierto de chihuahua, su
