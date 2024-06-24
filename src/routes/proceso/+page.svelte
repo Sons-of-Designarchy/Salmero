@@ -17,9 +17,12 @@
     <h1>Nuestro proceso</h1>
     <Jabali />
     <p>
-      Nuestro proceso de producción respeta las tradiciones de más de 200 años,
+      Nuestro proceso de producción respeta las <span class="bold-text"
+        >tradiciones de más de 200 años,</span
+      >
       nuestro mezcal está hecho por las manos de esta tierra.
     </p>
+    <div class="bg-image" />
   </section>
 </Header>
 
@@ -78,19 +81,20 @@
 <style>
   .proceso-intro {
     display: grid;
-
-    max-width: var(--max-width);
+    gap: var(--spacing-md);
     margin: auto;
     text-align: start;
-
-    gap: 1rem;
+    box-sizing: border-box;
 
     @media only screen and (min-width: 48em) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 30% 30%;
       justify-items: center;
-
       align-items: center;
+
+      max-width: var(--max-width);
+
+      padding: calc(var(--spacing-xl) * 2);
     }
   }
 
@@ -103,6 +107,22 @@
 
     @media only screen and (min-width: 48em) {
       grid-row: inherit;
+    }
+  }
+
+  .bg-image {
+    width: 95%;
+    height: 100%;
+    position: absolute;
+    background-image: url('../../assets/img/agave_bg.png');
+    background-repeat: no-repeat;
+    background-position: 10% -10rem;
+    background-size: cover;
+    mix-blend-mode: darken;
+
+    @media only screen and (min-width: 48em) {
+      background-position: 45vw 85%;
+      width: 100%;
     }
   }
 
