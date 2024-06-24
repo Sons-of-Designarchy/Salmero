@@ -47,13 +47,19 @@
     max-width: var(--max-width);
     margin: auto;
 
-    padding: var(--spacing-xl);
+    padding-top: var(--spacing-xl);
+
+    @media only screen and (min-width: 48em) {
+      padding-top: 0;
+    }
   }
   .tradiciones-intro {
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     align-items: center;
+
+    overflow: hidden;
 
     width: 100%;
 
@@ -68,7 +74,11 @@
   }
   .tradiciones-intro img {
     height: 100%;
-    width: 100%;
+    width: 100vw;
+
+    @media only screen and (min-width: 48em) {
+      width: 100%;
+    }
   }
 
   .tradiciones-intro-content {

@@ -41,6 +41,15 @@
     box-sizing: border-box;
   }
 
+  .header-content .caption {
+    font-size: 0.85rem;
+  }
+
+  .header-content .caption,
+  .header-description {
+    padding: 1rem 0;
+  }
+
   .header-description {
     max-width: 110ch;
   }

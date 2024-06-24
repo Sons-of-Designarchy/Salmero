@@ -86,9 +86,13 @@
     text-align: center;
     overflow: hidden;
 
-    padding: calc(var(--spacing-xl) * 2) 0;
-
     margin: auto;
+
+    padding-top: calc(var(--spacing-xl));
+
+    @media only screen and (min-width: 48em) {
+      padding: calc(var(--spacing-xl) * 2) 0;
+    }
   }
 
   .origenes-intro {
