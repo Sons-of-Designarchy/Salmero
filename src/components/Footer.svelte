@@ -18,7 +18,9 @@
         <a href="/">YouTube</a>
       </div>
     </div>
-    <Logo width="100%" />
+    <div class="footer-logo-container">
+      <Logo width="100%" height="100%" />
+    </div>
   </section>
 </footer>
 
@@ -46,9 +48,10 @@
   }
   .head {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @media only screen and (min-width: 48em) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .head div {
@@ -61,5 +64,9 @@
 
   .head-socials {
     text-align: right;
+  }
+
+  .footer-logo-container {
+    padding: var(--spacing-xl) var(--spacing-sm);
   }
 </style>
