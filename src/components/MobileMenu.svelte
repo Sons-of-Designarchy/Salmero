@@ -3,6 +3,8 @@
   import Hamburger from '../assets/svg/Hamburger.svelte';
   import Jabali from '../assets/svg/Jabali.svelte';
   import Close from '../assets/svg/Close.svelte';
+  import { slide } from 'svelte/transition';
+  import { quintOut } from 'svelte/easing';
 
   let isOpen = false;
 
@@ -21,19 +23,21 @@
     </button>
   </section>
   <section class="mobile-menu-nav-inner">
-    <nav class={`${isOpen ? 'nav--open' : ''}`}>
-      <button on:click={toggleMenu}>
-        <Close />
-      </button>
-      <ul class="mobile-menu-nav-links">
-        <li><a href="/"><p>Home</p></a></li>
-        <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-        <li><a href="/origenes"><p>Origenes</p></a></li>
-        <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
-        <li><a href="#encuentranos"><p>Encuentranos</p></a></li>
-      </ul>
-      <Jabali />
-    </nav>
+    {#if isOpen}
+      <nav transition:slide|local={{ axis: 'x' }} class="nav--open">
+        <button on:click={toggleMenu}>
+          <Close />
+        </button>
+        <ul class="mobile-menu-nav-links">
+          <li><a href="/"><p>Home</p></a></li>
+          <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
+          <li><a href="/origenes"><p>Origenes</p></a></li>
+          <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
+          <li><a href="#encuentranos"><p>Encuentranos</p></a></li>
+        </ul>
+        <Jabali />
+      </nav>
+    {/if}
   </section>
 </div>
 
