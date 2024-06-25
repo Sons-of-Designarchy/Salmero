@@ -152,13 +152,16 @@
   .proceso-steps article {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: start;
+
     gap: 1rem;
 
     width: 25rem;
 
-    text-align: center;
+    @media only screen and (min-width: 48em) {
+      text-align: center;
+      align-items: center;
+      justify-content: start;
+    }
   }
 
   .proceso-steps article p {
@@ -166,7 +169,12 @@
   }
 
   .proceso-steps-img {
-    width: 8rem;
-    height: 8rem;
+    width: 5rem;
+    height: 5rem;
+
+    @media only screen and (min-width: 48em) {
+      width: 8rem;
+      height: 8rem;
+    }
   }
 </style>
