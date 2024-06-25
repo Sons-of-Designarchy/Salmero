@@ -60,7 +60,7 @@
     object-fit: cover;
 
     @media only screen and (min-width: 48em) {
-      height: 46rem;
+      height: 36rem;
     }
   }
 </style>
