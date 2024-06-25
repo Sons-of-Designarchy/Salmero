@@ -167,5 +167,6 @@
 
   .proceso-steps-img {
     width: 8rem;
+    height: 8rem;
   }
 </style>
