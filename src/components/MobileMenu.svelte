@@ -4,12 +4,15 @@
   import Jabali from '../assets/svg/Jabali.svelte';
   import Close from '../assets/svg/Close.svelte';
   import { slide } from 'svelte/transition';
-  import { quintOut } from 'svelte/easing';
 
   let isOpen = false;
 
   function toggleMenu() {
     isOpen = !isOpen;
+  }
+
+  function closeMenu() {
+    isOpen = false;
   }
 </script>
 
@@ -29,11 +32,19 @@
           <Close />
         </button>
         <ul class="mobile-menu-nav-links">
-          <li><a href="/"><p>Home</p></a></li>
-          <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-          <li><a href="/origenes"><p>Origenes</p></a></li>
-          <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
-          <li><a href="#encuentranos"><p>Encuentranos</p></a></li>
+          <li><a href="/" on:click={closeMenu}><p>Home</p></a></li>
+          <li>
+            <a href="/nuestros-mezcales" on:click={closeMenu}
+              ><p>Nuestros mezcales</p></a
+            >
+          </li>
+          <li><a href="/origenes" on:click={closeMenu}><p>Origenes</p></a></li>
+          <li>
+            <a href="/proceso" on:click={closeMenu}><p>Nuestros procesos</p></a>
+          </li>
+          <li>
+            <a href="#encuentranos" on:click={closeMenu}><p>Encuentranos</p></a>
+          </li>
         </ul>
         <Jabali />
       </nav>
