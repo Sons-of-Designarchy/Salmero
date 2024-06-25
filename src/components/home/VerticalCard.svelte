@@ -31,7 +31,6 @@
 
     width: 100%;
     max-width: 30rem;
-    height: fit-content;
 
     border-radius: 20px;
   }
@@ -48,6 +47,9 @@
     padding: 1rem;
 
     text-align: center;
+    @media only screen and (min-width: 48em) {
+      min-height: 12rem;
+    }
   }
 
   h2 {
