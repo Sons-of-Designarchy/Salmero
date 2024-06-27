@@ -151,7 +151,7 @@
     align-items: center;
     width: 100%;
 
-    padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+    padding: var(--spacing-xl) var(--spacing-md);
     max-width: var(--max-width);
     margin: auto;
 
@@ -161,6 +161,7 @@
 
     @media only screen and (min-width: 48em) {
       gap: calc(var(--spacing-xl) * 2);
+      padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
     }
   }
 
@@ -168,6 +169,7 @@
     display: grid;
     width: 100%;
     gap: var(--spacing-md);
+    max-width: var(--max-width);
 
     @media only screen and (min-width: 48em) {
       gap: var(--spacing-lg);
@@ -176,15 +178,15 @@
 
   .origenes-description-section:first-child {
     grid-template-columns: 1fr;
-    @media only screen and (min-width: 48em) {
-      grid-template-columns: minmax(300px, 80%) 1fr;
+    @media only screen and (min-width: 64em) {
+      grid-template-columns: 100% 1fr;
     }
   }
 
   .origenes-description-section:nth-child(2) {
     grid-template-columns: 1fr;
-    @media only screen and (min-width: 48em) {
-      grid-template-columns: 1fr minmax(100px, 80%);
+    @media only screen and (min-width: 64em) {
+      grid-template-columns: 1fr 100%;
     }
   }
 
@@ -200,23 +202,30 @@
   }
 
   .origenes-description-section img:first-child {
-    width: 100%;
+    width: 80vw;
+    margin: auto;
     @media only screen and (min-width: 48em) {
       width: auto;
     }
   }
 
   .origenes-description-section img:nth-child(2) {
-    width: 100%;
-    @media only screen and (min-width: 48em) {
+    width: 80vw;
+    margin: auto;
+    @media only screen and (min-width: 64em) {
       width: auto;
       left: 60%;
       position: absolute;
     }
+
+    @media only screen and (min-width: 48em) {
+      width: auto;
+    }
   }
 
   .origenes-description-section img:nth-child(3) {
-    width: 100%;
+    width: 50vw;
+    margin: auto;
     @media only screen and (min-width: 64em) {
       display: block;
       margin-top: -30rem;
