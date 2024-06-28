@@ -9,7 +9,7 @@
 <div class="tradiciones-wrapper" id="tradiciones">
   <section class="tradiciones">
     <section class="tradiciones-intro">
-      <div class="tradiciones-intro-content">
+      <div class="tradiciones-intro-content container-min-paddings">
         <Jabali />
         <p class="caption">Nuestro proceso de producción</p>
         <h1>Expresión de nuestras tradiciones</h1>
@@ -47,8 +47,8 @@
     max-width: var(--max-width);
     margin: auto;
 
-    padding-top: var(--spacing-xl);
     padding-bottom: 0;
+    overflow: hidden;
 
     @media only screen and (min-width: 48em) {
       padding-top: 0;
@@ -58,12 +58,8 @@
   .tradiciones-intro {
     display: grid;
     grid-auto-flow: row;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     align-items: center;
-
-    overflow: hidden;
-
-    width: 100%;
 
     gap: 2rem;
 
@@ -76,7 +72,7 @@
   }
   .tradiciones-intro img {
     height: 100%;
-    width: 100vw;
+    width: 100%;
 
     @media only screen and (min-width: 48em) {
       width: 100%;
@@ -88,7 +84,6 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: var(--spacing-md);
 
     box-sizing: border-box;
   }
@@ -96,6 +91,7 @@
   .tradiciones-intro-content p,
   .tradiciones-intro-content h1 {
     max-width: 80ch;
+    word-wrap: break-word;
   }
 
   .tradiciones-images {

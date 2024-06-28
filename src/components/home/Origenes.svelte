@@ -24,8 +24,8 @@
       </p>
     </section>
 
-    <section class="origenes-description container-min-paddings">
-      <div class="origenes-description-inner">
+    <section class="origenes-description">
+      <div class="origenes-description-inner container-min-paddings">
         <div class="origenes-description-section">
           <section>
             <p>
@@ -148,8 +148,8 @@
     align-items: center;
     width: 100%;
 
-    padding: var(--spacing-xl) var(--spacing-md);
     max-width: var(--max-width);
+
     margin: auto;
 
     box-sizing: border-box;
@@ -158,7 +158,7 @@
 
     @media only screen and (min-width: 48em) {
       gap: calc(var(--spacing-xl) * 2);
-      padding: calc(var(--spacing-xl) * 2) var(--spacing-lg);
+      padding: calc(var(--spacing-lg) * 3);
     }
   }
 
