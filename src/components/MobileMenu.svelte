@@ -95,7 +95,8 @@
   }
 
   nav p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    text-wrap: nowrap;
   }
 
   .mobile-menu-nav-links {
