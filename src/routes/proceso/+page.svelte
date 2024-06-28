@@ -34,7 +34,7 @@
   <ImageComponent src={Proceso_3} />
 </section>
 
-<section class="proceso-steps">
+<section class="proceso-steps container-min-paddings">
   <article>
     <div class="proceso-steps-img"><Agave /></div>
     <p>1</p>
@@ -146,7 +146,7 @@
     justify-content: center;
 
     margin: auto;
-    padding: calc(var(--spacing-xl) * 2) 0;
+    padding-bottom: calc(var(--spacing-lg) * 3);
   }
 
   .proceso-steps article {
