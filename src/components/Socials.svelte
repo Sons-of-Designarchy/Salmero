@@ -84,6 +84,14 @@
     }
   }
 
+  .socials-links li:last-child {
+    width: auto;
+
+    @media only screen and (max-width: 35em) {
+      width: 100%;
+    }
+  }
+
   .socials-links p {
     text-align: center;
   }
