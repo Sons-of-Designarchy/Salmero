@@ -139,6 +139,16 @@ img {
   object-fit: cover;
 }
 
+/* utils */
+
+.container-min-paddings {
+  padding: var(--spacing-xl) var(--spacing-md);
+
+  @media only screen and (min-width: 48em) {
+    padding: var(--spacing-xl) var(--spacing-lg);
+  }
+}
+
 .bold-text {
   font-family: 'Univers LT Std 67';
   font-weight: 500;

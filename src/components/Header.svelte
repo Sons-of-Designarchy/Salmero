@@ -15,7 +15,7 @@
     <p class="header-description">
       {description}
     </p>
-    <slot name="custom-description"></slot>
+    <slot class="custom-description" name="custom-description"></slot>
   </section>
 </header>
 
@@ -34,17 +34,14 @@
     text-align: center;
   }
 
-  h1 {
-    margin: 1rem 0;
-  }
-
   .header-content {
     max-width: var(--max-width);
 
     padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
   }
-  .header-description {
+  .header-description,
+  .custom-description {
     max-width: 110ch;
   }
 

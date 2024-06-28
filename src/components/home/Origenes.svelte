@@ -6,7 +6,7 @@
 
 <div class="origenes-wrapper" id="#origenes">
   <div class="origenes">
-    <section>
+    <section class="container-min-paddings">
       <p class="caption">Del norte de México</p>
       <h1>ORIGENES DEL ALTIPLANO POTOSINO</h1>
       <p class="origenes-intro">
@@ -16,7 +16,7 @@
       </p>
     </section>
 
-    <section class="origenes-image">
+    <section class="origenes-image container-min-paddings">
       <h1>nuestro agave salmiana es enaltecido por su esencia resiliente,</h1>
       <p class="origenes-image-description">
         Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las
@@ -24,7 +24,7 @@
       </p>
     </section>
 
-    <section class="origenes-description">
+    <section class="origenes-description container-min-paddings">
       <div class="origenes-description-inner">
         <div class="origenes-description-section">
           <section>
@@ -87,16 +87,18 @@
 
     margin: auto;
 
-    padding-top: calc(var(--spacing-xl));
-
     @media only screen and (min-width: 48em) {
-      padding-top: calc(var(--spacing-xl) * 2);
+      padding-top: var(--spacing-xl);
     }
   }
 
   .origenes-intro {
-    margin: auto;
-    max-width: 110ch;
+    max-width: var(--max-width);
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 48em) {
+      padding: var(--spacing-sm) var(--spacing-md);
+    }
   }
 
   .origenes-image {
@@ -109,7 +111,6 @@
     justify-content: center;
 
     padding: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
 
     max-width: var(--max-width);
 
@@ -118,10 +119,6 @@
     background-repeat: no-repeat;
 
     box-sizing: border-box;
-
-    @media only screen and (min-width: 48em) {
-      margin: var(--spacing-xl) 0;
-    }
   }
 
   .origenes-image-description {
