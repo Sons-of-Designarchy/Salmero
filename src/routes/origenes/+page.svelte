@@ -93,6 +93,11 @@
   .custom-description p,
   .nuestra-tierra p {
     max-width: 55ch;
+    letter-spacing: var(--letter-spacing-normal);
+  }
+
+  .bold-text {
+    font-family: 'Univers LT Std 65 Bold';
   }
 
   .nuestra-tierra.featured-description {

@@ -95,6 +95,7 @@
   .origenes-intro {
     max-width: var(--max-width);
     box-sizing: border-box;
+    letter-spacing: var(--letter-spacing-normal);
 
     @media only screen and (min-width: 48em) {
       padding: var(--spacing-sm) var(--spacing-md);
@@ -197,11 +198,15 @@
     padding: var(--spacing-sm) 0;
     z-index: 2;
     font-size: 1.5rem;
+    font-family: 'Univers LT Std 59';
 
     @media only screen and (min-width: 48em) {
-      max-width: 45ch;
-      font-size: 2rem;
+      max-width: 60ch;
     }
+  }
+
+  .origenes-description-section section p .bold-text {
+    letter-spacing: var(--letter-spacing-extended);
   }
 
   .origenes-description-section:nth-child(2) img:nth-child(3) {

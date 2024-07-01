@@ -43,6 +43,7 @@
   .header-description,
   .custom-description {
     max-width: 110ch;
+    letter-spacing: var(--letter-spacing-normal);
   }
 
   .header-img {

@@ -13,8 +13,22 @@
 }
 
 @font-face {
+  font-family: 'Univers LT Std 65 Bold';
+  src: url('./assets/fonts/UniversLTStd-Bold.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Univers LT Std 67';
   src: url('./assets/fonts/UniversLTStd-BoldCn.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers LT Std 75 Black';
+  src: url('./assets/fonts/UniversLTStd-Black.otf');
   font-weight: 400;
   font-style: normal;
 }
@@ -50,6 +64,9 @@
   --spacing-xl: calc(var(--spacing-unit) * 5);
 
   --caption: 15px;
+  --letter-spacing-none: 0;
+  --letter-spacing-normal: 2px;
+  --letter-spacing-extended: 2.65px;
 }
 
 body {
@@ -123,7 +140,7 @@ a {
 }
 
 p {
-  letter-spacing: 2.25px;
+  letter-spacing: var(--letter-spacing-extended);
   font-size: 1.05rem;
 }
 

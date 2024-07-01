@@ -101,7 +101,12 @@
   }
 
   .proceso-intro p {
+    letter-spacing: var(--letter-spacing-normal);
     max-width: 80ch;
+  }
+
+  .proceso-intro .bold-text {
+    font-family: 'Univers LT Std 75 Black';
   }
 
   .proceso-intro h1 {
