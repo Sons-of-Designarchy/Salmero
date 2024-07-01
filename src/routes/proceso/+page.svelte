@@ -170,7 +170,10 @@
   }
 
   .proceso-steps article p {
-    max-width: 35ch;
+    max-width: 45ch;
+    @media only screen and (min-width: 48em) {
+      font-size: 0.9rem;
+    }
   }
 
   .proceso-steps-img {
