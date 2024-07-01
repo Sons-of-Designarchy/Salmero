@@ -55,6 +55,7 @@
     border-radius: 10px;
 
     object-fit: cover;
+    pointer-events: none;
 
     @media only screen and (min-width: 48em) {
       height: 36rem;
