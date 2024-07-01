@@ -118,7 +118,7 @@
     position: absolute;
     background-image: url('../../assets/img/agave_bg.png');
     background-repeat: no-repeat;
-    background-position: 10% -10rem;
+    background-position: 25% -2rem;
     background-size: cover;
     mix-blend-mode: darken;
 
