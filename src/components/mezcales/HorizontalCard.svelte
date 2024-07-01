@@ -25,7 +25,7 @@
     <p class="caption">{caption}</p>
     <h1>{title}</h1>
     <p>{subtitle}</p>
-    <Jabali />
+    <div class="icon"><Jabali width="100%" height="100%" /></div>
     <slot class="horizontal-card-description" name="description"></slot>
   </div>
 </article>
@@ -35,27 +35,30 @@
   #card2,
   #card3 {
     position: sticky;
-  }
-
-  #card1 {
     top: 0;
+    margin-bottom: 5rem;
   }
 
   #card2 {
-    top: 5rem;
+    @media only screen and (min-width: 48em) {
+      top: 5rem;
+    }
   }
 
   #card3 {
-    top: 10rem;
+    @media only screen and (min-width: 48em) {
+      top: 10rem;
+    }
   }
   .horizontal-card {
     display: grid;
     grid-auto-flow: row;
-    grid-template-rows: 20% fit-content;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 100%;
 
-    width: 85%;
     max-width: var(--max-width);
     height: fit-content;
+    width: 100%;
 
     margin: 0 auto;
 
@@ -81,10 +84,22 @@
     text-align: center;
     margin: auto;
     padding: var(--spacing-md);
+    width: 80%;
+
+    word-break: break-word;
 
     @media only screen and (min-width: 48em) {
       padding: var(--spacing-lg);
       box-sizing: border-box;
+      width: 100%;
+    }
+  }
+
+  .icon {
+    height: 4rem;
+
+    @media only screen and (min-width: 48em) {
+      height: 5rem;
     }
   }
 

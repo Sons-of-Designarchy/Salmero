@@ -88,4 +88,12 @@
 
     box-sizing: border-box;
   }
+
+  .horizontal-card-description p {
+    font-size: 0.95rem;
+
+    @media only screen and (min-width: 48em) {
+      font-size: 1rem;
+    }
+  }
 </style>
