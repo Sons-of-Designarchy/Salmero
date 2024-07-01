@@ -60,8 +60,8 @@
               >, digno representante del
               <span class="bold-text">Altiplano</span>.
             </p>
-            <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
           </section>
+          <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
         </div>
       </div>
     </section>
@@ -126,109 +126,91 @@
   }
 
   .vertical-img {
-    height: 15rem;
-
+    width: 100%;
+    max-width: 25rem;
     @media only screen and (min-width: 48em) {
       min-width: 26rem;
+      height: 15rem;
     }
   }
 
   .horizontal-img {
-    width: 12rem;
-    height: 19rem;
+    width: 100%;
+    max-width: 25rem;
+    @media only screen and (min-width: 48em) {
+      width: 12rem;
+      height: 19rem;
+    }
   }
 
   .origenes-description {
     background-color: var(--bg-default);
-    width: 100%;
+    position: relative;
+
+    @media only screen and (min-width: 48em) {
+      width: 100vw;
+    }
   }
   .origenes-description-inner {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    gap: 2rem;
     align-items: center;
-    width: 100%;
+    position: relative;
 
     max-width: var(--max-width);
 
     margin: auto;
 
     box-sizing: border-box;
+  }
 
-    overflow: hidden;
-
-    @media only screen and (min-width: 48em) {
-      gap: calc(var(--spacing-xl) * 2);
-      padding: calc(var(--spacing-lg) * 3);
-    }
+  section {
+    display: grid;
   }
 
   .origenes-description-section {
     display: grid;
-    width: 100%;
     gap: var(--spacing-md);
+    justify-items: center;
+
+    align-items: center;
     max-width: var(--max-width);
+
+    position: relative;
+    z-index: 1;
 
     @media only screen and (min-width: 48em) {
       gap: var(--spacing-lg);
-    }
-  }
-
-  .origenes-description-section:first-child {
-    grid-template-columns: 1fr;
-    @media only screen and (min-width: 64em) {
-      grid-template-columns: 100% 1fr;
+      grid-auto-flow: column;
     }
   }
 
   .origenes-description-section:nth-child(2) {
-    grid-template-columns: 1fr;
+    gap: 2rem;
     @media only screen and (min-width: 64em) {
-      grid-template-columns: 1fr 100%;
+      grid-template-columns: repeat(2, auto);
     }
   }
 
   .origenes-description-section section p {
     text-align: start;
-
     padding: var(--spacing-sm) 0;
+    z-index: 2;
+    font-size: 1.5rem;
 
     @media only screen and (min-width: 48em) {
       max-width: 45ch;
-      font-size: 1.6rem;
+      font-size: 2rem;
     }
   }
 
-  .origenes-description-section img:first-child {
-    width: 80vw;
-    margin: auto;
-    @media only screen and (min-width: 48em) {
-      width: auto;
-    }
-  }
-
-  .origenes-description-section img:nth-child(2) {
-    width: 80vw;
-    margin: auto;
-    @media only screen and (min-width: 64em) {
-      width: auto;
-      left: 60%;
-      position: absolute;
-    }
-
-    @media only screen and (min-width: 48em) {
-      width: auto;
-    }
-  }
-
-  .origenes-description-section img:nth-child(3) {
-    width: 50vw;
-    margin: auto;
+  .origenes-description-section:nth-child(2) img:nth-child(3) {
+    z-index: -1;
+    display: none;
     @media only screen and (min-width: 64em) {
       display: block;
-      margin-top: -30rem;
-      left: 78%;
-      position: absolute;
-      width: auto;
+      position: relative;
+      top: -10rem;
     }
   }
 </style>
