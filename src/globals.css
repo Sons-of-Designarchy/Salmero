@@ -67,6 +67,7 @@
   --letter-spacing-none: 0;
   --letter-spacing-normal: 2px;
   --letter-spacing-extended: 2.65px;
+  --letter-spacing-heading: 0.4rem;
 }
 
 body {
@@ -93,33 +94,32 @@ h4,
 h5 {
   font-family: 'Univers LT Std 59';
   text-transform: uppercase;
-  letter-spacing: 0.6rem;
+  letter-spacing: var(--letter-spacing-heading);
   font-weight: normal;
+  line-height: 110%;
 }
 
 h1 {
-  font-size: 3.25rem;
-
-  @media only screen and (min-width: 48em) {
-    font-size: 5rem;
-  }
-}
-
-h2 {
-  font-size: 3rem;
-  line-height: 110%;
+  font-size: 3.5rem;
 
   @media only screen and (min-width: 48em) {
     font-size: 4.5rem;
   }
 }
 
-h3 {
+h2 {
   font-size: 2.5rem;
-  line-height: 110%;
 
   @media only screen and (min-width: 48em) {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+
+  @media only screen and (min-width: 48em) {
+    font-size: 2.5rem;
   }
 }
 
@@ -127,6 +127,7 @@ p,
 a {
   text-transform: uppercase;
   font-family: 'Univers LT Std';
+  font-size: 0.85rem;
 }
 
 a {
@@ -141,11 +142,10 @@ a {
 
 p {
   letter-spacing: var(--letter-spacing-extended);
-  font-size: 1.05rem;
 }
 
 .caption {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   padding-bottom: 1rem;
 }
 
