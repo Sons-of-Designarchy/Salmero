@@ -11,9 +11,18 @@
       <p class="caption">Nuestros amigos</p>
       <h1>Siguenos en nuestras redes sociales</h1>
       <ul class="socials-links">
-        <li><a href="/"><p>Instagram</p></a></li>
-        <li><a href="/"><p>Facebook</p></a></li>
-        <li><a href="/"><p>YouTube</p></a></li>
+        <li>
+          <a
+            href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+            target="_blank"><p>Instagram</p></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/profile.php?id=61557454914828"
+            target="_blank"><p>Facebook</p></a
+          >
+        </li>
       </ul>
     </div>
   </article>
@@ -83,13 +92,15 @@
     }
   }
 
+  /* 
+  Add only if there's more than 2 social links
   .socials-links li:last-child {
     width: auto;
 
     @media only screen and (max-width: 35em) {
       width: 100%;
     }
-  }
+  } */
 
   .socials-links p {
     text-align: center;

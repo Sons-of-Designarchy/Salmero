@@ -13,9 +13,20 @@
       </div>
       <Jabali fill="#ECECE9" />
       <div class="head-socials">
-        <a href="/">Instagram</a>
-        <a href="/">Facebook</a>
-        <a href="/">YouTube</a>
+        <ul>
+          <li>
+            <a
+              href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+              target="_blank"><p>Instagram</p></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=61557454914828"
+              target="_blank"><p>Facebook</p></a
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <div class="footer-logo-container">
@@ -39,16 +50,13 @@
     width: var(--max-width);
   }
 
-  a {
-    letter-spacing: 2.25px;
-  }
-
   p {
     color: var(--text-color-light);
   }
   .head {
     width: 100%;
     align-items: center;
+
     @media only screen and (min-width: 48em) {
       display: flex;
       justify-content: space-between;
@@ -67,6 +75,12 @@
     text-align: right;
   }
 
+  .head-socials ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    justify-items: start;
+  }
   .footer-logo-container {
     padding: var(--spacing-xl) var(--spacing-sm);
   }
