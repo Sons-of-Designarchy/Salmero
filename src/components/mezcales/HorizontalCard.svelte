@@ -57,12 +57,12 @@
     grid-template-columns: 100%;
 
     max-width: var(--max-width);
-    height: fit-content;
-    width: 100%;
+    height: 100%;
+    width: 90%;
 
     margin: 0 auto;
 
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px;
     border: solid 1px var(--black-700);
 
     @media only screen and (min-width: 48em) {
@@ -70,8 +70,6 @@
       grid-auto-flow: columns;
       grid-template-columns: 50% 1fr;
       width: 80vw;
-
-      border-radius: 0 20px 20px 0;
     }
   }
 
@@ -83,10 +81,11 @@
 
     text-align: center;
     margin: auto;
-    padding: var(--spacing-md);
-    width: 80%;
+    padding: var(--spacing-sm);
+    padding-top: var(--spacing-lg);
 
     word-break: break-word;
+    border-radius: 20px;
 
     @media only screen and (min-width: 48em) {
       padding: var(--spacing-lg);
@@ -110,5 +109,10 @@
       height: 100%;
       width: 100%;
     }
+  }
+
+  .caption {
+    padding-top: var(--spacing-sm);
+    padding-bottom: 0;
   }
 </style>

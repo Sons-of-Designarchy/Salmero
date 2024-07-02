@@ -17,8 +17,12 @@
   <ImageComponent slot="image" src={HeaderImg} />
 </Header>
 <section class="card-container">
-  <HorizontalCard title="Original" id="card1" bgColor="salmon">
-    <ImageComponent slot="image" src={Original} />
+  <HorizontalCard title="Original" id="card1" bgColor="green">
+    <ImageComponent
+      slot="image"
+      className="horizontal-card-image"
+      src={Original}
+    />
     <section slot="description" class="horizontal-card-description">
       <p>Era mi destino.</p>
       <p>
@@ -34,8 +38,12 @@
       </p>
     </section>
   </HorizontalCard>
-  <HorizontalCard title="Guadalupe" id="card2" bgColor="green">
-    <ImageComponent slot="image" src={Guadalupe} />
+  <HorizontalCard title="Guadalupe" id="card2" bgColor="salmon">
+    <ImageComponent
+      slot="image"
+      src={Guadalupe}
+      className="horizontal-card-image"
+    />
     <section slot="description" class="horizontal-card-description">
       <p>Guadalupe, escuchaste la noticia del concurso.</p>
       <p>
@@ -53,7 +61,11 @@
     </section>
   </HorizontalCard>
   <HorizontalCard title="Panamericano" id="card3" bgColor="red">
-    <ImageComponent slot="image" src={Panamericano} />
+    <ImageComponent
+      slot="image"
+      src={Panamericano}
+      className="horizontal-card-image"
+    />
     <section slot="description" class="horizontal-card-description">
       <p>
         La carretera panamericana nace de un sueño colectivo de unir el
@@ -79,7 +91,7 @@
   .horizontal-card-description {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
     width: 100%;
     height: 100%;
     max-width: 50ch;
@@ -87,13 +99,5 @@
     padding-top: 1rem;
 
     box-sizing: border-box;
-  }
-
-  .horizontal-card-description p {
-    font-size: 0.95rem;
-
-    @media only screen and (min-width: 48em) {
-      font-size: 1rem;
-    }
   }
 </style>
