@@ -19,7 +19,7 @@
       </div>
     </div>
     <div class="footer-logo-container">
-      <Logo width="100%" height="100%" />
+      <Logo width="100%" height="100%" fill="#ECECE9" />
     </div>
   </section>
 </footer>
