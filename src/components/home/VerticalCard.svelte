@@ -30,7 +30,7 @@
     position: relative;
 
     width: 100%;
-    max-width: 30rem;
+    height: 100%;
 
     border-radius: 20px;
   }
@@ -39,29 +39,25 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.25rem;
 
     border: solid 1px var(--black-700);
     border-radius: 0 0 20px 20px;
 
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+    height: 100%;
 
     text-align: center;
     @media only screen and (min-width: 48em) {
-      min-height: 12rem;
+      min-height: 8rem;
     }
   }
 
   h2 {
-    word-break: break-all;
-
-    @media only screen and (min-width: 48em) {
-      word-break: normal;
-    }
+    word-break: break-word;
   }
 
-  .vertical-card-description {
-    max-width: 80%;
+  .caption {
+    padding-bottom: 0rem;
   }
 
   .image {
@@ -71,7 +67,7 @@
     position: relative;
 
     @media only screen and (min-width: 48em) {
-      height: 36rem;
+      height: 100%;
     }
   }
 </style>

@@ -64,8 +64,9 @@
 
 <style>
   .vertical-cards-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+
+    grid-template-columns: 100%;
     margin: auto;
     max-width: var(--max-width);
 
@@ -75,5 +76,9 @@
     text-align: center;
 
     padding: 0 var(--spacing-md);
+
+    @media only screen and (min-width: 40em) {
+      grid-template-columns: repeat(3, 33.33%);
+    }
   }
 </style>
