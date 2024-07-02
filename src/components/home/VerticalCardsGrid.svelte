@@ -65,6 +65,7 @@
 <style>
   .vertical-cards-grid {
     display: grid;
+    gap: var(--spacing-sm);
 
     grid-template-columns: 100%;
     margin: auto;
@@ -79,6 +80,7 @@
 
     @media only screen and (min-width: 40em) {
       grid-template-columns: repeat(3, 33.33%);
+      gap: 0;
     }
   }
 </style>
