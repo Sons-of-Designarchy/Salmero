@@ -146,22 +146,25 @@
 
   .proceso-steps {
     display: flex;
-    row-gap: 4rem;
     flex-wrap: wrap;
     justify-content: center;
 
-    margin: auto;
-    padding-bottom: calc(var(--spacing-lg) * 3);
+    gap: var(--spacing-lg);
+    box-sizing: border-box;
+
+    @media only screen and (min-width: 64em) {
+      flex-wrap: nowrap;
+      width: auto;
+      padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
+      margin: auto;
+      justify-content: center;
+    }
   }
 
   .proceso-steps article {
     display: flex;
     flex-direction: column;
-
     gap: 1rem;
-
-    width: 25rem;
-
     @media only screen and (min-width: 48em) {
       text-align: center;
       align-items: center;
@@ -170,9 +173,15 @@
   }
 
   .proceso-steps article p {
-    max-width: 45ch;
+    font-size: 0.8rem;
+    width: 100%;
+
+    @media only screen and (min-width: 40em) {
+      width: 80%;
+    }
     @media only screen and (min-width: 48em) {
-      font-size: 0.9rem;
+      max-width: 50ch;
+      width: 100%;
     }
   }
 
@@ -181,8 +190,8 @@
     height: 5rem;
 
     @media only screen and (min-width: 48em) {
-      width: 8rem;
-      height: 8rem;
+      width: 6.5rem;
+      height: 6.5rem;
     }
   }
 </style>
