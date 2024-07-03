@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import Header from '../../components/Header.svelte';
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
@@ -7,6 +9,22 @@
   import Original from '../../assets/img/Original.png';
   import Guadalupe from '../../assets/img/Guadalupe.png';
   import Panamericano from '../../assets/img/Panamericano.png';
+
+  let activeSlide = 1;
+
+  const handleScroll = () => {
+    const { scrollTop } = document.documentElement;
+
+    if (scrollTop < 1750) activeSlide = 1;
+    if (scrollTop >= 1750) activeSlide = 2;
+    if (scrollTop >= 2750) activeSlide = 3;
+  };
+
+  onMount(() => {
+    if (window) {
+      window.addEventListener('scroll', handleScroll);
+    }
+  });
 </script>
 
 <Header
@@ -17,6 +35,7 @@
   <ImageComponent slot="image" src={HeaderImg} />
 </Header>
 <section class="card-container">
+  <section class="active-slides"><h3>{activeSlide} / 3</h3></section>
   <HorizontalCard title="Original" id="card1" bgColor="green">
     <ImageComponent
       slot="image"
@@ -99,5 +118,18 @@
     padding-top: 1rem;
 
     box-sizing: border-box;
+  }
+
+  .active-slides {
+    display: none;
+    position: sticky;
+    max-width: var(--max-width);
+    margin-bottom: -4rem;
+    left: 1.5vw;
+    top: var(--spacing-md);
+
+    @media only screen and (min-width: 84em) {
+      display: block;
+    }
   }
 </style>
