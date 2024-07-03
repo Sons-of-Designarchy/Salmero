@@ -2,7 +2,7 @@
   export let src: string;
 </script>
 
-<video autoplay loop muted width="100%" height="100%">
+<video autoplay loop muted playsinline width="100%" height="100%">
   <source {src} />
   <track kind="captions" />
 </video>
