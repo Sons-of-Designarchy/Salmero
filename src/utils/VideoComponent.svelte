@@ -1,16 +1,29 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
   export let src: string;
+
+  let videoElement: HTMLVideoElement;
+
+  function playVideo() {
+    if (videoElement) {
+      videoElement.play();
+    }
+  }
+
+  // Automatically play the video when the component is mounted
+  onMount(() => {
+    playVideo();
+  });
 </script>
 
-<video autoplay loop muted width="100%" height="100%">
+<video bind:this={videoElement} loop muted width="100%" height="100%">
   <source {src} />
-  <track kind="captions" />
 </video>
 
 <style>
   video {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
   }
 </style>
