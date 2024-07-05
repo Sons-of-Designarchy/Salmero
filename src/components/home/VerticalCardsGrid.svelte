@@ -5,6 +5,11 @@
   import Guadalupe from '../../assets/img/Guadalupe.png';
   import Original from '../../assets/img/Original.png';
 
+  import IntersectionObserver from 'svelte-intersection-observer';
+
+  let element: HTMLElement;
+  let intersecting: boolean;
+
   interface Card {
     index: number;
     color: 'salmon' | 'green' | 'red';
@@ -44,23 +49,26 @@
   ];
 </script>
 
-<section class="vertical-cards-grid">
-  {#each cards as card}
-    <VerticalCard
-      title={card.title}
-      description={card.description}
-      caption={card.caption}
-      bgColor={card.color}
-    >
-      <ImageComponent
-        slot="image"
-        src={card.image}
-        alt={card.title}
-        styles={'border-radius: 20px 20px 0 0'}
-      />
-    </VerticalCard>
-  {/each}
-</section>
+<IntersectionObserver {element} bind:intersecting rootMargin="-50%">
+  <section class="vertical-cards-grid" bind:this={element}>
+    {#each cards as card}
+      <VerticalCard
+        title={card.title}
+        description={card.description}
+        caption={card.caption}
+        bgColor={card.color}
+        {intersecting}
+      >
+        <ImageComponent
+          slot="image"
+          src={card.image}
+          alt={card.title}
+          styles={'border-radius: 20px 20px 0 0'}
+        />
+      </VerticalCard>
+    {/each}
+  </section>
+</IntersectionObserver>
 
 <style>
   .vertical-cards-grid {
