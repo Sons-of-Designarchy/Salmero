@@ -27,7 +27,7 @@
           Siguenos en nuestras redes sociales
         </h1>
         <ul class="socials-links">
-          <li in:fly={{ y: 100, duration: 2000, delay: 200 }}>
+          <li in:fly={{ y: 100, duration: 2000, delay: 250 }}>
             <a
               href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
               target="_blank"><p>Instagram</p></a
