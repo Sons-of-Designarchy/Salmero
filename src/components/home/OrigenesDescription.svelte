@@ -1,46 +1,60 @@
-<script>
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+  import { fly } from 'svelte/transition';
+  let visible: boolean;
+
   import Altiplano_1 from '../../assets/img/Altiplano_1.png';
   import Altiplano_2 from '../../assets/img/Altiplano_2.png';
   import Altiplano_3 from '../../assets/img/Altiplano_3.png';
 </script>
 
-<section class="origenes-description">
+<section
+  class="origenes-description"
+  use:inview={{ rootMargin: '-15%' }}
+  on:inview_change={({ detail }) => {
+    visible = detail.inView;
+  }}
+>
   <div class="origenes-description-inner container-min-paddings">
     <div class="origenes-description-section">
-      <section>
-        <p>
-          En El Altiplano, el <span class="bold-text accent-text"
-            >agave Salmiana
-          </span>
-          vive
-          <span class="bold-text">besando el rocío de cada mañana</span>, porque
-          sabe que no contarÁ con lluvia.
-        </p>
-        <p>
-          Amanece siempre a dos mil metros de altura, donde pasa frio en el alba
-          y donde aguanta el sol de esas alturas.
-        </p>
-      </section>
+      {#if visible}
+        <section>
+          <p in:fly={{ y: 100, duration: 2000 }}>
+            En El Altiplano, el <span class="bold-text accent-text"
+              >agave Salmiana
+            </span>
+            vive
+            <span class="bold-text">besando el rocío de cada mañana</span>,
+            porque sabe que no contarÁ con lluvia.
+          </p>
+          <p in:fly={{ y: 100, duration: 2000, delay: 500 }}>
+            Amanece siempre a dos mil metros de altura, donde pasa frio en el
+            alba y donde aguanta el sol de esas alturas.
+          </p>
+        </section>
+      {/if}
       <img class="vertical-img" src={Altiplano_3} alt="placeholder" />
     </div>
     <div class="origenes-description-section">
       <img class="vertical-img" src={Altiplano_2} alt="placeholder" />
-      <section>
-        <p>
-          En este <span class="bold-text accent-text">Idilio Salvaje</span>, el
-          Agave Salmiana
-          <span class="bold-text">se nutre por mas de 12 años</span> de la rica tierra
-          Agreste que tiene a sus pies.
-        </p>
-        <p>
-          Así, solo así, se logra tener un agave capaz de darnos el <span
-            class="bold-text accent-text"
-          >
-            Mezcal Salmero</span
-          >, digno representante del
-          <span class="bold-text">Altiplano</span>.
-        </p>
-      </section>
+      {#if visible}
+        <section>
+          <p in:fly={{ y: 100, duration: 2000, delay: 700 }}>
+            En este <span class="bold-text accent-text">Idilio Salvaje</span>,
+            el Agave Salmiana
+            <span class="bold-text">se nutre por mas de 12 años</span> de la rica
+            tierra Agreste que tiene a sus pies.
+          </p>
+          <p in:fly={{ y: 100, duration: 2000, delay: 900 }}>
+            Así, solo así, se logra tener un agave capaz de darnos el <span
+              class="bold-text accent-text"
+            >
+              Mezcal Salmero</span
+            >, digno representante del
+            <span class="bold-text">Altiplano</span>.
+          </p>
+        </section>
+      {/if}
       <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
     </div>
   </div>

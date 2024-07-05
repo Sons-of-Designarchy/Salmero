@@ -6,15 +6,18 @@
 
 <div
   class="origenes-wrapper"
-  use:inview={{ rootMargin: '-15%' }}
+  use:inview={{}}
   on:inview_change={({ detail }) => {
     visible = detail.inView;
   }}
   id="#origenes"
 >
   {#if visible}
-    <div class="origenes" in:fly={{ y: 100, duration: 2000 }}>
-      <section class="container-min-paddings">
+    <div class="origenes">
+      <section
+        in:fly={{ y: 100, duration: 2000 }}
+        class="container-min-paddings"
+      >
         <p class="caption">Del norte de México</p>
         <h1>ORIGENES DEL ALTIPLANO POTOSINO</h1>
         <p class="origenes-intro">
@@ -25,11 +28,11 @@
       </section>
 
       <section class="origenes-image container-min-paddings">
-        <h1 in:fly={{ y: 100, duration: 2000, delay: 500 }}>
+        <h1 in:fly={{ y: 100, duration: 2000, delay: 100 }}>
           nuestro agave salmiana es enaltecido por su esencia resiliente,
         </h1>
         <p
-          in:fly={{ y: 100, duration: 2000, delay: 1000 }}
+          in:fly={{ y: 100, duration: 2000, delay: 100 }}
           class="origenes-image-description"
         >
           Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las

@@ -1,30 +1,47 @@
-<script>
+<script lang="ts">
+  import { inview } from 'svelte-inview';
+  import { fly } from 'svelte/transition';
+  let visible: boolean;
+
   import Sociales_1 from '../assets/img/Sociales_1.png';
   import Sociales_2 from '../assets/img/Sociales_2.png';
   import Sociales_3 from '../assets/img/Sociales_3.png';
   import Sociales_4 from '../assets/img/Sociales_4.png';
 </script>
 
-<section class="socials" id="encuentranos">
+<section
+  use:inview={{ rootMargin: '-5%' }}
+  on:inview_change={({ detail }) => {
+    visible = detail.inView;
+  }}
+  class="socials"
+  id="encuentranos"
+>
   <article class="socials-content">
-    <div class="socials-content-inner">
-      <p class="caption">Nuestros amigos</p>
-      <h1>Siguenos en nuestras redes sociales</h1>
-      <ul class="socials-links">
-        <li>
-          <a
-            href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-            target="_blank"><p>Instagram</p></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=61557454914828"
-            target="_blank"><p>Facebook</p></a
-          >
-        </li>
-      </ul>
-    </div>
+    {#if visible}
+      <div class="socials-content-inner">
+        <p in:fly={{ y: 100, duration: 2000 }} class="caption">
+          Nuestros amigos
+        </p>
+        <h1 in:fly={{ y: 100, duration: 2000, delay: 100 }}>
+          Siguenos en nuestras redes sociales
+        </h1>
+        <ul class="socials-links">
+          <li in:fly={{ y: 100, duration: 2000, delay: 200 }}>
+            <a
+              href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+              target="_blank"><p>Instagram</p></a
+            >
+          </li>
+          <li in:fly={{ y: 100, duration: 2000, delay: 300 }}>
+            <a
+              href="https://www.facebook.com/profile.php?id=61557454914828"
+              target="_blank"><p>Facebook</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    {/if}
   </article>
   <section class="socials-photo-grid">
     <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
