@@ -10,6 +10,7 @@
         <p>Original</p>
         <p>Guadalupe</p>
         <p>Panamericano</p>
+        <a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a>
       </div>
       <Jabali fill="#ECECE9" />
       <div class="head-socials">
