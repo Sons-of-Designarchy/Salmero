@@ -50,8 +50,6 @@
     width: 100%;
     height: 20rem;
 
-    padding: 0.4rem;
-
     box-sizing: border-box;
     border-radius: 10px;
 
