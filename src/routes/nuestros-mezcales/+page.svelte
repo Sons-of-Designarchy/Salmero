@@ -102,7 +102,7 @@
 
 <style>
   .card-container {
-    z-index: 25;
+    z-index: 5;
     margin-top: 0;
     position: relative;
     margin-bottom: var(--spacing-xl);

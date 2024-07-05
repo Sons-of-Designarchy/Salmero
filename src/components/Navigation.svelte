@@ -21,6 +21,10 @@
     align-items: center;
     justify-content: center;
 
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+
     background: var(--green-500);
 
     padding: var(--spacing-sm);
