@@ -3,6 +3,7 @@
   import Header from '../components/Header.svelte';
   import Origenes from '../components/home/Origenes.svelte';
   import Tradiciones from '../components/home/Tradiciones.svelte';
+  import OrigenesDescription from '../components/home/OrigenesDescription.svelte';
   import VideoComponent from '../utils/VideoComponent.svelte';
   import Altiplano from '../assets/altiplano.mov';
 </script>
@@ -17,4 +18,5 @@ del Altiplano."
 </Header>
 <VerticalCardsGrid />
 <Origenes />
+<OrigenesDescription />
 <Tradiciones />
