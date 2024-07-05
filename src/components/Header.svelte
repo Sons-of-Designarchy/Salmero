@@ -1,22 +1,42 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+  import { fly, fade } from 'svelte/transition';
+
   export let title: string = '';
   export let textAlign: 'start' | 'center' = 'center';
   export let caption: string = '';
   export let description: string = '';
+
+  import { inview } from 'svelte-inview';
+  let visible: boolean;
 </script>
 
 <header>
-  <section class="header-img">
+  <section
+    use:inview={{}}
+    on:inview_change={({ detail }) => {
+      visible = detail.inView;
+    }}
+    class="header-img"
+  >
     <slot name="image"></slot>
   </section>
-  <section class="header-content" style="text-align: {textAlign}">
-    <p class="caption" style="align-self: {textAlign}">{caption}</p>
-    <h1 style="align-self: {textAlign}">{title}</h1>
-    <p class="header-description">
-      {description}
-    </p>
-    <slot class="custom-description" name="custom-description"></slot>
-  </section>
+  {#if visible}
+    <section
+      in:fly={{ y: 100, duration: 2000 }}
+      class="header-content"
+      style="text-align: {textAlign}"
+    >
+      <p class="caption" style="align-self: {textAlign}">
+        {caption}
+      </p>
+      <h1 style="align-self: {textAlign}">{title}</h1>
+      <p class="header-description">
+        {description}
+      </p>
+      <slot class="custom-description" name="custom-description"></slot>
+    </section>
+  {/if}
 </header>
 
 <style>

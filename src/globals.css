@@ -191,3 +191,18 @@ img {
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {
 }
+
+/* Keyframe animation for fade in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate {
+  opacity: 0; /* Start with invisible */
+  animation: fadeIn 0.5s forwards; /* 1s duration, forwards to retain final state */
+}
