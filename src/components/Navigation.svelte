@@ -10,7 +10,11 @@
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
       <li><a href="/origenes"><p>Origenes</p></a></li>
       <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
-      <li><a href="/"><p>Encuentranos</p></a></li>
+      <li>
+        <a href="https://linktr.ee/mezcalsalmero" target="_blank"
+          ><p>Encuentranos</p></a
+        >
+      </li>
     </ul>
   </section>
 </nav>

@@ -43,7 +43,11 @@
             <a href="/proceso" on:click={closeMenu}><p>Nuestros procesos</p></a>
           </li>
           <li>
-            <a href="#encuentranos" on:click={closeMenu}><p>Encuentranos</p></a>
+            <a
+              href="https://linktr.ee/mezcalsalmero"
+              target="_blank"
+              on:click={closeMenu}><p>Encuentranos</p></a
+            >
           </li>
         </ul>
         <Jabali />
