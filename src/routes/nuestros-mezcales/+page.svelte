@@ -126,7 +126,7 @@
     max-width: var(--max-width);
     margin-bottom: -4rem;
     left: 1.5vw;
-    top: var(--spacing-md);
+    top: 8rem;
 
     @media only screen and (min-width: 84em) {
       display: block;
