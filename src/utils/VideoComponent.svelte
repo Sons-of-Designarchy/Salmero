@@ -3,16 +3,9 @@
   export let className: string;
 </script>
 
-<video
-  class={className}
-  playsinline
-  autoplay
-  loop
-  muted
-  width="100%"
-  height="100%"
->
+<video class={className} playsinline autoplay loop width="100%" height="100%">
   <source {src} />
+  <track kind="captions" />
 </video>
 
 <style>
