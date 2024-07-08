@@ -148,15 +148,15 @@
     }
   }
 
-  .animate:nth-child(2) {
+  .origenes-description-section:first-child .animate:nth-child(2) {
     animation-delay: 0.2s;
   }
 
-  .animate:nth-child(3) {
-    animation-delay: 0.4s;
+  .origenes-description-section:nth-child(2) .animate:first-child {
+    animation-delay: 0.6s;
   }
 
-  .animate:nth-child(4) {
-    animation-delay: 0.6s;
+  .origenes-description-section:nth-child(2) .animate:nth-child(2) {
+    animation-delay: 0.8s;
   }
 </style>
