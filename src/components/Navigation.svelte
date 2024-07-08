@@ -49,6 +49,9 @@
   .nav-links {
     display: flex;
     gap: var(--spacing-md);
+    align-items: center;
+
+    padding: 0 var(--spacing-lg);
   }
 
   ul {
