@@ -51,10 +51,10 @@
     <p>2</p>
     <h3>Cocción</h3>
     <p>
-      el Agave Salmiana madura en 10 a 12 años. Luego de un año más de espera,
-      los campesinos cosechan el agave para llevarlo al horno. Este proceso
-      permite al Salmiana concentrar más azúcar en su piña, esencial para la
-      fabricación artesanal del mezcal.
+      La cocción se realiza en hornos de mampostería de más de 200 años,
+      utilizando vapor durante aproximadamente 3 días, dando al mezcal del
+      Altiplano Potosino un perfil herbal y vegetal. Además, preserva el
+      delicado equilibrio de la flora y fauna del Altiplano.
     </p>
   </article>
   <article>
