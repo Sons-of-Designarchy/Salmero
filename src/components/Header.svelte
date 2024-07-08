@@ -68,15 +68,12 @@
   .header-img {
     width: 100%;
     height: 20rem;
-
-    box-sizing: border-box;
-    border-radius: 10px;
-
-    object-fit: cover;
-    pointer-events: none;
-
     @media only screen and (min-width: 48em) {
       height: 36rem;
+    }
+
+    @media only screen and (min-width: 64em) {
+      padding-top: 3.5rem;
     }
   }
 
