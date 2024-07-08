@@ -27,7 +27,6 @@
     <IntersectionObserver
       element={header}
       bind:intersecting={intersectingHeader}
-      rootMargin="-15%"
     >
       <div bind:this={header}>
         <h1 class:animate={intersectingHeader}>Nuestro proceso</h1>
@@ -214,14 +213,14 @@
   }
 
   .animate:nth-child(2) {
-    animation-delay: 0.6s;
+    animation-delay: 0.2s;
   }
 
   .animate:nth-child(3) {
-    animation-delay: 0.9s;
+    animation-delay: 0.4s;
   }
 
   .animate:nth-child(4) {
-    animation-delay: 1.4s;
+    animation-delay: 0.6s;
   }
 </style>

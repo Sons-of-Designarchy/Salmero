@@ -4,7 +4,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver {element} bind:intersecting rootMargin="-20%"
+<IntersectionObserver {element} bind:intersecting rootMargin="-15%"
   ><section bind:this={element} class="origenes-image container-min-paddings">
     <h1 class:animate={intersecting}>
       nuestro agave salmiana es enaltecido por su esencia resiliente,
@@ -46,7 +46,11 @@
     max-width: 50ch;
   }
 
+  .animate:first-child {
+    animation-delay: 0.2s;
+  }
+
   .animate:nth-child(2) {
-    animation-delay: 0.08s;
+    animation-delay: 0.4s;
   }
 </style>

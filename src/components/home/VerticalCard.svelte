@@ -75,10 +75,10 @@
   }
 
   .animate:nth-child(2) {
-    animation-delay: 0.05s;
+    animation-delay: 0.2s;
   }
 
   .animate:nth-child(3) {
-    animation-delay: 0.1s;
+    animation-delay: 0.4s;
   }
 </style>

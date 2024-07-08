@@ -14,7 +14,7 @@
   <section class="header-img">
     <slot name="image"></slot>
   </section>
-  <IntersectionObserver {element} bind:intersecting>
+  <IntersectionObserver {element} bind:intersecting rootMargin="-65%">
     <section
       bind:this={element}
       class="header-content"
@@ -81,10 +81,10 @@
   }
 
   .animate:nth-child(2) {
-    animation-delay: 0.3s;
+    animation-delay: 0.2s;
   }
 
   .animate:nth-child(3) {
-    animation-delay: 0.6s;
+    animation-delay: 0.4s;
   }
 </style>

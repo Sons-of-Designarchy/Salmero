@@ -1,8 +1,13 @@
-<script>
+<script lang="ts">
+  import IntersectionObserver from 'svelte-intersection-observer';
+
   import Sociales_1 from '../assets/img/Sociales_1.png';
   import Sociales_2 from '../assets/img/Sociales_2.png';
   import Sociales_3 from '../assets/img/Sociales_3.png';
   import Sociales_4 from '../assets/img/Sociales_4.png';
+
+  let element: HTMLElement;
+  let intersecting: boolean;
 </script>
 
 <section class="socials" id="encuentranos">

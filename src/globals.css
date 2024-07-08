@@ -203,5 +203,5 @@ img {
 
 .animate {
   opacity: 0; /* Start with invisible */
-  animation: fadeIn 2s forwards; /* 1s duration, forwards to retain final state */
+  animation: fadeIn 0.8s forwards; /* 1s duration, forwards to retain final state */
 }

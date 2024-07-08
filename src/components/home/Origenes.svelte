@@ -6,7 +6,7 @@
   let intersecting: boolean;
 </script>
 
-<IntersectionObserver {element} bind:intersecting>
+<IntersectionObserver {element} bind:intersecting rootMargin="-10%">
   <div class="origenes-wrapper" id="#origenes" bind:this={element}>
     <div class="origenes">
       <section class="container-min-paddings">
