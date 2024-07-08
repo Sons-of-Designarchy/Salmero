@@ -14,7 +14,7 @@
   <section class="header-img">
     <slot name="image"></slot>
   </section>
-  <IntersectionObserver {element} bind:intersecting rootMargin="-65%">
+  <IntersectionObserver {element} bind:intersecting>
     <section
       bind:this={element}
       class="header-content"
@@ -68,6 +68,7 @@
   .header-img {
     width: 100%;
     height: 20rem;
+    background-image: url('../assets/img/Altiplano_1.png');
 
     box-sizing: border-box;
     border-radius: 10px;
