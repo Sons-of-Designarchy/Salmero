@@ -24,5 +24,6 @@
 
   .header-img {
     background-image: url('../assets/img/altiplano.png');
+    background-size: cover;
   }
 </style>
