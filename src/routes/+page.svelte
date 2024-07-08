@@ -14,7 +14,7 @@ del Altiplano."
   caption="Hecho en México"
   description="El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su agave Salmiana silvestre, destilado con respeto y tradición."
 >
-  <VideoComponent slot="image" src={Altiplano} />
+  <VideoComponent className="header-img" slot="image" src={Altiplano} />
 </Header>
 <VerticalCardsGrid />
 <Origenes />

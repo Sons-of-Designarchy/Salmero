@@ -1,8 +1,17 @@
 <script lang="ts">
   export let src: string;
+  export let className: string;
 </script>
 
-<video playsinline autoplay loop muted width="100%" height="100%">
+<video
+  class={className}
+  playsinline
+  autoplay
+  loop
+  muted
+  width="100%"
+  height="100%"
+>
   <source {src} />
 </video>
 
@@ -11,5 +20,9 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
+  }
+
+  .header-img {
+    background-image: url('../assets/img/altiplano.png');
   }
 </style>
