@@ -8,11 +8,11 @@
     <ul class="nav-links">
       <li><a href="/"><p>Home</p></a></li>
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-      <li><a href="/origenes"><p>Origenes</p></a></li>
+      <li><a href="/origenes"><p>Orígenes</p></a></li>
       <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
       <li>
         <a href="https://linktr.ee/mezcalsalmero" target="_blank"
-          ><p>Encuentranos</p></a
+          ><p>Encuéntranos</p></a
         >
       </li>
     </ul>

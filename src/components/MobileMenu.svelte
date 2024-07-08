@@ -38,7 +38,7 @@
               ><p>Nuestros mezcales</p></a
             >
           </li>
-          <li><a href="/origenes" on:click={closeMenu}><p>Origenes</p></a></li>
+          <li><a href="/origenes" on:click={closeMenu}><p>Orígenes</p></a></li>
           <li>
             <a href="/proceso" on:click={closeMenu}><p>Nuestros procesos</p></a>
           </li>
@@ -46,7 +46,7 @@
             <a
               href="https://linktr.ee/mezcalsalmero"
               target="_blank"
-              on:click={closeMenu}><p>Encuentranos</p></a
+              on:click={closeMenu}><p>Encuéntranos</p></a
             >
           </li>
         </ul>

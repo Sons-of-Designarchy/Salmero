@@ -8,7 +8,7 @@
   <div class="origenes">
     <section class="container-min-paddings">
       <p class="caption">Del norte de México</p>
-      <h1>ORIGENES DEL ALTIPLANO POTOSINO</h1>
+      <h1>ORÍGENES DEL ALTIPLANO POTOSINO</h1>
       <p class="origenes-intro">
         Hace más de 200 años, donde comienza el gran desierto de chihuahua, su
         gente comenzó a transformar un agave que sobrevivía al igual que ellos a
@@ -37,7 +37,7 @@
               porque sabe que no contarÁ con lluvia.
             </p>
             <p>
-              Amanece siempre a dos mil metros de altura, donde pasa frio en el
+              Amanece siempre a dos mil metros de altura, donde pasa frío en el
               alba y donde aguanta el sol de esas alturas.
             </p>
           </section>
@@ -49,7 +49,7 @@
             <p>
               En este <span class="bold-text accent-text">Idilio Salvaje</span>,
               el Agave Salmiana
-              <span class="bold-text">se nutre por mas de 12 años</span> de la rica
+              <span class="bold-text">se nutre por más de 12 años</span> de la rica
               tierra Agreste que tiene a sus pies.
             </p>
             <p>

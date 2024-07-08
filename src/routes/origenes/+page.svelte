@@ -21,14 +21,14 @@
     </p>
     <p>
       PERFUMES FLORALES QUE TRASCIENDEN EN CUALQUIER LUGAR, FORMAN <span
-        class="bold-text accent-text">CARACTER Y ESENCIA</span
+        class="bold-text accent-text">CARÁCTER Y ESENCIA</span
       >
       EL DE NUESTRO <span class="bold-text">MEZCAL SALMERO</span>.
     </p>
   </section>
 </Header>
 
-<FeaturedImage title="Nuestra tierra" caption="Expresion pura de tradiciones">
+<FeaturedImage title="Nuestra tierra" caption="Expresión pura de tradiciones">
   <ImageComponent slot="image" src={NuestraTierraImg} />
   <section
     slot="featured-description"
@@ -48,7 +48,7 @@
   </section>
 </FeaturedImage>
 
-<FeaturedImage title="Nuestra historia" caption="Expresion pura de tradiciones">
+<FeaturedImage title="Nuestra historia" caption="Expresión pura de tradiciones">
   <ImageComponent slot="image" src={NuestraHistoriaImg} />
   <section
     slot="featured-description"
@@ -64,9 +64,9 @@
       <span class="bold-text">San Luis Potosí se convirtió</span> hasta las
       épocas de la revolución
       <span class="bold-text"
-        >en el productor mas grande de destilados en el país y en el continente</span
+        >en el productor más grande de destilados en el país y en el continente</span
       >. Como toda buena historia, sufre su tragedia después de la revolución,
-      donde mas de 200 fabricas se vieron forzadas a cerrar sus puertas ya que
+      donde mas de 200 fábricas se vieron forzadas a cerrar sus puertas ya que
       la reforma agraria no fue compatible con el modelo económico que
       terminaba, el de las Haciendas.
     </p>
@@ -74,7 +74,7 @@
       Ahora, 100 años después, <span class="bold-text"
         >Mezcal Salmero está presente para recordar Nuestra Historia</span
       > y no dejarnos olvidar de dónde viene este Mezcal tan tradicional no solo
-      en su elaboración, sino en la cultura de nuestro Estado y nuestro Pais.
+      en su elaboración, sino en la cultura de nuestro Estado y nuestro País.
     </p>
   </section>
 </FeaturedImage>
