@@ -68,7 +68,7 @@
   .header-img {
     width: 100%;
     height: 20rem;
-    background-image: url('../assets/img/Altiplano_1.png');
+    background-image: url('../assets/img/altiplano.png');
 
     box-sizing: border-box;
     border-radius: 10px;
