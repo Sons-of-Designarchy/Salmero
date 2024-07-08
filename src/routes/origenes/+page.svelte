@@ -18,7 +18,7 @@
 </script>
 
 <Header title="Nuestro Agave" caption="origenes salmero" textAlign="start">
-  <ImageComponent src={HeaderImg} slot="image" />
+  <ImageComponent className="header-img-top" src={HeaderImg} slot="image" />
   <section slot="custom-description" class="custom-description">
     <IntersectionObserver
       element={header}
@@ -74,7 +74,11 @@
 </FeaturedImage>
 
 <FeaturedImage title="Nuestra historia" caption="Expresión pura de tradiciones">
-  <ImageComponent slot="image" src={NuestraHistoriaImg} />
+  <ImageComponent
+    className="header-img-top"
+    slot="image"
+    src={NuestraHistoriaImg}
+  />
   <section
     slot="featured-description"
     class="nuestra-historia featured-description"

@@ -32,7 +32,7 @@
   caption="Conoce la familia"
   description="El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su agave Salmiana silvestre, destilado con respeto y tradición."
 >
-  <ImageComponent slot="image" src={HeaderImg} />
+  <ImageComponent className="header-img-top" slot="image" src={HeaderImg} />
 </Header>
 <section class="card-container">
   <section class="active-slides"><h3>{activeSlide} / 3</h3></section>

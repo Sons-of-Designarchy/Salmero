@@ -31,4 +31,8 @@
       border-radius: 20px 0 0 20px;
     }
   }
+
+  .header-img-top {
+    object-position: top center;
+  }
 </style>

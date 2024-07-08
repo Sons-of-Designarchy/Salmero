@@ -22,7 +22,7 @@
 </script>
 
 <Header>
-  <ImageComponent src={ProcesoImg} slot="image" />
+  <ImageComponent className="header-img-top" src={ProcesoImg} slot="image" />
   <section slot="custom-description" class="proceso-intro">
     <IntersectionObserver
       element={header}
