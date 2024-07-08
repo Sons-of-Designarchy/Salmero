@@ -11,26 +11,30 @@
 </script>
 
 <section class="socials" id="encuentranos">
-  <article class="socials-content">
-    <div class="socials-content-inner">
-      <p class="caption">Nuestros amigos</p>
-      <h1>Siguenos en nuestras redes sociales</h1>
-      <ul class="socials-links">
-        <li>
-          <a
-            href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-            target="_blank"><p>Instagram</p></a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.facebook.com/profile.php?id=61557454914828"
-            target="_blank"><p>Facebook</p></a
-          >
-        </li>
-      </ul>
-    </div>
-  </article>
+  <IntersectionObserver {element} bind:intersecting rootMargin="-50%">
+    <article bind:this={element} class="socials-content">
+      <div class="socials-content-inner">
+        <p class:animate={intersecting} class="caption">Nuestros amigos</p>
+        <h1 class:animate={intersecting}>
+          Siguenos en nuestras redes sociales
+        </h1>
+        <ul class="socials-links">
+          <li class:animate={intersecting}>
+            <a
+              href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+              target="_blank"><p>Instagram</p></a
+            >
+          </li>
+          <li class:animate={intersecting}>
+            <a
+              href="https://www.facebook.com/profile.php?id=61557454914828"
+              target="_blank"><p>Facebook</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </article>
+  </IntersectionObserver>
   <section class="socials-photo-grid">
     <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
     <img src={Sociales_2} alt="Panorama del altiplano" />
@@ -126,5 +130,17 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .socials-content .animate:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .socials-links .animate:first-child {
+    animation-delay: 0.4s;
+  }
+
+  .socials-links .animate:nth-child(2) {
+    animation-delay: 0.6s;
   }
 </style>
