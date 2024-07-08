@@ -38,8 +38,8 @@
           nuestro mezcal está hecho por las manos de esta tierra.
         </p>
         <div class="bg-image" />
-      </div></IntersectionObserver
-    >
+      </div>
+    </IntersectionObserver>
   </section>
 </Header>
 
@@ -98,7 +98,7 @@
 </IntersectionObserver>
 
 <style>
-  .proceso-intro div {
+  .proceso-intro div:first-child {
     display: grid;
     gap: var(--spacing-md);
 
