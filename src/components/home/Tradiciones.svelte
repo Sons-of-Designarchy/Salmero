@@ -1,38 +1,49 @@
-<script>
+<script lang="ts">
+  import IntersectionObserver from 'svelte-intersection-observer';
+
   import Jabali from '../../assets/svg/Jabali.svelte';
   import Agave from '../../assets/img/Agave.png';
   import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
   import Tradiciones_2 from '../../assets/img/Tradiciones_2.png';
   import Dron from '../../assets/img/Dron.png';
+
+  let element: HTMLElement;
+  let intersecting: boolean;
 </script>
 
-<div class="tradiciones-wrapper" id="tradiciones">
-  <section class="tradiciones">
-    <section class="tradiciones-intro">
-      <div class="tradiciones-intro-content container-min-paddings">
-        <Jabali />
-        <p class="caption">Nuestro proceso de producción</p>
-        <h1>Expresión de nuestras tradiciones</h1>
-        <p>
-          Salmero se produce en el histórico límite de mesoamérica con
-          aridoamérica, donde se unen las avanzadas civilizaciones con las
-          nómadas.
-        </p>
-        <p>
-          realizado con respeto a sus tradiciones, salmero es nuestro mezcal
-          para el mundo.
-        </p>
-      </div>
-      <img src={Agave} alt="Agave" />
-    </section>
+<IntersectionObserver {element} bind:intersecting rootMargin="-25%"
+  ><div bind:this={element} class="tradiciones-wrapper" id="tradiciones">
+    <section class="tradiciones">
+      <section class="tradiciones-intro">
+        <div class="tradiciones-intro-content container-min-paddings">
+          <div class:animate={intersecting}><Jabali /></div>
+          <p class:animate={intersecting} class="caption">
+            Nuestro proceso de producción
+          </p>
+          <h1 class:animate={intersecting}>
+            Expresión de nuestras tradiciones
+          </h1>
+          <p class:animate={intersecting}>
+            Salmero se produce en el histórico límite de mesoamérica con
+            aridoamérica, donde se unen las avanzadas civilizaciones con las
+            nómadas.
+          </p>
+          <p class:animate={intersecting}>
+            realizado con respeto a sus tradiciones, salmero es nuestro mezcal
+            para el mundo.
+          </p>
+        </div>
+        <img src={Agave} alt="Agave" />
+      </section>
 
-    <section class="tradiciones-images">
-      <img src={Tradiciones_2} alt="placeholder" />
-      <img src={Tradiciones_1} alt="placeholder" />
-      <img src={Dron} alt="placeholder" />
+      <section class="tradiciones-images">
+        <img src={Tradiciones_2} alt="placeholder" />
+        <img src={Tradiciones_1} alt="placeholder" />
+        <img src={Dron} alt="placeholder" />
+      </section>
     </section>
-  </section>
-</div>
+  </div></IntersectionObserver
+>
 
 <style>
   .tradiciones-wrapper {
@@ -125,5 +136,24 @@
     position: absolute;
     right: 24rem;
     bottom: 10rem;
+  }
+
+  .animate:first-child {
+    animation-delay: 0.2s;
+  }
+
+  .animate:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+
+  .animate:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+
+  .animate:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  .animate:nth-child(5) {
+    animation-delay: 1s;
   }
 </style>

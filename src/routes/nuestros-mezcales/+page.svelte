@@ -70,7 +70,7 @@
       </p>
       <p>
         En tu honor, nombramos este mezcal que une dos regiones mezcaleras del
-        país en un ensamble de Salmiana potosino con Espadin oaxaqueño.
+        país en un ensamble de Salmiana potosino con Espadín oaxaqueño.
       </p>
       <p>
         Por ti, y por el resto de mexicanas y mexicanos que siguen construyendo

@@ -1,9 +1,10 @@
 <script lang="ts">
   export let title: string = 'Guadalupe';
   export let description: string =
-    '50% Salmiana, 50% Espadin. Un exuberante olor floral con notas herbales.';
+    '50% Salmiana, 50% Espadín. Un exuberante olor floral con notas herbales.';
   export let caption: string = 'Hecho en México';
   export let bgColor: 'salmon' | 'green' | 'red' = 'salmon';
+  export let intersecting: boolean;
 
   let bgColors = {
     salmon: 'var(--salmon)',
@@ -17,9 +18,11 @@
     <slot name="image"></slot>
   </div>
   <section class="vertical-card-inner">
-    <p class="caption">{caption}</p>
-    <h2>{title}</h2>
-    <p class="vertical-card-description">{description}</p>
+    <p class:animate={intersecting} class="caption">{caption}</p>
+    <h2 class:animate={intersecting}>{title}</h2>
+    <p class:animate={intersecting} class="vertical-card-description">
+      {description}
+    </p>
   </section>
 </article>
 
@@ -69,5 +72,13 @@
     @media only screen and (min-width: 48em) {
       height: 100%;
     }
+  }
+
+  .animate:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .animate:nth-child(3) {
+    animation-delay: 0.4s;
   }
 </style>

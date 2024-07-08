@@ -1,15 +1,22 @@
 <script lang="ts">
+  import IntersectionObserver from 'svelte-intersection-observer';
+
   export let title: string = '';
   export let caption: string = '';
+
+  let element: HTMLElement;
+  let intersecting: boolean;
 </script>
 
 <section>
   <section class="featured-img"><slot name="image"></slot></section>
-  <section class="featured-content">
-    <p class="caption">{caption}</p>
-    <h1>{title}</h1>
-    <slot name="featured-description" />
-  </section>
+  <IntersectionObserver {element} bind:intersecting
+    ><section bind:this={element} class="featured-content">
+      <p class:animate={intersecting} class="caption">{caption}</p>
+      <h1 class:animate={intersecting}>{title}</h1>
+      <slot name="featured-description" />
+    </section></IntersectionObserver
+  >
 </section>
 
 <style>
