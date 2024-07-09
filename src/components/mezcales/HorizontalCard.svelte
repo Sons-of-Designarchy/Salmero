@@ -94,6 +94,13 @@
     }
   }
 
+  h1 {
+    font-size: 3rem;
+    @media only screen and (min-width: 64em) {
+      font-size: 4.5rem;
+    }
+  }
+
   .icon {
     height: 4rem;
 
