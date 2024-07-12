@@ -25,7 +25,7 @@
       caption: 'Hecho en México',
       title: 'Guadalupe',
       description:
-        '50% Salmiana, 50% Espadín. Un exuberante olor floral con notas herbales.',
+        'Salmiana y Espadín. Un exuberante olor floral con notas herbales.',
       image: Guadalupe,
     },
     {
@@ -34,7 +34,7 @@
       caption: 'Hecho en México',
       title: 'Original',
       description:
-        '100% Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
+        'Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
       image: Original,
     },
     {
@@ -43,7 +43,7 @@
       caption: 'Hecho en México',
       title: 'Panamericano',
       description:
-        '50% Salmiana, 25% Espadín, 25% Mexicano. Intenso, de carácter fuerte, con un sabor único.',
+        'Salmiana, Espadín y Mexicano. Intenso, de carácter fuerte, con un sabor único.',
       image: Panamericano,
     },
   ];
