@@ -11,27 +11,27 @@
 </script>
 
 <section class="socials" id="encuentranos">
-  <IntersectionObserver {element} bind:intersecting rootMargin="-50%">
+  <IntersectionObserver {element} bind:intersecting rootMargin="-20%">
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
-        <p class:animate={intersecting} class="caption">Nuestros amigos</p>
-        <h1 class:animate={intersecting}>
-          Síguenos en nuestras redes sociales
-        </h1>
-        <ul class="socials-links">
-          <li class:animate={intersecting}>
-            <a
-              href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-              target="_blank"><p>Instagram</p></a
-            >
-          </li>
-          <li class:animate={intersecting}>
-            <a
-              href="https://www.facebook.com/profile.php?id=61557454914828"
-              target="_blank"><p>Facebook</p></a
-            >
-          </li>
-        </ul>
+        {#if intersecting}
+          <p class="caption animate">Nuestros amigos</p>
+          <h1 class="animate">Síguenos en nuestras redes sociales</h1>
+          <ul class="socials-links">
+            <li class="animate">
+              <a
+                href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+                target="_blank"><p>Instagram</p></a
+              >
+            </li>
+            <li class="animate">
+              <a
+                href="https://www.facebook.com/profile.php?id=61557454914828"
+                target="_blank"><p>Facebook</p></a
+              >
+            </li>
+          </ul>
+        {/if}
       </div>
     </article>
   </IntersectionObserver>
@@ -131,12 +131,19 @@
     height: 100%;
     object-fit: cover;
   }
+  .animate:first-child {
+    animation-delay: 0.2s;
+  }
 
-  .socials-links .animate:first-child {
+  .animate:nth-child(2) {
     animation-delay: 0.4s;
   }
 
-  .socials-links .animate:nth-child(2) {
+  .socials-links .animate:first-child {
     animation-delay: 0.6s;
+  }
+
+  .socials-links .animate:nth-child(2) {
+    animation-delay: 0.8s;
   }
 </style>

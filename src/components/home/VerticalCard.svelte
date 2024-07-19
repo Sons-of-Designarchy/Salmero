@@ -18,11 +18,13 @@
     <slot name="image"></slot>
   </div>
   <section class="vertical-card-inner">
-    <p class:animate={intersecting} class="caption">{caption}</p>
-    <h2 class:animate={intersecting}>{title}</h2>
-    <p class:animate={intersecting} class="vertical-card-description">
-      {description}
-    </p>
+    {#if intersecting}
+      <p class="caption animate">{caption}</p>
+      <h2 class="animate">{title}</h2>
+      <p class="vertical-card-description animate">
+        {description}
+      </p>
+    {/if}
   </section>
 </article>
 

@@ -12,9 +12,11 @@
   <section class="featured-img"><slot name="image"></slot></section>
   <IntersectionObserver {element} bind:intersecting
     ><section bind:this={element} class="featured-content">
-      <p class:animate={intersecting} class="caption">{caption}</p>
-      <h1 class:animate={intersecting}>{title}</h1>
-      <slot name="featured-description" />
+      {#if intersecting}
+        <p class="caption animate">{caption}</p>
+        <h1 class="animate">{title}</h1>
+        <slot name="featured-description" />
+      {/if}
     </section></IntersectionObserver
   >
 </section>

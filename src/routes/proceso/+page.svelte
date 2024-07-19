@@ -29,14 +29,16 @@
       bind:intersecting={intersectingHeader}
     >
       <div bind:this={header}>
-        <h1 class:animate={intersectingHeader}>Nuestro proceso</h1>
-        <div class:animate={intersectingHeader}><Jabali /></div>
-        <p class:animate={intersectingHeader}>
-          Nuestro proceso de producción respeta las <span class="bold-text"
-            >tradiciones de más de 200 años,</span
-          >
-          nuestro mezcal está hecho por las manos de esta tierra.
-        </p>
+        {#if intersectingHeader}
+          <h1 class="animate">Nuestro proceso</h1>
+          <div class="animate"><Jabali /></div>
+          <p class="animate">
+            Nuestro proceso de producción respeta las <span class="bold-text"
+              >tradiciones de más de 200 años,</span
+            >
+            nuestro mezcal está hecho por las manos de esta tierra.
+          </p>
+        {/if}
         <div class="bg-image" />
       </div>
     </IntersectionObserver>
@@ -51,49 +53,51 @@
 
 <IntersectionObserver {element} bind:intersecting rootMargin="-25%">
   <section class="proceso-steps container-min-paddings" bind:this={element}>
-    <article class:animate={intersecting}>
-      <div class="proceso-steps-img"><Agave /></div>
-      <p>1</p>
-      <h3>Selección</h3>
-      <p>
-        el Agave Salmiana madura en 10 a 12 años. Luego de un año más de espera,
-        los campesinos cosechan el agave para llevarlo al horno. Este proceso
-        permite al Salmiana concentrar más azúcar en su piña, esencial para la
-        fabricación artesanal del mezcal.
-      </p>
-    </article>
-    <article class:animate={intersecting}>
-      <div class="proceso-steps-img"><HotStones /></div>
-      <p>2</p>
-      <h3>Cocción</h3>
-      <p>
-        La cocción se realiza en hornos de mampostería de más de 200 años,
-        utilizando vapor durante aproximadamente 3 días, dando al mezcal del
-        Altiplano Potosino un perfil herbal y vegetal. Además, preserva el
-        delicado equilibrio de la flora y fauna del Altiplano.
-      </p>
-    </article>
-    <article class:animate={intersecting}>
-      <div class="proceso-steps-img"><Fermentacion /></div>
-      <p>3</p>
-      <h3>Fermentación</h3>
-      <p>
-        Nuestro proceso 100% Natural se ve determinado por las fluctuaciones de
-        temperatura en el Altiplano y por consecuencia la fermentación se logra
-        desde 2 días en los veranos, hasta 5 días en los inviernos.
-      </p>
-    </article>
-    <article class:animate={intersecting}>
-      <div class="proceso-steps-img"><Destilacion /></div>
-      <p>4</p>
-      <h3>Destilación</h3>
-      <p>
-        La destilación se realiza en Alambiques de Cobre y Alambiques de
-        Platillos. Con este método se logra la separación de alcoholes óptimos
-        para crear el sabor que hace único a Mezcal Salmero en sus tres
-        presentaciones.
-      </p>
-    </article>
+    {#if intersecting}
+      <article class="animate">
+        <div class="proceso-steps-img"><Agave /></div>
+        <p>1</p>
+        <h3>Selección</h3>
+        <p>
+          el Agave Salmiana madura en 10 a 12 años. Luego de un año más de
+          espera, los campesinos cosechan el agave para llevarlo al horno. Este
+          proceso permite al Salmiana concentrar más azúcar en su piña, esencial
+          para la fabricación artesanal del mezcal.
+        </p>
+      </article>
+      <article class="animate">
+        <div class="proceso-steps-img"><HotStones /></div>
+        <p>2</p>
+        <h3>Cocción</h3>
+        <p>
+          La cocción se realiza en hornos de mampostería de más de 200 años,
+          utilizando vapor durante aproximadamente 3 días, dando al mezcal del
+          Altiplano Potosino un perfil herbal y vegetal. Además, preserva el
+          delicado equilibrio de la flora y fauna del Altiplano.
+        </p>
+      </article>
+      <article class="animate">
+        <div class="proceso-steps-img"><Fermentacion /></div>
+        <p>3</p>
+        <h3>Fermentación</h3>
+        <p>
+          Nuestro proceso 100% Natural se ve determinado por las fluctuaciones
+          de temperatura en el Altiplano y por consecuencia la fermentación se
+          logra desde 2 días en los veranos, hasta 5 días en los inviernos.
+        </p>
+      </article>
+      <article class="animate">
+        <div class="proceso-steps-img"><Destilacion /></div>
+        <p>4</p>
+        <h3>Destilación</h3>
+        <p>
+          La destilación se realiza en Alambiques de Cobre y Alambiques de
+          Platillos. Con este método se logra la separación de alcoholes óptimos
+          para crear el sabor que hace único a Mezcal Salmero en sus tres
+          presentaciones.
+        </p>
+      </article>
+    {/if}
   </section>
 </IntersectionObserver>
 

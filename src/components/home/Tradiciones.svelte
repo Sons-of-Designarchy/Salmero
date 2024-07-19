@@ -16,22 +16,20 @@
     <section class="tradiciones">
       <section class="tradiciones-intro">
         <div class="tradiciones-intro-content container-min-paddings">
-          <div class:animate={intersecting}><Jabali /></div>
-          <p class:animate={intersecting} class="caption">
-            Nuestro proceso de producción
-          </p>
-          <h1 class:animate={intersecting}>
-            Expresión de nuestras tradiciones
-          </h1>
-          <p class:animate={intersecting}>
-            Salmero se produce en el histórico límite de mesoamérica con
-            aridoamérica, donde se unen las avanzadas civilizaciones con las
-            nómadas.
-          </p>
-          <p class:animate={intersecting}>
-            realizado con respeto a sus tradiciones, salmero es nuestro mezcal
-            para el mundo.
-          </p>
+          {#if intersecting}
+            <div class="animate"><Jabali /></div>
+            <p class="caption animate">Nuestro proceso de producción</p>
+            <h1 class="animate">Expresión de nuestras tradiciones</h1>
+            <p class="animate">
+              Salmero se produce en el histórico límite de mesoamérica con
+              aridoamérica, donde se unen las avanzadas civilizaciones con las
+              nómadas.
+            </p>
+            <p class="animate">
+              realizado con respeto a sus tradiciones, salmero es nuestro mezcal
+              para el mundo.
+            </p>
+          {/if}
         </div>
         <img src={Agave} alt="Agave" />
       </section>

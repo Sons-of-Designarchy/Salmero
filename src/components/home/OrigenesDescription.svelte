@@ -6,52 +6,67 @@
   import Altiplano_3 from '../../assets/img/Altiplano_3.png';
 
   let element: HTMLElement;
+  let secondElement: HTMLElement;
+
   let intersecting: boolean;
+  let intersectingSecondElement: boolean;
 </script>
 
-<IntersectionObserver {element} bind:intersecting rootMargin="-25%">
-  <section class="origenes-description" bind:this={element}>
-    <div class="origenes-description-inner container-min-paddings">
-      <div class="origenes-description-section">
-        <section>
-          <p class:animate={intersecting}>
-            En El Altiplano, el <span class="bold-text accent-text"
-              >agave Salmiana
-            </span>
-            vive
-            <span class="bold-text">besando el rocío de cada mañana</span>,
-            porque sabe que no contarÁ con lluvia.
-          </p>
-          <p class:animate={intersecting}>
-            Amanece siempre a dos mil metros de altura, donde pasa frío en el
-            alba y donde aguanta el sol de esas alturas.
-          </p>
+<section class="origenes-description">
+  <div class="origenes-description-inner container-min-paddings">
+    <div class="origenes-description-section">
+      <IntersectionObserver {element} bind:intersecting rootMargin="-25%">
+        <section bind:this={element}>
+          {#if intersecting}
+            <p class="animate">
+              En El Altiplano, el <span class="bold-text accent-text"
+                >agave Salmiana
+              </span>
+              vive
+              <span class="bold-text">besando el rocío de cada mañana</span>,
+              porque sabe que no contarÁ con lluvia.
+            </p>
+            <p class="animate">
+              Amanece siempre a dos mil metros de altura, donde pasa frío en el
+              alba y donde aguanta el sol de esas alturas.
+            </p>
+          {/if}
         </section>
-        <img class="vertical-img" src={Altiplano_3} alt="placeholder" />
-      </div>
-      <div class="origenes-description-section">
-        <img class="vertical-img" src={Altiplano_2} alt="placeholder" />
-        <section>
-          <p class:animate={intersecting}>
-            En este <span class="bold-text accent-text">Idilio Salvaje</span>,
-            el Agave Salmiana
-            <span class="bold-text">se nutre por más de 12 años</span> de la rica
-            tierra Agreste que tiene a sus pies.
-          </p>
-          <p class:animate={intersecting}>
-            Así, solo así, se logra tener un agave capaz de darnos el <span
-              class="bold-text accent-text"
-            >
-              Mezcal Salmero</span
-            >, digno representante del
-            <span class="bold-text">Altiplano</span>.
-          </p>
-        </section>
-        <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
-      </div>
+      </IntersectionObserver>
+      <img class="vertical-img" src={Altiplano_3} alt="placeholder" />
     </div>
-  </section>
-</IntersectionObserver>
+    <div class="origenes-description-section">
+      <IntersectionObserver
+        element={secondElement}
+        bind:intersecting={intersectingSecondElement}
+        rootMargin="-35%"
+      >
+        <div bind:this={secondElement}>
+          <img class="vertical-img" src={Altiplano_2} alt="placeholder" />
+          <section>
+            {#if intersectingSecondElement}
+              <p class="animate">
+                En este <span class="bold-text accent-text">Idilio Salvaje</span
+                >, el Agave Salmiana
+                <span class="bold-text">se nutre por más de 12 años</span> de la
+                rica tierra Agreste que tiene a sus pies.
+              </p>
+              <p class="animate">
+                Así, solo así, se logra tener un agave capaz de darnos el <span
+                  class="bold-text accent-text"
+                >
+                  Mezcal Salmero</span
+                >, digno representante del
+                <span class="bold-text">Altiplano</span>.
+              </p>
+            {/if}
+          </section>
+          <img class="horizontal-img" src={Altiplano_1} alt="placeholder" />
+        </div>
+      </IntersectionObserver>
+    </div>
+  </div>
+</section>
 
 <style>
   .vertical-img {
