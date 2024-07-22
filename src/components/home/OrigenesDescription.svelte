@@ -49,7 +49,7 @@
         </section>
       </IntersectionObserver>
       <img
-        style={`${screenSize == 'medium' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * 0.2 : 0}px, 0)`}`}
+        style={`${screenSize !== 'large' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * 0.2 : 0}px, 0)`}`}
         class="vertical-img"
         src={Altiplano_3}
         alt="placeholder"
