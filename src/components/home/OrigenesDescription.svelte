@@ -1,5 +1,6 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { getScreenSize } from '../../utils/utils';
 
   import Altiplano_1 from '../../assets/img/Altiplano_1.png';
   import Altiplano_2 from '../../assets/img/Altiplano_2.png';
@@ -14,23 +15,13 @@
   let scrollY: number;
   let screenSize: 'large' | 'medium' | 'small';
 
-  const getScreenSize = () => {
-    const width = window.innerWidth;
-    if (width > 1200) {
-      screenSize = 'large';
-    } else if (width > 768) {
-      screenSize = 'medium';
-    } else {
-      screenSize = 'small';
-    }
-  };
-
   const handleScroll = () => {
     if (intersectingSecondElement) {
       const rect = secondElement.getBoundingClientRect();
       scrollY = rect.top;
     }
-    getScreenSize();
+    screenSize = getScreenSize();
+    console.log(screenSize);
   };
 </script>
 

@@ -6,12 +6,25 @@
   import Tradiciones_1 from '../../assets/img/Tradiciones_1.png';
   import Tradiciones_2 from '../../assets/img/Tradiciones_2.png';
   import Dron from '../../assets/img/Dron.png';
+  import { getScreenSize } from '../../utils/utils';
 
   let element: HTMLElement;
   let intersecting: boolean;
+  let screenSize: 'large' | 'medium' | 'small';
+  let scrollY: number;
+
+  const handleScroll = () => {
+    if (intersecting) {
+      const rect = element.getBoundingClientRect();
+      scrollY = rect.top;
+    }
+    screenSize = getScreenSize();
+  };
 </script>
 
-<IntersectionObserver {element} bind:intersecting rootMargin="-25%"
+<svelte:window on:scroll={handleScroll} />
+
+<IntersectionObserver {element} bind:intersecting rootMargin="50%"
   ><div bind:this={element} class="tradiciones-wrapper" id="tradiciones">
     <section class="tradiciones">
       <section class="tradiciones-intro">
@@ -35,9 +48,21 @@
       </section>
 
       <section class="tradiciones-images">
-        <img src={Tradiciones_2} alt="placeholder" />
-        <img src={Tradiciones_1} alt="placeholder" />
-        <img src={Dron} alt="placeholder" />
+        <img
+          style={`transform: translate3d(0, ${intersecting && screenSize == 'large' ? scrollY * 0.2 : 0}px, 0)`}
+          src={Tradiciones_2}
+          alt="placeholder"
+        />
+        <img
+          style={`transform: translate3d(0, ${intersecting ? scrollY * -0.2 : 0}px, 0)`}
+          src={Tradiciones_1}
+          alt="placeholder"
+        />
+        <img
+          style={`${screenSize !== 'large' && `transform: translate3d(0, ${intersecting ? scrollY * 0.2 : 0}px, 0)`}`}
+          src={Dron}
+          alt="placeholder"
+        />
       </section>
     </section>
   </div></IntersectionObserver
@@ -59,9 +84,10 @@
     padding-bottom: 0;
     overflow: hidden;
 
-    @media only screen and (min-width: 48em) {
+    padding-bottom: calc(var(--spacing-xl) * 2);
+
+    @media only screen and (min-width: 80em) {
       padding-top: 0;
-      padding-bottom: calc(var(--spacing-xl) * 2);
     }
   }
   .tradiciones-intro {
@@ -74,7 +100,7 @@
 
     text-align: center;
 
-    @media only screen and (min-width: 48em) {
+    @media only screen and (min-width: 80em) {
       grid-auto-flow: column;
       grid-template-columns: 50% 50%;
     }
@@ -82,9 +108,10 @@
   .tradiciones-intro img {
     height: 100%;
     width: 100%;
-
-    @media only screen and (min-width: 48em) {
+    display: none;
+    @media only screen and (min-width: 80em) {
       width: 100%;
+      display: block;
     }
   }
 
@@ -104,36 +131,75 @@
   }
 
   .tradiciones-images {
-    display: none;
     position: relative;
-    padding-top: calc(var(--spacing-xl) * 3);
 
-    @media only screen and (min-width: 64em) {
+    @media only screen and (min-width: 80em) {
       display: block;
       overflow: hidden;
+      padding-top: calc(var(--spacing-xl) * 3);
     }
   }
 
   .tradiciones-images img:first-child {
-    width: 27rem;
-    height: 42rem;
+    display: block;
+    position: relative;
+
+    height: 80dvh;
+    width: 60%;
+
+    left: 0;
+    right: 0;
+
+    margin: auto;
+    @media only screen and (min-width: 80em) {
+      width: 27rem;
+      height: 42rem;
+
+      margin: initial;
+    }
   }
 
   .tradiciones-images img:nth-child(2) {
-    width: 42rem;
-    height: 24rem;
-
     position: absolute;
-    right: 0;
+    top: -5rem;
+    left: 0;
+
+    width: 18rem;
+
+    z-index: 3;
+    @media only screen and (min-width: 80em) {
+      right: 0;
+      left: auto;
+      top: 3rem;
+
+      width: 42rem;
+      height: 24rem;
+    }
   }
 
   .tradiciones-images img:nth-child(3) {
-    width: 40rem;
-    height: 18rem;
-
     position: absolute;
-    right: 24rem;
-    bottom: 10rem;
+    top: 80%;
+    right: 2rem;
+
+    width: 20rem;
+    height: 10rem;
+
+    z-index: 2;
+    @media only screen and (min-width: 80em) {
+      display: block;
+
+      width: 40rem;
+      height: 20rem;
+
+      margin: auto;
+
+      left: 0;
+      right: 0;
+      top: 30%;
+
+      z-index: 3;
+    }
   }
 
   .animate:first-child {
