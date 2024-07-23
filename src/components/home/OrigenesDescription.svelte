@@ -47,7 +47,7 @@
         </section>
       </IntersectionObserver>
       <img
-        style={`${screenSize === 'medium' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * 0.2 : 0}px, 0)`}`}
+        style={`${screenSize === 'medium' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * -0.2 : 0}px, 0)`}`}
         class="vertical-img"
         src={Altiplano_3}
         alt="placeholder"
@@ -57,7 +57,7 @@
       <IntersectionObserver
         element={secondElement}
         bind:intersecting={intersectingSecondElement}
-        rootMargin={screenSize == 'small' ? '100%' : '15%'}
+        rootMargin={screenSize !== 'large' ? '100%' : '15%'}
       >
         <section bind:this={secondElement}>
           <p>
