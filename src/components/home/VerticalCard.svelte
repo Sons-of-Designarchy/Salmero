@@ -49,7 +49,7 @@
     border-radius: 0 0 20px 20px;
 
     padding: 1rem 0.5rem;
-    height: 100%;
+    min-height: 6rem;
 
     text-align: center;
     @media only screen and (min-width: 48em) {
