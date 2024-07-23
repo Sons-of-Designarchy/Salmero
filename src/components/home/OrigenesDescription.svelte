@@ -193,9 +193,11 @@
   }
   .origenes-description-section:nth-child(2) img {
     position: static;
+    left: 2rem;
     @media only screen and (max-width: 64em) {
       grid-area: 1/1;
       position: relative;
+      left: 0;
     }
   }
 
