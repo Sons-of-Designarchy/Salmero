@@ -79,7 +79,7 @@
           class="vertical-img img-start"
           src={Altiplano_2}
           alt="placeholder"
-          style={`transform: translate3d(0, ${intersectingSecondElement ? scrollY * (screenSize !== 'large' ? -0.2 : 0.2) : 0}px, 0)`}
+          style={`transform: translate3d(0, ${intersectingSecondElement ? scrollY * 0.2 : 0}px, 0)`}
         />
       </IntersectionObserver>
     </div>
@@ -192,11 +192,12 @@
     max-width: 25rem;
   }
   .origenes-description-section:nth-child(2) img {
-    position: static;
+    position: relative;
+    top: -10rem;
     left: 2rem;
-    @media only screen and (max-width: 64em) {
-      grid-area: 1/1;
-      position: relative;
+    grid-area: 1/1;
+    @media only screen and (min-width: 64em) {
+      top: -5rem;
       left: 0;
     }
   }
