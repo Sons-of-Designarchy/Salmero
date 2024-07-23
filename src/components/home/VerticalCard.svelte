@@ -50,6 +50,7 @@
 
     padding: 1rem 0.5rem;
     min-height: 6rem;
+    height: 100%;
 
     text-align: center;
     @media only screen and (min-width: 48em) {
@@ -59,6 +60,15 @@
 
   h2 {
     word-break: break-word;
+    font-size: 2.25rem;
+
+    @media only screen and (min-width: 84em) {
+      font-size: 3rem;
+    }
+  }
+
+  .vertical-card-description {
+    height: 100%;
   }
 
   .caption {
