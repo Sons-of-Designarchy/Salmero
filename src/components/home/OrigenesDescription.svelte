@@ -21,7 +21,6 @@
       scrollY = rect.top;
     }
     screenSize = getScreenSize();
-    console.log(screenSize);
   };
 </script>
 
