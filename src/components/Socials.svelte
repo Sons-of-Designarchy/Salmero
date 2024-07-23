@@ -90,7 +90,10 @@
       {#each data
         .filter((item) => item.media_type !== 'VIDEO')
         .slice(0, 4) as item (item.id)}
-        <img src={item.media_url} alt={item.caption} />
+        <img
+          src={item.media_url ? item.media_url : Sociales_1}
+          alt={item.caption}
+        />
       {/each}
     {:else}
       <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
