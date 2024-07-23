@@ -145,13 +145,13 @@
     position: relative;
 
     height: 80dvh;
-    width: 60%;
+    width: 30rem;
 
     left: 0;
     right: 0;
 
     margin: auto;
-    @media only screen and (min-width: 80em) {
+    @media only screen and (min-width: 64em) {
       width: 27rem;
       height: 42rem;
 
@@ -161,19 +161,19 @@
 
   .tradiciones-images img:nth-child(2) {
     position: absolute;
-    top: -5rem;
+    top: 1rem;
     left: 0;
 
     width: 18rem;
 
     z-index: 3;
-    @media only screen and (min-width: 80em) {
+
+    @media only screen and (min-width: 48em) {
       right: 0;
       left: auto;
       top: 3rem;
-
-      width: 42rem;
-      height: 24rem;
+      width: 28rem;
+      height: 18rem;
     }
   }
 
@@ -186,7 +186,7 @@
     height: 10rem;
 
     z-index: 2;
-    @media only screen and (min-width: 80em) {
+    @media only screen and (min-width: 64em) {
       display: block;
 
       width: 40rem;

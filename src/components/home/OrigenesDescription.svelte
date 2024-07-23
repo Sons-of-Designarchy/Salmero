@@ -30,22 +30,20 @@
 <section class="origenes-description">
   <div class="origenes-description-inner container-min-paddings">
     <div class="origenes-description-section">
-      <IntersectionObserver {element} bind:intersecting>
+      <IntersectionObserver {element} bind:intersecting rootMargin="50%">
         <section bind:this={element}>
-          {#if intersecting}
-            <p class="animate">
-              En El Altiplano, el <span class="bold-text accent-text"
-                >agave Salmiana
-              </span>
-              vive
-              <span class="bold-text">besando el rocío de cada mañana</span>,
-              porque sabe que no contarÁ con lluvia.
-            </p>
-            <p class="animate">
-              Amanece siempre a dos mil metros de altura, donde pasa frío en el
-              alba y donde aguanta el sol de esas alturas.
-            </p>
-          {/if}
+          <p>
+            En El Altiplano, el <span class="bold-text accent-text"
+              >agave Salmiana
+            </span>
+            vive
+            <span class="bold-text">besando el rocío de cada mañana</span>,
+            porque sabe que no contarÁ con lluvia.
+          </p>
+          <p>
+            Amanece siempre a dos mil metros de altura, donde pasa frío en el
+            alba y donde aguanta el sol de esas alturas.
+          </p>
         </section>
       </IntersectionObserver>
       <img
@@ -62,28 +60,26 @@
         rootMargin={screenSize == 'small' ? '100%' : '15%'}
       >
         <section bind:this={secondElement}>
-          {#if intersectingSecondElement}
-            <p class="animate">
-              En este <span class="bold-text accent-text">Idilio Salvaje</span>,
-              el Agave Salmiana
-              <span class="bold-text">se nutre por más de 12 años</span> de la rica
-              tierra Agreste que tiene a sus pies.
-            </p>
-            <p class="animate">
-              Así, solo así, se logra tener un agave capaz de darnos el <span
-                class="bold-text accent-text"
-              >
-                Mezcal Salmero</span
-              >, digno representante del
-              <span class="bold-text">Altiplano</span>.
-            </p>
-          {/if}
+          <p>
+            En este <span class="bold-text accent-text">Idilio Salvaje</span>,
+            el Agave Salmiana
+            <span class="bold-text">se nutre por más de 12 años</span> de la rica
+            tierra Agreste que tiene a sus pies.
+          </p>
+          <p>
+            Así, solo así, se logra tener un agave capaz de darnos el <span
+              class="bold-text accent-text"
+            >
+              Mezcal Salmero</span
+            >, digno representante del
+            <span class="bold-text">Altiplano</span>.
+          </p>
         </section>
         <img
-          class="vertical-img img-start parallax"
+          class="vertical-img img-start"
           src={Altiplano_2}
           alt="placeholder"
-          style={`transform: translate3d(0, ${intersectingSecondElement ? scrollY * (screenSize == 'small' ? -0.2 : 0.2) : 0}px, 0)`}
+          style={`transform: translate3d(0, ${intersectingSecondElement ? scrollY * (screenSize !== 'large' ? -0.2 : 0.2) : 0}px, 0)`}
         />
       </IntersectionObserver>
     </div>
@@ -143,7 +139,6 @@
 
     @media only screen and (min-width: 48em) {
       grid-auto-flow: column;
-      grid-template-columns: repeat(2, 1fr);
       width: calc(var(--max-width) - 25rem);
     }
   }
@@ -197,13 +192,22 @@
     max-width: 25rem;
   }
 
+  .origenes-description-section:first-child img {
+    top: 0;
+  }
+
   .origenes-description-section:nth-child(2) img {
     grid-area: 1/1;
     position: static;
+    top: 0rem;
 
-    @media only screen and (min-width: 48em) {
+    @media only screen and (max-width: 64em) {
       position: relative;
-      top: -8rem;
+      top: 2rem;
+    }
+
+    @media only screen and (max-width: 48em) {
+      top: -5rem;
     }
   }
 
@@ -214,23 +218,11 @@
       width: 12rem;
       height: 19rem;
       position: absolute;
-      top: 10rem;
+      top: 20rem;
       right: -8rem;
       z-index: 1;
     }
   }
 
   /* IMAGES END */
-
-  .origenes-description-section:first-child .animate:nth-child(2) {
-    animation-delay: 0.2s;
-  }
-
-  .origenes-description-section:nth-child(2) .animate:first-child {
-    animation-delay: 0.4s;
-  }
-
-  .origenes-description-section:nth-child(2) .animate:nth-child(2) {
-    animation-delay: 0.6s;
-  }
 </style>
