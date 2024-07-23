@@ -5,9 +5,58 @@
   import Sociales_2 from '../assets/img/Sociales_2.png';
   import Sociales_3 from '../assets/img/Sociales_3.png';
   import Sociales_4 from '../assets/img/Sociales_4.png';
+  import { onMount } from 'svelte';
+
+  type MediaItem = {
+    id: string;
+    media_type: 'CAROUSEL_ALBUM' | 'VIDEO' | 'IMAGE';
+    permalink: string;
+    media_url: string;
+    username: string;
+    caption: string;
+    timestamp: string;
+    children?: {
+      data: {
+        media_url: string;
+        thumbnail_url: string;
+        id: string;
+      }[];
+    };
+  };
+
+  type FetchResponse = {
+    data: MediaItem[];
+  };
 
   let element: HTMLElement;
   let intersecting: boolean;
+
+  let data: MediaItem[];
+
+  var myHeaders = new Headers();
+  myHeaders.append('Content-Type', 'application/json');
+
+  async function fetchData() {
+    let requestOptions = {
+      method: 'get',
+      headers: myHeaders,
+      caches: 'force-cache',
+    };
+
+    fetch(
+      'https://v1.nocodeapi.com/mezcalsalmero/instagram/tcyplVDduepbfJTz?limit=10',
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result: FetchResponse) => {
+        data = result.data;
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  }
+
+  onMount(() => fetchData());
 </script>
 
 <section class="socials" id="encuentranos">
@@ -35,11 +84,20 @@
       </div>
     </article>
   </IntersectionObserver>
+
   <section class="socials-photo-grid">
-    <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
-    <img src={Sociales_2} alt="Panorama del altiplano" />
-    <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
-    <img src={Sociales_4} alt="Shots de mezcal" />
+    {#if data}
+      {#each data
+        .filter((item) => item.media_type !== 'VIDEO')
+        .slice(0, 4) as item (item.id)}
+        <img src={item.media_url} alt={item.caption} />
+      {/each}
+    {:else}
+      <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
+      <img src={Sociales_2} alt="Panorama del altiplano" />
+      <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
+      <img src={Sociales_4} alt="Shots de mezcal" />
+    {/if}
   </section>
 </section>
 
