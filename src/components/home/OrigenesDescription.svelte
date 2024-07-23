@@ -30,7 +30,7 @@
 <section class="origenes-description">
   <div class="origenes-description-inner container-min-paddings">
     <div class="origenes-description-section">
-      <IntersectionObserver {element} bind:intersecting rootMargin="50%">
+      <IntersectionObserver {element} bind:intersecting rootMargin="80%">
         <section bind:this={element}>
           <p>
             En El Altiplano, el <span class="bold-text accent-text"
