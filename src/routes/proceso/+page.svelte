@@ -104,22 +104,24 @@
 <style>
   .proceso-intro div:first-child {
     display: grid;
-    gap: var(--spacing-md);
 
     text-align: start;
     box-sizing: border-box;
 
-    height: 40dvh !important;
+    grid-template-rows: repeat(3, fit-content);
+    align-content: center;
+
+    height: 20rem !important;
 
     @media only screen and (min-width: 48em) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 30% 30%;
       justify-items: center;
       align-items: center;
+      gap: var(--spacing-md);
 
       max-width: var(--max-width);
       margin: auto;
-      height: 30dvh !important;
 
       padding: calc(var(--spacing-xl) * 2);
     }
@@ -177,7 +179,7 @@
     gap: var(--spacing-lg);
     box-sizing: border-box;
 
-    height: 80rem;
+    height: 100rem;
 
     @media only screen and (min-width: 48em) {
       height: 50rem;
