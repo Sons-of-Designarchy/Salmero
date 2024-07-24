@@ -112,12 +112,13 @@
     align-items: center;
     flex-direction: row;
 
-    height: 100%;
+    width: 100%;
 
     background: var(--green-500);
 
     @media only screen and (min-width: 48em) {
       grid-template-columns: repeat(2, 1fr);
+      height: 80dvh;
     }
   }
 
@@ -141,6 +142,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    height: 80vh;
 
     padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
 
@@ -148,6 +152,7 @@
 
     @media only screen and (min-width: 48em) {
       min-width: min-content;
+      height: 50vh;
     }
   }
 
