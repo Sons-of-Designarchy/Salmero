@@ -26,7 +26,7 @@
 
   .origenes-image {
     width: 100%;
-    min-height: 43rem;
+    height: 43rem;
 
     display: flex;
     flex-direction: column;
