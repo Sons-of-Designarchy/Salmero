@@ -56,7 +56,7 @@
       <IntersectionObserver
         element={secondElement}
         bind:intersecting={intersectingSecondElement}
-        rootMargin={screenSize !== 'large' ? '100%' : '15%'}
+        rootMargin={screenSize !== 'large' ? '-50%' : '-25%'}
       >
         <section bind:this={secondElement}>
           <p>
