@@ -54,8 +54,14 @@
   .header-content {
     max-width: var(--max-width);
 
-    padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
+
+    height: 65dvh;
+    padding: var(--spacing-xl);
+
+    @media only screen and (min-width: 48em) {
+      height: 100%;
+    }
   }
   .header-description,
   .custom-description {

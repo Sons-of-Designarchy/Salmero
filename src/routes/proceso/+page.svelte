@@ -109,6 +109,8 @@
     text-align: start;
     box-sizing: border-box;
 
+    height: 40dvh !important;
+
     @media only screen and (min-width: 48em) {
       grid-auto-flow: column;
       grid-template-columns: 1fr 30% 30%;
@@ -117,6 +119,7 @@
 
       max-width: var(--max-width);
       margin: auto;
+      height: 30dvh !important;
 
       padding: calc(var(--spacing-xl) * 2);
     }
@@ -174,12 +177,20 @@
     gap: var(--spacing-lg);
     box-sizing: border-box;
 
+    height: 80rem;
+
+    @media only screen and (min-width: 48em) {
+      height: 50rem;
+    }
+
     @media only screen and (min-width: 64em) {
       flex-wrap: nowrap;
       width: auto;
       padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
       margin: auto;
       justify-content: center;
+
+      height: 40rem;
     }
   }
 
