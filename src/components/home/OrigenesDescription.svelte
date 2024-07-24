@@ -46,7 +46,7 @@
         </section>
       </IntersectionObserver>
       <img
-        style={`${screenSize === 'medium' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * -0.2 : 0}px, 0)`}`}
+        style={`${screenSize !== 'large' && `transform: translate3d(0, ${intersectingSecondElement ? scrollY * -0.2 : 0}px, 0)`}`}
         class="vertical-img"
         src={Altiplano_3}
         alt="placeholder"
@@ -190,6 +190,15 @@
     width: 100%;
     max-width: 25rem;
   }
+
+  .origenes-description-section:first-child img {
+    top: 12rem;
+    position: relative;
+    @media only screen and (min-width: 48em) {
+      top: 0;
+    }
+  }
+
   .origenes-description-section:nth-child(2) img {
     position: relative;
     top: -10rem;
