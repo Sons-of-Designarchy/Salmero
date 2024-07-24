@@ -144,7 +144,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 80vh;
+    height: 60dvh;
 
     padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
 
