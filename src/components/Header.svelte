@@ -56,11 +56,11 @@
 
     box-sizing: border-box;
 
-    min-height: 65dvh;
+    max-height: 65dvh;
     padding: var(--spacing-xl);
 
     @media only screen and (min-width: 48em) {
-      min-height: fit-content;
+      max-height: fit-content;
     }
   }
   .header-description,
