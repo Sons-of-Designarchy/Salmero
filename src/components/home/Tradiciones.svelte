@@ -145,7 +145,8 @@
     position: relative;
 
     height: 80dvh;
-    max-width: 30rem;
+    width: 20rem;
+    height: 30rem;
 
     left: 0;
     right: 0;
