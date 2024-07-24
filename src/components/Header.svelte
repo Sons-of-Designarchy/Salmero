@@ -56,12 +56,7 @@
 
     box-sizing: border-box;
 
-    max-height: 65dvh;
     padding: var(--spacing-xl);
-
-    @media only screen and (min-width: 48em) {
-      max-height: fit-content;
-    }
   }
   .header-description,
   .custom-description {
