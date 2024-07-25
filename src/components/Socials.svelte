@@ -60,7 +60,7 @@
 </script>
 
 <section class="socials" id="encuentranos">
-  <IntersectionObserver {element} bind:intersecting rootMargin="-20%">
+  <IntersectionObserver {element} bind:intersecting threshold={0.2}>
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
         <p class:animate={intersecting} class="caption">Nuestros amigos</p>
