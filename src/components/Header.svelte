@@ -20,18 +20,20 @@
       class="header-content"
       style="text-align: {textAlign}"
     >
-      {#if intersecting}
-        <p class="caption animate" style="align-self: {textAlign}">
-          {caption}
-        </p>
-        <h1 class="animate" style="align-self: {textAlign}">
-          {title}
-        </h1>
-        <p class="header-description animate">
-          {description}
-        </p>
-        <slot class="custom-description" name="custom-description"></slot>
-      {/if}
+      <p
+        class:animate={intersecting}
+        class="caption"
+        style="align-self: {textAlign}"
+      >
+        {caption}
+      </p>
+      <h1 class:animate={intersecting} style="align-self: {textAlign}">
+        {title}
+      </h1>
+      <p class:animate={intersecting} class="header-description">
+        {description}
+      </p>
+      <slot class="custom-description" name="custom-description"></slot>
     </section>
   </IntersectionObserver>
 </header>
