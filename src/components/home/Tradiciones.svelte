@@ -144,7 +144,7 @@
     display: block;
     position: relative;
 
-    height: 80dvh;
+    height: 80vh;
     width: 20rem;
     height: 30rem;
 
