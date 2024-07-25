@@ -63,24 +63,24 @@
   <IntersectionObserver {element} bind:intersecting rootMargin="-20%">
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
-        {#if intersecting}
-          <p class="caption animate">Nuestros amigos</p>
-          <h1 class="animate">Síguenos en nuestras redes sociales</h1>
-          <ul class="socials-links">
-            <li class="animate">
-              <a
-                href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-                target="_blank"><p>Instagram</p></a
-              >
-            </li>
-            <li class="animate">
-              <a
-                href="https://www.facebook.com/profile.php?id=61557454914828"
-                target="_blank"><p>Facebook</p></a
-              >
-            </li>
-          </ul>
-        {/if}
+        <p class:animate={intersecting} class="caption">Nuestros amigos</p>
+        <h1 class:animate={intersecting}>
+          Síguenos en nuestras redes sociales
+        </h1>
+        <ul class="socials-links">
+          <li class:animate={intersecting}>
+            <a
+              href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+              target="_blank"><p>Instagram</p></a
+            >
+          </li>
+          <li class:animate={intersecting}>
+            <a
+              href="https://www.facebook.com/profile.php?id=61557454914828"
+              target="_blank"><p>Facebook</p></a
+            >
+          </li>
+        </ul>
       </div>
     </article>
   </IntersectionObserver>
