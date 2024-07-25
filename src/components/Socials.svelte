@@ -60,7 +60,7 @@
 </script>
 
 <section class="socials" id="encuentranos">
-  <IntersectionObserver {element} bind:intersecting threshold={0.2}>
+  <IntersectionObserver {element} bind:intersecting>
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
         <p class:animate={intersecting} class="caption">Nuestros amigos</p>
@@ -118,7 +118,7 @@
 
     @media only screen and (min-width: 48em) {
       grid-template-columns: repeat(2, 1fr);
-      height: 80dvh;
+      height: 80vh;
     }
   }
 
@@ -144,7 +144,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 60dvh;
+    height: 60vh;
 
     padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
 
