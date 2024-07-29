@@ -90,10 +90,12 @@
       {#each data
         .filter((item) => item.media_type !== 'VIDEO')
         .slice(0, 4) as item (item.id)}
-        <img
-          src={item.media_url ? item.media_url : Sociales_1}
-          alt={item.caption}
-        />
+        <a href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr" target="_blank">
+          <img
+            src={item.media_url ? item.media_url : Sociales_1}
+            alt={item.caption}
+          />
+        </a>
       {/each}
     {:else}
       <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
@@ -192,7 +194,7 @@
     }
   }
 
-  .socials-photo-grid > img {
+  .socials-photo-grid > a > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
