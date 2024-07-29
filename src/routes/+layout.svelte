@@ -6,12 +6,24 @@
   import '../globals.css';
 
   import AgeWall from '../components/AgeWall.svelte';
+  import { onMount } from 'svelte';
 
   let minAgeAgreement: boolean | null = null;
 
   function setMinAge(event: CustomEvent) {
     minAgeAgreement = event.detail.agreement;
+    if (minAgeAgreement)
+      sessionStorage.setItem('minAge', minAgeAgreement.toString());
   }
+
+  onMount(() => {
+    const getSessionAge = sessionStorage.getItem('minAge');
+    if (getSessionAge) {
+      const minAge = JSON.parse(getSessionAge);
+      minAgeAgreement = minAge;
+    }
+    return;
+  });
 </script>
 
 {#if minAgeAgreement}

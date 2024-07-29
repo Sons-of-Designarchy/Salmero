@@ -49,7 +49,7 @@
   ];
 </script>
 
-<IntersectionObserver {element} bind:intersecting rootMargin="-50%">
+<IntersectionObserver {element} bind:intersecting rootMargin="-15%">
   <section class="vertical-cards-grid" bind:this={element}>
     {#each cards as card}
       <VerticalCard

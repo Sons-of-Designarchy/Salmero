@@ -6,15 +6,17 @@
 
 <IntersectionObserver {element} bind:intersecting rootMargin="-15%"
   ><section bind:this={element} class="origenes-image container-min-paddings">
-    <h1 class:animate={intersecting}>
-      nuestro agave salmiana es enaltecido por su esencia resiliente,
-    </h1>
-    <p class:animate={intersecting} class="origenes-image-description">
-      Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las
-      condiciones donde crece el Salmiana de forma Silvestre
-    </p>
-  </section></IntersectionObserver
->
+    {#if intersecting}
+      <h1 class="animate">
+        nuestro agave salmiana es enaltecido por su esencia resiliente,
+      </h1>
+      <p class="origenes-image-description animate">
+        Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las
+        condiciones donde crece el Salmiana de forma Silvestre
+      </p>
+    {/if}
+  </section>
+</IntersectionObserver>
 
 <style>
   .origenes-image h1,
@@ -24,7 +26,7 @@
 
   .origenes-image {
     width: 100%;
-    min-height: 43rem;
+    height: 43rem;
 
     display: flex;
     flex-direction: column;

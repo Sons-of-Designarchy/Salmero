@@ -18,11 +18,13 @@
     <slot name="image"></slot>
   </div>
   <section class="vertical-card-inner">
-    <p class:animate={intersecting} class="caption">{caption}</p>
-    <h2 class:animate={intersecting}>{title}</h2>
-    <p class:animate={intersecting} class="vertical-card-description">
-      {description}
-    </p>
+    {#if intersecting}
+      <p class="caption animate">{caption}</p>
+      <h2 class="animate">{title}</h2>
+      <p class="vertical-card-description animate">
+        {description}
+      </p>
+    {/if}
   </section>
 </article>
 
@@ -47,6 +49,7 @@
     border-radius: 0 0 20px 20px;
 
     padding: 1rem 0.5rem;
+    min-height: 6rem;
     height: 100%;
 
     text-align: center;
@@ -57,6 +60,15 @@
 
   h2 {
     word-break: break-word;
+    font-size: 2.25rem;
+
+    @media only screen and (min-width: 84em) {
+      font-size: 3rem;
+    }
+  }
+
+  .vertical-card-description {
+    height: 100%;
   }
 
   .caption {

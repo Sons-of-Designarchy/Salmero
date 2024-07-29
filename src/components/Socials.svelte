@@ -5,13 +5,62 @@
   import Sociales_2 from '../assets/img/Sociales_2.png';
   import Sociales_3 from '../assets/img/Sociales_3.png';
   import Sociales_4 from '../assets/img/Sociales_4.png';
+  import { onMount } from 'svelte';
+
+  type MediaItem = {
+    id: string;
+    media_type: 'CAROUSEL_ALBUM' | 'VIDEO' | 'IMAGE';
+    permalink: string;
+    media_url: string;
+    username: string;
+    caption: string;
+    timestamp: string;
+    children?: {
+      data: {
+        media_url: string;
+        thumbnail_url: string;
+        id: string;
+      }[];
+    };
+  };
+
+  type FetchResponse = {
+    data: MediaItem[];
+  };
 
   let element: HTMLElement;
   let intersecting: boolean;
+
+  let data: MediaItem[];
+
+  var myHeaders = new Headers();
+  myHeaders.append('Content-Type', 'application/json');
+
+  async function fetchData() {
+    let requestOptions = {
+      method: 'get',
+      headers: myHeaders,
+      caches: 'force-cache',
+    };
+
+    fetch(
+      'https://v1.nocodeapi.com/mezcalsalmero/instagram/tcyplVDduepbfJTz?limit=10',
+      requestOptions
+    )
+      .then((response) => response.json())
+      .then((result: FetchResponse) => {
+        data = result.data;
+      })
+      .catch((e) => {
+        console.error(e);
+      });
+  }
+
+  onMount(() => fetchData());
 </script>
 
 <section class="socials" id="encuentranos">
-  <IntersectionObserver {element} bind:intersecting rootMargin="-50%">
+  <IntersectionObserver {element} bind:intersecting>
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
         <p class:animate={intersecting} class="caption">Nuestros amigos</p>
@@ -35,11 +84,23 @@
       </div>
     </article>
   </IntersectionObserver>
+
   <section class="socials-photo-grid">
-    <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
-    <img src={Sociales_2} alt="Panorama del altiplano" />
-    <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
-    <img src={Sociales_4} alt="Shots de mezcal" />
+    {#if data}
+      {#each data
+        .filter((item) => item.media_type !== 'VIDEO')
+        .slice(0, 4) as item (item.id)}
+        <img
+          src={item.media_url ? item.media_url : Sociales_1}
+          alt={item.caption}
+        />
+      {/each}
+    {:else}
+      <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
+      <img src={Sociales_2} alt="Panorama del altiplano" />
+      <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
+      <img src={Sociales_4} alt="Shots de mezcal" />
+    {/if}
   </section>
 </section>
 
@@ -51,12 +112,13 @@
     align-items: center;
     flex-direction: row;
 
-    height: 100%;
+    width: 100%;
 
     background: var(--green-500);
 
     @media only screen and (min-width: 48em) {
       grid-template-columns: repeat(2, 1fr);
+      height: 80vh;
     }
   }
 
@@ -80,6 +142,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+
+    height: 60vh;
 
     padding: calc(var(--spacing-lg) * 3) var(--spacing-md);
 
@@ -87,6 +152,7 @@
 
     @media only screen and (min-width: 48em) {
       min-width: min-content;
+      height: 50vh;
     }
   }
 
@@ -131,12 +197,19 @@
     height: 100%;
     object-fit: cover;
   }
+  .animate:first-child {
+    animation-delay: 0.2s;
+  }
 
-  .socials-links .animate:first-child {
+  .animate:nth-child(2) {
     animation-delay: 0.4s;
   }
 
-  .socials-links .animate:nth-child(2) {
+  .socials-links .animate:first-child {
     animation-delay: 0.6s;
+  }
+
+  .socials-links .animate:nth-child(2) {
+    animation-delay: 0.8s;
   }
 </style>

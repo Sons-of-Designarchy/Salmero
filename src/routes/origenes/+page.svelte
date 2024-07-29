@@ -25,21 +25,23 @@
       bind:intersecting={intersectingHeader}
     >
       <div bind:this={header}>
-        <p class:animate={intersectingHeader}>
-          SAGRADO PARA NUESTROS ANCESTROS, <span class="accent-text bold-text"
-            >AGAVE SALMIANA</span
-          > PERDURA EN EL DESIERTO COMO LAS LEYENDAS CONTADAS EN SU NOMBRE.
-        </p>
-        <p class:animate={intersectingHeader}>
-          CON SUS <span class="bold-text">PENCAS GRUESAS Y CARNOSAS</span>, QUE
-          NACEN DEL TALLO Y REMATAN EN UNA ESPINA FUERTE Y OSCURA.
-        </p>
-        <p class:animate={intersectingHeader}>
-          PERFUMES FLORALES QUE TRASCIENDEN EN CUALQUIER LUGAR, FORMAN <span
-            class="bold-text accent-text">CARÁCTER Y ESENCIA</span
-          >
-          EL DE NUESTRO <span class="bold-text">MEZCAL SALMERO</span>.
-        </p>
+        {#if intersectingHeader}
+          <p class="animate">
+            SAGRADO PARA NUESTROS ANCESTROS, <span class="accent-text bold-text"
+              >AGAVE SALMIANA</span
+            > PERDURA EN EL DESIERTO COMO LAS LEYENDAS CONTADAS EN SU NOMBRE.
+          </p>
+          <p class="animate">
+            CON SUS <span class="bold-text">PENCAS GRUESAS Y CARNOSAS</span>,
+            QUE NACEN DEL TALLO Y REMATAN EN UNA ESPINA FUERTE Y OSCURA.
+          </p>
+          <p class="animate">
+            PERFUMES FLORALES QUE TRASCIENDEN EN CUALQUIER LUGAR, FORMAN <span
+              class="bold-text accent-text">CARÁCTER Y ESENCIA</span
+            >
+            EL DE NUESTRO <span class="bold-text">MEZCAL SALMERO</span>.
+          </p>
+        {/if}
       </div>
     </IntersectionObserver>
   </section>
@@ -57,17 +59,21 @@
       bind:intersecting={intersectingNuestraTierra}
     >
       <div bind:this={nuestraTierra}>
-        <p class:animate={intersectingNuestraTierra}>
-          EL LÍMITE DE <span class="bold-text">MESOAMÉRICA Y ARIDOAMÉRICA</span
-          >, DONDE LOS BRAVOS SE JUNTAN CON LOS CIVILIZADOS, DONDE EL DESIERTO
-          IMPONE SU LEY Y DEJA VIVIR SOLO A LOS MÁS RESILIENTES.
-        </p>
-        <p class:animate={intersectingNuestraTierra}>
-          <span class="bold-text">ORgULLO POTOSINO</span> QUE RINDE HOMENAJE A
-          LA UNIÓN DE DOS MUNDOS COMO EL MISMO SAN LUIS.
-          <span class="bold-text accent-text">SALMERO</span> ES LA
-          REPRESENTACIÓN COMPLETA DEL <span class="bold-text">ALTIPLANO</span>.
-        </p>
+        {#if intersectingNuestraTierra}
+          <p class="animate">
+            EL LÍMITE DE <span class="bold-text"
+              >MESOAMÉRICA Y ARIDOAMÉRICA</span
+            >, DONDE LOS BRAVOS SE JUNTAN CON LOS CIVILIZADOS, DONDE EL DESIERTO
+            IMPONE SU LEY Y DEJA VIVIR SOLO A LOS MÁS RESILIENTES.
+          </p>
+          <p class="animate">
+            <span class="bold-text">ORgULLO POTOSINO</span> QUE RINDE HOMENAJE A
+            LA UNIÓN DE DOS MUNDOS COMO EL MISMO SAN LUIS.
+            <span class="bold-text accent-text">SALMERO</span> ES LA
+            REPRESENTACIÓN COMPLETA DEL
+            <span class="bold-text">ALTIPLANO</span>.
+          </p>
+        {/if}
       </div>
     </IntersectionObserver>
   </section>
@@ -88,29 +94,33 @@
       bind:intersecting={intersectingHistoria}
     >
       <div bind:this={historia}>
-        <p class:animate={intersectingHistoria}>
-          Fue en el <span class="bold-text">Siglo XVII</span> que los Monjes
-          Carmelitos Descalzos llegaron al
-          <span class="bold-text accent-text">Altiplano Potosino</span>, y ahí,
-          introdujeron el primer alambique para procesar Mezcal en México, donde
-          no solamente fue el primer Mezcal de México, si no probablemente el
-          primer destilado en todo el continente americano. De esta forma,
-          <span class="bold-text">San Luis Potosí se convirtió</span> hasta las
-          épocas de la revolución
-          <span class="bold-text"
-            >en el productor más grande de destilados en el país y en el
-            continente</span
-          >. Como toda buena historia, sufre su tragedia después de la
-          revolución, donde más de 200 fábricas se vieron forzadas a cerrar sus
-          puertas ya que la reforma agraria no fue compatible con el modelo
-          económico que terminaba, el de las Haciendas.
-        </p>
-        <p class:animate={intersectingHistoria}>
-          Ahora, 100 años después, <span class="bold-text"
-            >Mezcal Salmero está presente para recordar Nuestra Historia</span
-          > y no dejarnos olvidar de dónde viene este Mezcal tan tradicional no solo
-          en su elaboración, sino en la cultura de nuestro Estado y nuestro País.
-        </p>
+        {#if intersectingHistoria}
+          <p class="animate">
+            Fue en el <span class="bold-text">Siglo XVII</span> que los Monjes
+            Carmelitos Descalzos llegaron al
+            <span class="bold-text accent-text">Altiplano Potosino</span>, y
+            ahí, introdujeron el primer alambique para procesar Mezcal en
+            México, donde no solamente fue el primer Mezcal de México, si no
+            probablemente el primer destilado en todo el continente americano.
+            De esta forma,
+            <span class="bold-text">San Luis Potosí se convirtió</span> hasta
+            las épocas de la revolución
+            <span class="bold-text"
+              >en el productor más grande de destilados en el país y en el
+              continente</span
+            >. Como toda buena historia, sufre su tragedia después de la
+            revolución, donde más de 200 fábricas se vieron forzadas a cerrar
+            sus puertas ya que la reforma agraria no fue compatible con el
+            modelo económico que terminaba, el de las Haciendas.
+          </p>
+          <p class="animate">
+            Ahora, 100 años después, <span class="bold-text"
+              >Mezcal Salmero está presente para recordar Nuestra Historia</span
+            > y no dejarnos olvidar de dónde viene este Mezcal tan tradicional no
+            solo en su elaboración, sino en la cultura de nuestro Estado y nuestro
+            País.
+          </p>
+        {/if}
       </div>
     </IntersectionObserver>
   </section>

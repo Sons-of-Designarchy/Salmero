@@ -74,6 +74,10 @@
     justify-content: space-between;
   }
 
+  .mobile-menu-navbar a:first-child {
+    margin: auto;
+  }
+
   nav {
     display: none;
     flex-direction: column;

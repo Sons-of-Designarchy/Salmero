@@ -10,13 +10,15 @@
   <div class="origenes-wrapper" id="#origenes" bind:this={element}>
     <div class="origenes">
       <section class="container-min-paddings">
-        <p class:animate={intersecting} class="caption">Del norte de México</p>
-        <h1 class:animate={intersecting}>ORÍGENES DEL ALTIPLANO POTOSINO</h1>
-        <p class:animate={intersecting} class="origenes-intro">
-          Hace más de 200 años, donde comienza el gran desierto de chihuahua, su
-          gente comenzó a transformar un agave que sobrevivía al igual que ellos
-          a esa dura tierra: el salmiana.
-        </p>
+        {#if intersecting}
+          <p class="caption animate">Del norte de México</p>
+          <h1 class="animate">ORÍGENES DEL ALTIPLANO POTOSINO</h1>
+          <p class="origenes-intro animate">
+            Hace más de 200 años, donde comienza el gran desierto de chihuahua,
+            su gente comenzó a transformar un agave que sobrevivía al igual que
+            ellos a esa dura tierra: el salmiana.
+          </p>
+        {/if}
       </section>
       <OrigenesImage />
     </div>

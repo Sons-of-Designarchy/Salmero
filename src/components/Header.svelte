@@ -56,8 +56,9 @@
   .header-content {
     max-width: var(--max-width);
 
-    padding: var(--spacing-xl) var(--spacing-md);
     box-sizing: border-box;
+
+    padding: var(--spacing-xl);
   }
   .header-description,
   .custom-description {
