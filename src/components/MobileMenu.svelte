@@ -19,7 +19,7 @@
 <div class="mobile-menu-container">
   <section class="mobile-menu-navbar">
     <a href="/">
-      <Logo className="logo" height="2rem" width="15rem" fill="#2F2F25" />
+      <Logo className="logo" width="14rem" height="2rem" fill="#2F2F25" />
     </a>
     <button on:click={toggleMenu}>
       <Hamburger />
@@ -71,11 +71,10 @@
   .mobile-menu-navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
   }
 
   .mobile-menu-navbar a:first-child {
-    margin: auto;
+    flex: 1;
   }
 
   nav {

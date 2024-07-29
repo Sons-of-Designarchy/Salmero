@@ -3,6 +3,7 @@
   src: url('./assets/fonts/UniversLTStd.otf');
   font-weigth: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,20 +11,23 @@
   src: url('./assets/fonts/UniversLTStd-UltraCn.otf');
   font-weigth: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Univers LT Std 65 Bold';
   src: url('./assets/fonts/UniversLTStd-Bold.otf');
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Univers LT Std 67';
   src: url('./assets/fonts/UniversLTStd-BoldCn.otf');
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -31,6 +35,7 @@
   src: url('./assets/fonts/UniversLTStd-Black.otf');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
