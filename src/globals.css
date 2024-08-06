@@ -205,8 +205,3 @@ img {
     opacity: 1;
   }
 }
-
-.animate {
-  opacity: 0; /* Start with invisible */
-  animation: fadeIn 0.8s forwards; /* 1s duration, forwards to retain final state */
-}
