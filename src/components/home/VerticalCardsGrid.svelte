@@ -29,15 +29,6 @@
       image: Guadalupe,
     },
     {
-      index: 2,
-      color: 'green',
-      caption: 'Hecho en México',
-      title: 'Original',
-      description:
-        'Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
-      image: Original,
-    },
-    {
       index: 3,
       color: 'red',
       caption: 'Hecho en México',
@@ -45,6 +36,15 @@
       description:
         'Salmiana, Espadín y Mexicano. Intenso, de carácter fuerte, con un sabor único.',
       image: Panamericano,
+    },
+    {
+      index: 2,
+      color: 'green',
+      caption: 'Hecho en México',
+      title: 'Original',
+      description:
+        'Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
+      image: Original,
     },
   ];
 </script>

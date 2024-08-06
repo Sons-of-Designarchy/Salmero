@@ -1,14 +1,14 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-  import Header from '../../components/Header.svelte';
-  import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';
-  import ImageComponent from '../../utils/ImageComponent.svelte';
+  import Header from "../../components/Header.svelte";
+  import HorizontalCard from "../../components/mezcales/HorizontalCard.svelte";
+  import ImageComponent from "../../utils/ImageComponent.svelte";
 
-  import HeaderImg from '../../assets/img/Salmero_header.png';
-  import Original from '../../assets/img/Original.png';
-  import Guadalupe from '../../assets/img/Guadalupe.png';
-  import Panamericano from '../../assets/img/Panamericano.png';
+  import HeaderImg from "../../assets/img/Salmero_header.png";
+  import Original from "../../assets/img/Original.png";
+  import Guadalupe from "../../assets/img/Guadalupe.png";
+  import Panamericano from "../../assets/img/Panamericano.png";
 
   let activeSlide = 1;
 
@@ -22,7 +22,7 @@
 
   onMount(() => {
     if (window) {
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener("scroll", handleScroll);
     }
   });
 </script>
@@ -36,27 +36,6 @@
 </Header>
 <section class="card-container">
   <section class="active-slides"><h3>{activeSlide} / 3</h3></section>
-  <HorizontalCard title="Original" id="card1" bgColor="green">
-    <ImageComponent
-      slot="image"
-      className="horizontal-card-image"
-      src={Original}
-    />
-    <section slot="description" class="horizontal-card-description">
-      <p>Era mi destino.</p>
-      <p>
-        En una tierra de poca agua, apagaría algunas sedes, despertaría otras.
-      </p>
-      <p>De joven no tengo nada, pues más de 200 años llevo en mi andar.</p>
-      <p>
-        Fusión de dos mundos, tenacidad y supervivencia, arte agreste en
-        evolución.
-      </p>
-      <p>
-        Soy el mezcal del Altiplano Potosino, tradición mexicana por excelencia.
-      </p>
-    </section>
-  </HorizontalCard>
   <HorizontalCard title="Guadalupe" id="card2" bgColor="salmon">
     <ImageComponent
       slot="image"
@@ -95,6 +74,27 @@
         mezcal Salmiana potosino con el mezcal mexicano oaxaqueño, de tal forma,
         a las personas de dichos estados se les brinda respeto y admiración con
         este ensamble hecho para ti.
+      </p>
+    </section>
+  </HorizontalCard>
+  <HorizontalCard title="Original" id="card1" bgColor="green">
+    <ImageComponent
+      slot="image"
+      className="horizontal-card-image"
+      src={Original}
+    />
+    <section slot="description" class="horizontal-card-description">
+      <p>Era mi destino.</p>
+      <p>
+        En una tierra de poca agua, apagaría algunas sedes, despertaría otras.
+      </p>
+      <p>De joven no tengo nada, pues más de 200 años llevo en mi andar.</p>
+      <p>
+        Fusión de dos mundos, tenacidad y supervivencia, arte agreste en
+        evolución.
+      </p>
+      <p>
+        Soy el mezcal del Altiplano Potosino, tradición mexicana por excelencia.
       </p>
     </section>
   </HorizontalCard>
