@@ -4,6 +4,7 @@
   import Jabali from '../assets/svg/Jabali.svelte';
   import Close from '../assets/svg/Close.svelte';
   import { slide } from 'svelte/transition';
+  import HeaderJabali from '../assets/img/header-jabali.png';
 
   let isOpen = false;
 
@@ -20,6 +21,7 @@
   <section class="mobile-menu-navbar">
     <a href="/">
       <Logo className="logo" width="14rem" height="2rem" fill="#2F2F25" />
+      <img src={HeaderJabali} alt="Icono de Jabalí" height="40px" />
     </a>
     <button on:click={toggleMenu}>
       <Hamburger />
@@ -61,7 +63,7 @@
     position: relative;
 
     background-color: var(--green-500);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-md);
 
     @media only screen and (min-width: 64em) {
       display: none;

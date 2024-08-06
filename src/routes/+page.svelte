@@ -5,7 +5,7 @@
   import Tradiciones from '../components/home/Tradiciones.svelte';
   import OrigenesDescription from '../components/home/OrigenesDescription.svelte';
   import VideoComponent from '../utils/VideoComponent.svelte';
-  import Altiplano from '../assets/altiplano.mov';
+  import Altiplano from '../assets/altiplano.mp4';
 </script>
 
 <Header

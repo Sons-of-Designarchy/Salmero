@@ -5,8 +5,8 @@
 
 <nav>
   <section class="nav-inner">
-    <a href="/"> <Logo fill="#2F2F25" height="4.5rem" width="18rem" /></a>
-    <img src={HeaderJabali} alt="Icono de Jabalí" height="70px" />
+    <a href="/"> <Logo fill="#2F2F25" height="3.0rem" width="18rem" /></a>
+    <img src={HeaderJabali} alt="Icono de Jabalí" height="50px" />
     <ul class="nav-links">
       <li><a href="/"><p>Home</p></a></li>
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
