@@ -1,18 +1,18 @@
 <script lang="ts">
-  import IntersectionObserver from 'svelte-intersection-observer';
+  import IntersectionObserver from "svelte-intersection-observer";
 
-  import Header from '../../components/Header.svelte';
-  import ImageComponent from '../../utils/ImageComponent.svelte';
+  import Header from "../../components/Header.svelte";
+  import ImageComponent from "../../utils/ImageComponent.svelte";
 
-  import ProcesoImg from '../../assets/img/Proceso_header.png';
-  import Jabali from '../../assets/svg/Jabali.svelte';
-  import Proceso_1 from '../../assets/img/Proceso_1.png';
-  import Proceso_2 from '../../assets/img/Proceso_2.png';
-  import Proceso_3 from '../../assets/img/Proceso_3.png';
-  import HotStones from '../../assets/svg/HotStones.svelte';
-  import Destilacion from '../../assets/svg/Destilacion.svelte';
-  import Fermentacion from '../../assets/svg/Fermentacion.svelte';
-  import Agave from '../../assets/svg/Agave.svelte';
+  import ProcesoImg from "../../assets/img/Proceso_header.png";
+  import Jabali from "../../assets/svg/Jabali.svelte";
+  import Proceso_1 from "../../assets/img/Proceso_1.png";
+  import Proceso_2 from "../../assets/img/Proceso_2.png";
+  import Proceso_3 from "../../assets/img/Proceso_3.png";
+  import HotStones from "../../assets/svg/HotStones.svelte";
+  import Destilacion from "../../assets/svg/Destilacion.svelte";
+  import Fermentacion from "../../assets/svg/Fermentacion.svelte";
+  import Agave from "../../assets/svg/Agave.svelte";
 
   let element: HTMLElement;
   let header: HTMLElement;
@@ -59,10 +59,11 @@
         <p>1</p>
         <h3>Selección</h3>
         <p>
-          el Agave Salmiana madura en 10 a 12 años. Luego de un año más de
-          espera, los campesinos cosechan el agave para llevarlo al horno. Este
-          proceso permite al Salmiana concentrar más azúcar en su piña, esencial
-          para la fabricación artesanal del mezcal.
+          LA SELECCIÓN DEL AGAVE SALMIANA SE REALIZA CUANDO LA PLANTA LLEGA A SU
+          MADUREZ QUE CONLLEVA HASTA 15 AÑOS DE VIDA SILVESTRE. AL MADURAR EL
+          AGAVE ES CAPADO CON EL OBJETIVO DE CONCENTRAR LA MAYOR CANTIDAD DE
+          AZÚCARES. PASADO UN AÑO, ESTOS AGAVES SON FINALMENTE COSECHADOS Y SE
+          LLEVAN AL HORNO PARA SU COCCIÓN.
         </p>
       </article>
       <article class="animate">
@@ -133,7 +134,7 @@
   }
 
   .proceso-intro .bold-text {
-    font-family: 'Univers LT Std 75 Black';
+    font-family: "Univers LT Std 75 Black";
   }
 
   .proceso-intro h1 {
@@ -148,7 +149,7 @@
     width: 95%;
     height: 100%;
     position: absolute;
-    background-image: url('../../assets/img/agave_bg.png');
+    background-image: url("../../assets/img/agave_bg.png");
     background-repeat: no-repeat;
     background-position: 25% -2rem;
     background-size: cover;
