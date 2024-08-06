@@ -1,10 +1,12 @@
 <script>
   import Logo from '../assets/svg/Logo.svelte';
+  import HeaderJabali from '../assets/img/header-jabali.png';
 </script>
 
 <nav>
   <section class="nav-inner">
-    <a href="/"> <Logo fill="#2F2F25" height="4.5rem" width="20rem" /></a>
+    <a href="/"> <Logo fill="#2F2F25" height="4.5rem" width="18rem" /></a>
+    <img src={HeaderJabali} alt="Icono de Jabalí" height="70px" />
     <ul class="nav-links">
       <li><a href="/"><p>Home</p></a></li>
       <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
