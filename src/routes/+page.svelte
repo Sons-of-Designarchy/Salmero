@@ -11,10 +11,9 @@
 </script>
 
 <Header
-  title={$_('homepage_title')}
-  caption="Hecho en México"
-  description="El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su
-    agave Salmiana silvestre, destilado con respeto y tradición."
+  title={$_('homepage.title')}
+  caption={$_('common.hecho_en_mex')}
+  description={$_('homepage.description')}
 >
   <VideoComponent className="header-img" slot="image" src={Altiplano} />
 </Header>
