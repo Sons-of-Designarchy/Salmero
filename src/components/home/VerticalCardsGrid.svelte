@@ -6,6 +6,7 @@
   import Original from '../../assets/img/Original.png';
 
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { _ } from 'svelte-i18n';
 
   let element: HTMLElement;
   let intersecting: boolean;
@@ -13,7 +14,7 @@
   interface Card {
     index: number;
     color: 'salmon' | 'green' | 'red';
-    caption: string;
+    caption: any;
     title: string;
     description: string;
     image: string;
@@ -22,28 +23,25 @@
     {
       index: 1,
       color: 'salmon',
-      caption: 'Hecho en México',
-      title: 'Guadalupe',
-      description:
-        'Salmiana y Espadín. Un exuberante olor floral con notas herbales.',
+      caption: `${$_('common.hecho_en_mex')}`,
+      title: `${$_('common.guadalupe')}`,
+      description: `${$_('homepage_vertical_cards.guadalupe_description')}`,
       image: Guadalupe,
     },
     {
       index: 3,
       color: 'red',
-      caption: 'Hecho en México',
-      title: 'Panamericano',
-      description:
-        'Salmiana, Espadín y Mexicano. Intenso, de carácter fuerte, con un sabor único.',
+      caption: `${$_('common.hecho_en_mex')}`,
+      title: `${$_('common.panamericano')}`,
+      description: `${$_('homepage_vertical_cards.panamericano_description')}`,
       image: Panamericano,
     },
     {
       index: 2,
       color: 'green',
-      caption: 'Hecho en México',
+      caption: `${$_('common.hecho_en_mex')}`,
       title: 'Original',
-      description:
-        'Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
+      description: `${$_('homepage_vertical_cards.original_description')}`,
       image: Original,
     },
   ];

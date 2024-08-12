@@ -17,22 +17,22 @@
     "encuentranos": "Find Us"
   },
   "homepage": {
-    "title": "Tradition and Authentic Flavor of the High Plain",
+    "title": "Tradition and Authentic Flavor of the highlands",
     "description": "Mezcal Potosino Salmero respects its ancestral processes by honoring its wild Salmiana agave, distilled with respect and tradition."
   },
   "homepage_vertical_cards": {
     "guadalupe_description": "Salmiana and Espadín. An exuberant floral aroma with herbal notes.",
-    "panamericano_description": "Salmiana, Espadín, and Mexicano. Intense, with a strong character and unique flavor.",
-    "original_description": "Salmiana. A brilliant mezcal, as clear as the sky of the High Plain Potosino."
+    "panamericano_description": "Salmiana, Espadín, and Mexican. Intense, with a strong character and unique flavor.",
+    "original_description": "Salmiana. A brilliant mezcal, as clear as the sky of the Potosinian highlands."
   },
   "homepage_origenes": {
-    "title": "ORIGINS OF THE HIGH PLAIN POTOSINO",
+    "title": "ORIGINS OF THE POTOSINIAN HIGHLANDS",
     "description": "More than 200 years ago, where the great Chihuahua desert begins, its people began to transform an agave that survived just like them in that harsh land: the Salmiana.",
     "second_title": "our Salmiana agave is exalted by its resilient essence,",
     "second_description": "The flavors you can appreciate in Mezcal Salmero are the result of the conditions where the Salmiana grows wild."
   },
   "homepage_origenes_extended": {
-    "first_paragraph": "In the High Plain, the <span class=\"bold-text accent-text\">Salmiana agave</span> lives <span class=\"bold-text\">kissing the morning dew</span>, because it knows it won't have rain.",
+    "first_paragraph": "In the highlands, the <span class=\"bold-text accent-text\">Salmiana agave</span> lives <span class=\"bold-text\">kissing the morning dew</span>, because it knows it won't have rain.",
     "second_paragraph": "It always dawns at two thousand meters high, where it feels cold at dawn and endures the sun from those heights.",
     "third_paragraph": "In this <span class=\"bold-text accent-text\">Wild Idyl</span>, the Salmiana Agave <span class=\"bold-text\">nourishes itself for over 12 years</span> from the rich wild land at its feet.",
     "fourth_paragraph": "Thus, only thus, can we have an agave capable of giving us the <span class=\"bold-text accent-text\">Mezcal Salmero</span>, a worthy representative of the <span class=\"bold-text\">High Plain</span>."
@@ -40,7 +40,7 @@
   "expresion_tradiciones": {
     "caption": "Our Production Process",
     "title": "Expression of Our Traditions",
-    "description": "Salmero is produced at the historic boundary of Mesoamerica with Aridoamerica, where advanced civilizations meet the nomads. Made with respect for its traditions, Salmero is our mezcal for the world."
+    "description": "Salmero is produced at the historic boundary of Mesoamerica with Aridoamerica, where advanced civilizations meet the nomads. <br/><br/> Made with respect for its traditions, Salmero is our mezcal for the world."
   },
   "socials": {
     "caption": "Our Friends",
