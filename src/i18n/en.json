@@ -1,14 +1,81 @@
 {
-  "homepage_title": "tradición y sabor auténtico del Altiplano",
-  "home": "Home",
-  "about": "About",
-  "contact": "Contact",
-  "sign_in": "Sign In",
-  "sign_up": "Sign Up",
-  "learn_more": "Learn More",
-  "explore_products": "Explore Products",
-  "our_story": "Our Story",
-  "product_description": "Product Description",
-  "footer_contact": "Contact Us",
-  "footer_follow_us": "Follow Us"
+  "common": {
+    "original": "Original",
+    "guadalupe": "Guadalupe",
+    "panamericano": "Panamericano",
+    "hecho_en_mex": "Made in Mexico",
+    "norte_de_mex": "From Northern Mexico",
+    "fb": "Facebook",
+    "ig": "Instagram",
+    "nuestros_mezcales": "Our Mezcals"
+  },
+  "nav": {
+    "home": "Home",
+    "origenes": "Origins",
+    "procesos": "Our Processes",
+    "encuentranos": "Find Us"
+  },
+  "homepage": {
+    "title": "Tradition and Authentic Flavor of the High Plain",
+    "description": "Mezcal Potosino Salmero respects its ancestral processes by honoring its wild Salmiana agave, distilled with respect and tradition."
+  },
+  "homepage_vertical_cards": {
+    "guadalupe_description": "Salmiana and Espadín. An exuberant floral aroma with herbal notes.",
+    "panamericano_description": "Salmiana, Espadín, and Mexicano. Intense, with a strong character and unique flavor.",
+    "original_description": "Salmiana. A brilliant mezcal, as clear as the sky of the High Plain Potosino."
+  },
+  "homepage_origenes": {
+    "title": "ORIGINS OF THE HIGH PLAIN POTOSINO",
+    "description": "More than 200 years ago, where the great Chihuahua desert begins, its people began to transform an agave that survived just like them in that harsh land: the Salmiana.",
+    "second_title": "our Salmiana agave is exalted by its resilient essence,",
+    "second_description": "The flavors you can appreciate in Mezcal Salmero are the result of the conditions where the Salmiana grows wild."
+  },
+  "homepage_origenes_extended": {
+    "first_paragraph": "In the High Plain, the <span class=\"bold-text accent-text\">Salmiana agave</span> lives <span class=\"bold-text\">kissing the morning dew</span>, because it knows it won't have rain.",
+    "second_paragraph": "It always dawns at two thousand meters high, where it feels cold at dawn and endures the sun from those heights.",
+    "third_paragraph": "In this <span class=\"bold-text accent-text\">Wild Idyl</span>, the Salmiana Agave <span class=\"bold-text\">nourishes itself for over 12 years</span> from the rich wild land at its feet.",
+    "fourth_paragraph": "Thus, only thus, can we have an agave capable of giving us the <span class=\"bold-text accent-text\">Mezcal Salmero</span>, a worthy representative of the <span class=\"bold-text\">High Plain</span>."
+  },
+  "expresion_tradiciones": {
+    "caption": "Our Production Process",
+    "title": "Expression of Our Traditions",
+    "description": "Salmero is produced at the historic boundary of Mesoamerica with Aridoamerica, where advanced civilizations meet the nomads. Made with respect for its traditions, Salmero is our mezcal for the world."
+  },
+  "socials": {
+    "caption": "Our Friends",
+    "title": "Follow Us on Our Social Media"
+  },
+  "nuestros_mezcales": {
+    "caption": "Meet the Family",
+    "title": "Our Mezcals",
+    "description": "Mezcal Potosino Salmero respects its ancestral processes by honoring its wild Salmiana agave, distilled with respect and tradition.",
+    "guadalupe_description": "<p>Guadalupe, you heard the news about the competition.</p><p>You knew that your boyfriend Francisco Bocanegra had the talent to win it.</p><p>In your honor, we named this mezcal that unites two mezcal regions of the country in a blend of Potosino Salmiana with Oaxaca Espadín.</p><p>For you, and for the rest of Mexicans who continue building our history, we proudly toast with this Salmero Guadalupe in hand!</p>",
+    "panamericano_description": "<p>The Panamerican Highway arises from a collective dream to unite the most beautiful continent in the world...</p><p>This blend of mezcals, like the Panamerican Highway, unites Potosino Salmiana mezcal with Mexican Oaxaca mezcal, thereby showing respect and admiration for the people of those states with this blend made for you.</p>",
+    "original_description": "<p>It was my destiny.</p><p>In a land with little water, I would quench some thirsts, awaken others.</p><p>As a young mezcal, I have nothing, for I have been around for more than 200 years.</p><p>Fusion of two worlds, tenacity and survival, wild art in evolution.</p><p>I am the mezcal of the High Plain Potosino, Mexican tradition par excellence.</p>"
+  },
+  "origenes": {
+    "caption": "Salmero Origins",
+    "second_caption": "Pure Expression of Traditions",
+    "title": "Our Agave",
+    "second_title": "Our Land",
+    "third_title": "Our History",
+    "first_paragraph": "SACRED TO OUR ANCESTORS, <span class=\"accent-text bold-text\">SALMIANA AGAVE</span> ENDURES IN THE DESERT LIKE THE LEGENDS TOLD IN ITS NAME.",
+    "second_paragraph": "WITH ITS <span class=\"bold-text\">THICK AND FLESHY LEAVES</span>, WHICH GROW FROM THE STEM AND END IN A STRONG, DARK SPINE.",
+    "third_paragraph": "FLORAL SCENTS THAT TRANSCEND ANYWHERE, FORM <span class=\"bold-text accent-text\">CHARACTER AND ESSENCE</span> OF OUR <span class=\"bold-text\">MEZCAL SALMERO</span>.",
+    "fourth_paragraph": "THE LIMIT OF <span class=\"bold-text\">MESOAMERICA AND ARIDOAMERICA</span>, WHERE THE BRAVE MEET THE CIVILIZED, WHERE THE DESERT IMPOSSES ITS LAW AND ONLY ALLOWS THE MOST RESILIENT TO SURVIVE.",
+    "fifth_paragraph": "<span class=\"bold-text\">POTOSINO PRIDE</span> THAT PAYS HOMAGE TO THE UNION OF TWO WORLDS LIKE SAN LUIS ITSELF. <span class=\"bold-text accent-text\">SALMERO</span> IS THE COMPLETE REPRESENTATION OF THE <span class=\"bold-text\">HIGH PLAIN</span>.",
+    "sixth_paragraph": "It was in the <span class=\"bold-text\">17th Century</span> that the Discalced Carmelite Monks arrived in the <span class=\"bold-text accent-text\">High Plain Potosino</span>, and there, they introduced the first still to process Mezcal in Mexico, where it was not only the first Mezcal in Mexico but probably the first distilled spirit in the entire American continent. Thus, <span class=\"bold-text\">San Luis Potosí became</span> until the revolution <span class=\"bold-text\">the largest producer of distilled spirits in the country and the continent</span>. Like all good stories, it suffered its tragedy after the revolution, when more than 200 factories were forced to close their doors as the agrarian reform was incompatible with the economic model that was ending, that of the Haciendas."
+  },
+  "nuestro_proceso": {
+    "title": "Our Process",
+    "subtitle": "Our production process respects the <span class=\"bold-text\"> traditions of over 200 years,</span> our mezcal is made by the hands of this land.",
+    "seleccion_title": "Selection",
+    "seleccion_description": "THE SELECTION OF THE SALMIANA AGAVE IS CARRIED OUT WHEN THE PLANT REACHES ITS MATURITY WHICH TAKES UP TO 15 YEARS OF WILD LIFE. UPON MATURING, THE AGAVE IS TOPPED TO CONCENTRATE THE MAXIMUM AMOUNT OF SUGARS. AFTER ONE YEAR, THESE AGAVES ARE FINALLY HARVESTED AND TAKEN TO THE OVEN FOR COOKING.",
+    "coccion_title": "Cooking",
+    "coccion_description": "Cooking is done in masonry ovens over 200 years old, using steam for approximately 3 days, giving the mezcal from the High Plain Potosino a herbal and vegetal profile. It also preserves the delicate balance of the flora and fauna of the High Plain.",
+    "fermentacion_title": "Fermentation",
+    "fermentacion_description": "Our 100% Natural process is influenced by the temperature fluctuations in the High Plain, and consequently, fermentation occurs from 2 days in the summer to 5 days in the winter.",
+    "destilacion_title": "Distillation",
+    "destilacion_description": "Distillation is carried out in Copper Stills and Pot Stills. This method achieves the separation of optimal alcohols to create the flavor that makes Mezcal Salmero unique in its three presentations."
+  }
 }
