@@ -1,6 +1,7 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
   import { getScreenSize } from '../../utils/utils';
+  import { _, t } from 'svelte-i18n';
 
   import Altiplano_1 from '../../assets/img/Altiplano_1.png';
   import Altiplano_2 from '../../assets/img/Altiplano_2.png';
@@ -32,16 +33,10 @@
       <IntersectionObserver {element} bind:intersecting rootMargin="80%">
         <section bind:this={element}>
           <p>
-            En El Altiplano, el <span class="bold-text accent-text"
-              >agave Salmiana
-            </span>
-            vive
-            <span class="bold-text">besando el rocío de cada mañana</span>,
-            porque sabe que no contarÁ con lluvia.
+            {@html $t('homepage_origenes_extended.first_paragraph')}
           </p>
           <p>
-            Amanece siempre a dos mil metros de altura, donde pasa frío en el
-            alba y donde aguanta el sol de esas alturas.
+            {$_('homepage_origenes_extended.second_paragraph')}
           </p>
         </section>
       </IntersectionObserver>
@@ -60,18 +55,10 @@
       >
         <section bind:this={secondElement}>
           <p>
-            En este <span class="bold-text accent-text">Idilio Salvaje</span>,
-            el Agave Salmiana
-            <span class="bold-text">se nutre por más de 12 años</span> de la rica
-            tierra Agreste que tiene a sus pies.
+            {@html $t('homepage_origenes_extended.third_paragraph')}
           </p>
           <p>
-            Así, solo así, se logra tener un agave capaz de darnos el <span
-              class="bold-text accent-text"
-            >
-              Mezcal Salmero</span
-            >, digno representante del
-            <span class="bold-text">Altiplano</span>.
+            {@html $t('homepage_origenes_extended.fourth_paragraph')}
           </p>
         </section>
         <img
