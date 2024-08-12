@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { _ } from 'svelte-i18n';
+
   import Jabali from '../../assets/svg/Jabali.svelte';
 
   export let caption: string = 'Hecho en México';
@@ -22,7 +24,7 @@
 >
   <div class="image"><slot name="image"></slot></div>
   <div class="horizontal-card-inner">
-    <p class="caption">{caption}</p>
+    <p class="caption">{$_('common.hecho_en_mex')}</p>
     <h1>{title}</h1>
     <p>{subtitle}</p>
     <div class="icon"><Jabali width="100%" height="100%" /></div>
