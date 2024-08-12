@@ -1,6 +1,7 @@
 <script>
   import Logo from '../assets/svg/Logo.svelte';
   import HeaderJabali from '../assets/img/header-jabali.png';
+  import LocaleSwitcher from './LocaleSwitcher.svelte';
 </script>
 
 <nav>
@@ -18,6 +19,7 @@
         >
       </li>
     </ul>
+    <LocaleSwitcher />
   </section>
 </nav>
 

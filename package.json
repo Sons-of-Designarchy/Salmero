@@ -21,5 +21,7 @@
 		"vite": "^5.0.3"
 	},
 	"type": "module",
-	"dependencies": {}
+	"dependencies": {
+		"svelte-i18n": "^4.0.0"
+	}
 }
