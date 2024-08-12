@@ -1,4 +1,6 @@
 <script>
+  import { _ } from 'svelte-i18n';
+
   import Logo from '../assets/svg/Logo.svelte';
   import Jabali from '../assets/svg/Jabali.svelte';
 </script>
@@ -7,10 +9,10 @@
   <section>
     <div class="head">
       <div>
-        <p>Original</p>
+        <p>{$_('common.original')}</p>
         <p>Guadalupe</p>
         <p>Panamericano</p>
-        <a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a>
+        <a href="/nuestros-mezcales"><p>{$_('common.nuestros_mezcales')}</p></a>
       </div>
       <Jabali fill="#ECECE9" />
       <div class="head-socials">
@@ -18,13 +20,13 @@
           <li>
             <a
               href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-              target="_blank"><p>Instagram</p></a
+              target="_blank"><p>{$_('common.ig')}</p></a
             >
           </li>
           <li>
             <a
               href="https://www.facebook.com/profile.php?id=61557454914828"
-              target="_blank"><p>Facebook</p></a
+              target="_blank"><p>{$_('common.fb')}</p></a
             >
           </li>
         </ul>
