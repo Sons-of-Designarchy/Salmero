@@ -5,6 +5,7 @@
   import Close from '../assets/svg/Close.svelte';
   import { slide } from 'svelte/transition';
   import HeaderJabali from '../assets/img/header-jabali.png';
+  import { _ } from 'svelte-i18n';
 
   let isOpen = false;
 
@@ -34,21 +35,27 @@
           <Close />
         </button>
         <ul class="mobile-menu-nav-links">
-          <li><a href="/" on:click={closeMenu}><p>Home</p></a></li>
+          <li><a href="/" on:click={closeMenu}><p>{$_('nav.home')}</p></a></li>
           <li>
             <a href="/nuestros-mezcales" on:click={closeMenu}
-              ><p>Nuestros mezcales</p></a
+              ><p>{$_('nav.nuestros_mezcales')}</p></a
             >
           </li>
-          <li><a href="/origenes" on:click={closeMenu}><p>Orígenes</p></a></li>
           <li>
-            <a href="/proceso" on:click={closeMenu}><p>Nuestros procesos</p></a>
+            <a href="/origenes" on:click={closeMenu}
+              ><p>{$_('nav.origenes')}</p></a
+            >
+          </li>
+          <li>
+            <a href="/proceso" on:click={closeMenu}
+              ><p>{$_('nav.procesos')}</p></a
+            >
           </li>
           <li>
             <a
               href="https://linktr.ee/mezcalsalmero"
               target="_blank"
-              on:click={closeMenu}><p>Encuéntranos</p></a
+              on:click={closeMenu}><p>{$_('nav.encuentranos')}</p></a
             >
           </li>
         </ul>
