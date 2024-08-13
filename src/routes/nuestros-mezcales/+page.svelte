@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import { _, t } from 'svelte-i18n';
+  import '../../i18n';
 
   import Header from '../../components/Header.svelte';
   import HorizontalCard from '../../components/mezcales/HorizontalCard.svelte';

@@ -50,13 +50,14 @@
     "caption": "Meet the Family",
     "title": "Our Mezcals",
     "description": "Mezcal Potosino Salmero respects its ancestral processes by honoring its wild Salmiana agave, distilled with respect and tradition.",
-    "guadalupe_description": "<p>Guadalupe, you heard the news about the competition.</p><p>You knew that your boyfriend Francisco Bocanegra had the talent to win it.</p><p>In your honor, we named this mezcal that unites two mezcal regions of the country in a blend of Potosino Salmiana with Oaxaca Espadín.</p><p>For you, and for the rest of Mexicans who continue building our history, we proudly toast with this Salmero Guadalupe in hand!</p>",
-    "panamericano_description": "<p>The Panamerican Highway arises from a collective dream to unite the most beautiful continent in the world...</p><p>This blend of mezcals, like the Panamerican Highway, unites Potosino Salmiana mezcal with Mexican Oaxaca mezcal, thereby showing respect and admiration for the people of those states with this blend made for you.</p>",
+    "guadalupe_description": "<p>Guadalupe, you heard the news about the competition.</p><p>You knew that your boyfriend Francisco Bocanegra had the talent to win it.</p><p>In your honor, we named this mezcal that unites two mezcal regions of the country in a blend of Potosinian Salmiana with Oaxaca Espadín.</p><p>For you, and for the rest of Mexicans who continue building our history, we proudly toast with this Salmero Guadalupe in hand!</p>",
+    "panamericano_description": "<p>The Panamerican Highway arises from a collective dream to unite the most beautiful continent in the world...</p><p>This blend of mezcals, like the Panamerican Highway, unites Potosinian Salmiana mezcal with Mexican Oaxaca mezcal, thereby showing respect and admiration for the people of those states with this blend made for you.</p>",
     "original_description": "<p>It was my destiny.</p><p>In a land with little water, I would quench some thirsts, awaken others.</p><p>As a young mezcal, I have nothing, for I have been around for more than 200 years.</p><p>Fusion of two worlds, tenacity and survival, wild art in evolution.</p><p>I am the mezcal of the Potosinian Highlands, Mexican tradition par excellence.</p>"
   },
   "origenes": {
     "caption": "Salmero Origins",
     "second_caption": "Pure Expression of Traditions",
+    "third_caption": "Expression of our Traditions",
     "title": "Our Agave",
     "second_title": "Our Land",
     "third_title": "Our History",
@@ -64,8 +65,8 @@
     "second_paragraph": "WITH ITS <span class=\"bold-text\">THICK AND FLESHY LEAVES</span>, WHICH GROW FROM THE STEM AND END IN A STRONG, DARK SPINE.",
     "third_paragraph": "FLORAL SCENTS THAT TRANSCEND ANYWHERE, FORM <span class=\"bold-text accent-text\">CHARACTER AND ESSENCE</span> OF OUR <span class=\"bold-text\">MEZCAL SALMERO</span>.",
     "fourth_paragraph": "THE LIMIT OF <span class=\"bold-text\">MESOAMERICA AND ARIDOAMERICA</span>, WHERE THE BRAVE MEET THE CIVILIZED, WHERE THE DESERT IMPOSSES ITS LAW AND ONLY ALLOWS THE MOST RESILIENT TO SURVIVE.",
-    "fifth_paragraph": "<span class=\"bold-text\">POTOSINO PRIDE</span> THAT PAYS HOMAGE TO THE UNION OF TWO WORLDS LIKE SAN LUIS ITSELF. <span class=\"bold-text accent-text\">SALMERO</span> IS THE COMPLETE REPRESENTATION OF THE <span class=\"bold-text\">HIGH PLAIN</span>.",
-    "sixth_paragraph": "It was in the <span class=\"bold-text\">17th Century</span> that the Discalced Carmelite Monks arrived in the <span class=\"bold-text accent-text\">High Plain Potosino</span>, and there, they introduced the first still to process Mezcal in Mexico, where it was not only the first Mezcal in Mexico but probably the first distilled spirit in the entire American continent. Thus, <span class=\"bold-text\">San Luis Potosí became</span> until the revolution <span class=\"bold-text\">the largest producer of distilled spirits in the country and the continent</span>. Like all good stories, it suffered its tragedy after the revolution, when more than 200 factories were forced to close their doors as the agrarian reform was incompatible with the economic model that was ending, that of the Haciendas."
+    "fifth_paragraph": "<span class=\"bold-text\">POTOSINIAN PRIDE</span> THAT PAYS HOMAGE TO THE UNION OF TWO WORLDS LIKE SAN LUIS ITSELF. <span class=\"bold-text accent-text\">SALMERO</span> IS THE COMPLETE REPRESENTATION OF THE <span class=\"bold-text\">Highlands</span>.",
+    "sixth_paragraph": "<p class=\"animate\">It was in the <span class=\"bold-text\">17th Century</span> that the Discalced Carmelite Monks arrived at the <span class=\"bold-text accent-text\">Potosinian Highlands</span>, and there, they introduced the first still to process Mezcal in Mexico, which was not only the first Mezcal in Mexico but probably the first distilled spirit in the entire American continent. Thus, <span class=\"bold-text\">San Luis Potosí became</span> up until the revolution <span class=\"bold-text\">the largest producer of spirits in the country and the continent</span>. Like any good story, it suffered its tragedy after the revolution, when more than 200 factories were forced to close their doors as agrarian reform was incompatible with the economic model that was ending, that of the Haciendas.</br></br> </p> <p class=\"animate\">Now, 100 years later, <span class=\"bold-text\">Mezcal Salmero is here to remind us of Our History</span> and not let us forget where this traditional Mezcal comes from, not only in its production but also in the culture of our State and our Country.</p>"
   },
   "nuestro_proceso": {
     "title": "Our Process",
@@ -73,7 +74,7 @@
     "seleccion_title": "Selection",
     "seleccion_description": "THE SELECTION OF THE SALMIANA AGAVE IS CARRIED OUT WHEN THE PLANT REACHES ITS MATURITY WHICH TAKES UP TO 15 YEARS OF WILD LIFE. UPON MATURING, THE AGAVE IS TOPPED TO CONCENTRATE THE MAXIMUM AMOUNT OF SUGARS. AFTER ONE YEAR, THESE AGAVES ARE FINALLY HARVESTED AND TAKEN TO THE OVEN FOR COOKING.",
     "coccion_title": "Cooking",
-    "coccion_description": "Cooking is done in masonry ovens over 200 years old, using steam for approximately 3 days, giving the mezcal from the High Plain Potosino a herbal and vegetal profile. It also preserves the delicate balance of the flora and fauna of the High Plain.",
+    "coccion_description": "Cooking is done in masonry ovens over 200 years old, using steam for approximately 3 days, giving the mezcal from the Potosinian Highlands a herbal and vegetal profile. It also preserves the delicate balance of the flora and fauna of the High Plain.",
     "fermentacion_title": "Fermentation",
     "fermentacion_description": "Our 100% Natural process is influenced by the temperature fluctuations in the High Plain, and consequently, fermentation occurs from 2 days in the summer to 5 days in the winter.",
     "destilacion_title": "Distillation",

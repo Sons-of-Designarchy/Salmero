@@ -1,5 +1,7 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { _, t } from 'svelte-i18n';
+  import '../../i18n';
 
   import Header from '../../components/Header.svelte';
   import ImageComponent from '../../utils/ImageComponent.svelte';
@@ -17,7 +19,11 @@
   let intersectingNuestraTierra: boolean;
 </script>
 
-<Header title="Nuestro Agave" caption="origenes salmero" textAlign="start">
+<Header
+  title={$_('origenes.title')}
+  caption={$_('origenes.caption')}
+  textAlign="start"
+>
   <ImageComponent className="header-img-top" src={HeaderImg} slot="image" />
   <section slot="custom-description" class="custom-description">
     <IntersectionObserver
@@ -27,19 +33,13 @@
       <div bind:this={header}>
         {#if intersectingHeader}
           <p class="animate">
-            SAGRADO PARA NUESTROS ANCESTROS, <span class="accent-text bold-text"
-              >AGAVE SALMIANA</span
-            > PERDURA EN EL DESIERTO COMO LAS LEYENDAS CONTADAS EN SU NOMBRE.
+            {@html $t('origenes.first_paragraph')}
           </p>
           <p class="animate">
-            CON SUS <span class="bold-text">PENCAS GRUESAS Y CARNOSAS</span>,
-            QUE NACEN DEL TALLO Y REMATAN EN UNA ESPINA FUERTE Y OSCURA.
+            {@html $t('origenes.second_paragraph')}
           </p>
           <p class="animate">
-            PERFUMES FLORALES QUE TRASCIENDEN EN CUALQUIER LUGAR, FORMAN <span
-              class="bold-text accent-text">CARÁCTER Y ESENCIA</span
-            >
-            EL DE NUESTRO <span class="bold-text">MEZCAL SALMERO</span>.
+            {@html $t('origenes.third_paragraph')}
           </p>
         {/if}
       </div>
@@ -47,7 +47,10 @@
   </section>
 </Header>
 
-<FeaturedImage title="Nuestra tierra" caption="Expresión pura de tradiciones">
+<FeaturedImage
+  title={$_('origenes.second_title')}
+  caption={$_('origenes.second_caption')}
+>
   <ImageComponent slot="image" src={NuestraTierraImg} />
 
   <section
@@ -61,17 +64,10 @@
       <div bind:this={nuestraTierra}>
         {#if intersectingNuestraTierra}
           <p class="animate">
-            EL LÍMITE DE <span class="bold-text"
-              >MESOAMÉRICA Y ARIDOAMÉRICA</span
-            >, DONDE LOS BRAVOS SE JUNTAN CON LOS CIVILIZADOS, DONDE EL DESIERTO
-            IMPONE SU LEY Y DEJA VIVIR SOLO A LOS MÁS RESILIENTES.
+            {@html $t('origenes.fourth_paragraph')}
           </p>
           <p class="animate">
-            <span class="bold-text">ORgULLO POTOSINO</span> QUE RINDE HOMENAJE A
-            LA UNIÓN DE DOS MUNDOS COMO EL MISMO SAN LUIS.
-            <span class="bold-text accent-text">SALMERO</span> ES LA
-            REPRESENTACIÓN COMPLETA DEL
-            <span class="bold-text">ALTIPLANO</span>.
+            {@html $t('origenes.fifth_paragraph')}
           </p>
         {/if}
       </div>
@@ -79,7 +75,10 @@
   </section>
 </FeaturedImage>
 
-<FeaturedImage title="Nuestra historia" caption="Expresión pura de tradiciones">
+<FeaturedImage
+  title={$_('origenes.third_title')}
+  caption={$_('origenes.third_caption')}
+>
   <ImageComponent
     className="header-img-top"
     slot="image"
@@ -95,31 +94,7 @@
     >
       <div bind:this={historia}>
         {#if intersectingHistoria}
-          <p class="animate">
-            Fue en el <span class="bold-text">Siglo XVII</span> que los Monjes
-            Carmelitos Descalzos llegaron al
-            <span class="bold-text accent-text">Altiplano Potosino</span>, y
-            ahí, introdujeron el primer alambique para procesar Mezcal en
-            México, donde no solamente fue el primer Mezcal de México, si no
-            probablemente el primer destilado en todo el continente americano.
-            De esta forma,
-            <span class="bold-text">San Luis Potosí se convirtió</span> hasta
-            las épocas de la revolución
-            <span class="bold-text"
-              >en el productor más grande de destilados en el país y en el
-              continente</span
-            >. Como toda buena historia, sufre su tragedia después de la
-            revolución, donde más de 200 fábricas se vieron forzadas a cerrar
-            sus puertas ya que la reforma agraria no fue compatible con el
-            modelo económico que terminaba, el de las Haciendas.
-          </p>
-          <p class="animate">
-            Ahora, 100 años después, <span class="bold-text"
-              >Mezcal Salmero está presente para recordar Nuestra Historia</span
-            > y no dejarnos olvidar de dónde viene este Mezcal tan tradicional no
-            solo en su elaboración, sino en la cultura de nuestro Estado y nuestro
-            País.
-          </p>
+          {@html $t('origenes.sixth_paragraph')}
         {/if}
       </div>
     </IntersectionObserver>
