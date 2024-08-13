@@ -210,3 +210,19 @@ img {
   opacity: 0; /* Start with invisible */
   animation: fadeIn 0.8s forwards; /* 1s duration, forwards to retain final state */
 }
+
+.locale-switcher {
+  background: var(--salmon);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  color: #666;
+}
+
+.locale-switcher button {
+  background: none;
+  border: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
