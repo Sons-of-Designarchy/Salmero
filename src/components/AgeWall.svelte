@@ -1,5 +1,7 @@
 <script lang="ts">
   import { createEventDispatcher } from 'svelte';
+  import { _ } from 'svelte-i18n';
+  import '../i18n';
 
   import Logo from '../assets/svg/Logo.svelte';
   import Jabali from '../assets/svg/Jabali.svelte';
@@ -21,20 +23,23 @@
       <Jabali fill="#E7E7E7" width="100%" height="100%" />
     </div>
     <div class="content__inner">
-      <p>Hecho en México</p>
-      <h1>Bienvenido al altiplano</h1>
-      <p>¿Eres mayor de edad para beber en tu país?</p>
+      <p>{$_('common.hecho_en_mex')}</p>
+      <h1>{$_('age_wall.title')}</h1>
+      <p>{$_('age_wall.description')}</p>
       <section class="content__buttons">
-        <button on:click={() => setAgreement(true)}>Si</button>
+        <button on:click={() => setAgreement(true)}>
+          {$_('age_wall.si')}
+        </button>
         <a href="https://www.google.com">
-          <button>No</button>
+          <button>
+            {$_('age_wall.no')}
+          </button>
         </a>
       </section>
     </div>
   </div>
   <p class="age-wall__cookies">
-    Al ingresar a este sitio web, aceptas el uso de cookies. Conoce más sobre
-    nuestra Política de privacidad y uso de tu información.
+    {$_('age_wall.cookies')}
   </p>
 </section>
 

@@ -79,5 +79,12 @@
     "fermentacion_description": "Our 100% Natural process is influenced by the temperature fluctuations in the Highlands, and consequently, fermentation occurs from 2 days in the summer to 5 days in the winter.",
     "destilacion_title": "Distillation",
     "destilacion_description": "Distillation is carried out in Copper Stills and Pot Stills. This method achieves the separation of optimal alcohols to create the flavor that makes Mezcal Salmero unique in its three presentations."
+  },
+  "age_wall": {
+    "title": "Welcome to the Highlands",
+    "description": "Are you legally allowed to drink alcohol in your country?",
+    "si": "yes",
+    "no": "no",
+    "cookies": "By entering this website, you agree to the use of cookies. Learn more about our Privacy Policy and the use of your information."
   }
 }
