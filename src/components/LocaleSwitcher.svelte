@@ -36,14 +36,16 @@
   .locale-switcher {
     background: var(--salmon);
     position: fixed;
+    padding: 0;
     bottom: 0;
     right: 0;
-    padding: 1rem;
     color: #666;
+    z-index: 1000;
+    border-top-left-radius: 8px;
   }
 
   .locale-switcher button {
-    padding: 0.25em 0.5em;
+    padding: 0.75rem 1rem;
     border: none;
     cursor: pointer;
   }

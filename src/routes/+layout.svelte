@@ -7,6 +7,7 @@
 
   import AgeWall from '../components/AgeWall.svelte';
   import { onMount } from 'svelte';
+  import LocaleSwitcher from '../components/LocaleSwitcher.svelte';
 
   let minAgeAgreement: boolean | null = null;
 
@@ -28,6 +29,7 @@
 
 {#if minAgeAgreement}
   <main>
+    <LocaleSwitcher />
     <Navigation />
     <MobileMenu />
     <slot></slot>
