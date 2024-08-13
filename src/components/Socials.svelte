@@ -104,10 +104,31 @@
         </a>
       {/each}
     {:else}
-      <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
-      <img src={Sociales_2} alt="Panorama del altiplano" />
-      <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
-      <img src={Sociales_4} alt="Shots de mezcal" />
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
+      </a>
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_2} alt="Panorama del altiplano" />
+      </a>
+
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
+      </a>
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_4} alt="Shots de mezcal" />
+      </a>
     {/if}
   </section>
 </section>
@@ -200,7 +221,8 @@
     }
   }
 
-  .socials-photo-grid > a > img {
+  .socials-photo-grid > a > img,
+  .socials-photo-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;
