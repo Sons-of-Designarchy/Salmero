@@ -141,10 +141,6 @@
     }
   }
 
-  .origenes-description-section section p .bold-text {
-    letter-spacing: var(--letter-spacing-extended);
-  }
-
   .origenes-description-section:nth-child(2) section {
     display: grid;
     box-sizing: border-box;
