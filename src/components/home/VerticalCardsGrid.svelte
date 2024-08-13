@@ -6,14 +6,14 @@
   import Original from '../../assets/img/Original.png';
 
   import IntersectionObserver from 'svelte-intersection-observer';
-  import { _ } from 'svelte-i18n';
+  import { t, _ } from 'svelte-i18n';
 
   let element: HTMLElement;
   let intersecting: boolean;
 
   interface Card {
     index: number;
-    color: 'salmon' | 'green' | 'red';
+    color: string;
     caption: any;
     title: string;
     description: string;
@@ -23,25 +23,25 @@
     {
       index: 1,
       color: 'salmon',
-      caption: `${$_('common.hecho_en_mex')}`,
-      title: `${$_('common.guadalupe')}`,
-      description: `${$_('homepage_vertical_cards.guadalupe_description')}`,
+      caption: 'common.hecho_en_mex',
+      title: 'common.guadalupe',
+      description: 'homepage_vertical_cards.guadalupe_description',
       image: Guadalupe,
     },
     {
       index: 3,
       color: 'red',
-      caption: `${$_('common.hecho_en_mex')}`,
-      title: `${$_('common.panamericano')}`,
-      description: `${$_('homepage_vertical_cards.panamericano_description')}`,
+      caption: 'common.hecho_en_mex',
+      title: 'common.panamericano',
+      description: 'homepage_vertical_cards.panamericano_description',
       image: Panamericano,
     },
     {
       index: 2,
       color: 'green',
-      caption: `${$_('common.hecho_en_mex')}`,
+      caption: 'common.hecho_en_mex',
       title: 'Original',
-      description: `${$_('homepage_vertical_cards.original_description')}`,
+      description: 'homepage_vertical_cards.original_description',
       image: Original,
     },
   ];
@@ -51,10 +51,10 @@
   <section class="vertical-cards-grid" bind:this={element}>
     {#each cards as card}
       <VerticalCard
-        title={card.title}
-        description={card.description}
-        caption={card.caption}
-        bgColor={card.color}
+        title={$_(card.title)}
+        description={$_(card.description)}
+        caption={$_(card.caption)}
+        bgColor={$_(card.color)}
         {intersecting}
       >
         <ImageComponent
