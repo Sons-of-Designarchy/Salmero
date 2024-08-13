@@ -3,7 +3,7 @@
   export let description: string =
     '50% Salmiana, 50% Espadín. Un exuberante olor floral con notas herbales.';
   export let caption: string = 'Hecho en México';
-  export let bgColor: 'salmon' | 'green' | 'red' = 'salmon';
+  export let bgColor: string = 'salmon';
   export let intersecting: boolean;
 
   let bgColors = {

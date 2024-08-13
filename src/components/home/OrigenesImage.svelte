@@ -1,5 +1,7 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { _ } from 'svelte-i18n';
+
   let element: HTMLElement;
   let intersecting: boolean;
 </script>
@@ -8,11 +10,10 @@
   ><section bind:this={element} class="origenes-image container-min-paddings">
     {#if intersecting}
       <h1 class="animate">
-        nuestro agave salmiana es enaltecido por su esencia resiliente,
+        {$_('homepage_origenes.second_title')}
       </h1>
       <p class="origenes-image-description animate">
-        Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las
-        condiciones donde crece el Salmiana de forma Silvestre
+        {$_('homepage_origenes.second_description')}
       </p>
     {/if}
   </section>

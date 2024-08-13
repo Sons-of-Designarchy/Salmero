@@ -1,5 +1,6 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { _, t } from 'svelte-i18n';
 
   import Jabali from '../../assets/svg/Jabali.svelte';
   import Agave from '../../assets/img/Agave.png';
@@ -31,16 +32,12 @@
         <div class="tradiciones-intro-content container-min-paddings">
           {#if intersecting}
             <div class="animate"><Jabali /></div>
-            <p class="caption animate">Nuestro proceso de producción</p>
-            <h1 class="animate">Expresión de nuestras tradiciones</h1>
-            <p class="animate">
-              Salmero se produce en el histórico límite de mesoamérica con
-              aridoamérica, donde se unen las avanzadas civilizaciones con las
-              nómadas.
+            <p class="caption animate">
+              {$_('expresion_tradiciones.caption')}
             </p>
+            <h1 class="animate">{$_('expresion_tradiciones.title')}</h1>
             <p class="animate">
-              realizado con respeto a sus tradiciones, salmero es nuestro mezcal
-              para el mundo.
+              {@html $t('expresion_tradiciones.description')}
             </p>
           {/if}
         </div>

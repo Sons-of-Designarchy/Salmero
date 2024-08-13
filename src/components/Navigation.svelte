@@ -1,6 +1,7 @@
 <script>
   import Logo from '../assets/svg/Logo.svelte';
   import HeaderJabali from '../assets/img/header-jabali.png';
+  import { _ } from 'svelte-i18n';
 </script>
 
 <nav>
@@ -8,13 +9,15 @@
     <a href="/"> <Logo fill="#2F2F25" height="3.0rem" width="18rem" /></a>
     <img src={HeaderJabali} alt="Icono de Jabalí" height="50px" />
     <ul class="nav-links">
-      <li><a href="/"><p>Home</p></a></li>
-      <li><a href="/nuestros-mezcales"><p>Nuestros mezcales</p></a></li>
-      <li><a href="/origenes"><p>Orígenes</p></a></li>
-      <li><a href="/proceso"><p>Nuestros procesos</p></a></li>
+      <li><a href="/"><p>{$_('nav.home')}</p></a></li>
+      <li>
+        <a href="/nuestros-mezcales"><p>{$_('nav.nuestros_mezcales')}</p></a>
+      </li>
+      <li><a href="/origenes"><p>{$_('nav.origenes')}</p></a></li>
+      <li><a href="/proceso"><p>{$_('nav.procesos')}</p></a></li>
       <li>
         <a href="https://linktr.ee/mezcalsalmero" target="_blank"
-          ><p>Encuéntranos</p></a
+          ><p>{$_('nav.encuentranos')}</p></a
         >
       </li>
     </ul>

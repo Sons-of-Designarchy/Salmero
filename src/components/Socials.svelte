@@ -1,5 +1,6 @@
 <script lang="ts">
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { _ } from 'svelte-i18n';
 
   import Sociales_1 from '../assets/img/Sociales_1.png';
   import Sociales_2 from '../assets/img/Sociales_2.png';
@@ -63,21 +64,23 @@
   <IntersectionObserver {element} bind:intersecting>
     <article bind:this={element} class="socials-content">
       <div class="socials-content-inner">
-        <p class:animate={intersecting} class="caption">Nuestros amigos</p>
+        <p class:animate={intersecting} class="caption">
+          {$_('socials.caption')}
+        </p>
         <h1 class:animate={intersecting}>
-          Síguenos en nuestras redes sociales
+          {$_('socials.title')}
         </h1>
         <ul class="socials-links">
           <li class:animate={intersecting}>
             <a
               href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
-              target="_blank"><p>Instagram</p></a
+              target="_blank"><p>{$_('common.ig')}</p></a
             >
           </li>
           <li class:animate={intersecting}>
             <a
               href="https://www.facebook.com/profile.php?id=61557454914828"
-              target="_blank"><p>Facebook</p></a
+              target="_blank"><p>{$_('common.fb')}</p></a
             >
           </li>
         </ul>
@@ -90,7 +93,10 @@
       {#each data
         .filter((item) => item.media_type !== 'VIDEO')
         .slice(0, 4) as item (item.id)}
-        <a href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr" target="_blank">
+        <a
+          href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+          target="_blank"
+        >
           <img
             src={item.media_url ? item.media_url : Sociales_1}
             alt={item.caption}
@@ -98,10 +104,31 @@
         </a>
       {/each}
     {:else}
-      <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
-      <img src={Sociales_2} alt="Panorama del altiplano" />
-      <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
-      <img src={Sociales_4} alt="Shots de mezcal" />
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_1} alt="Mezcal Panamericano sobre mesa" />
+      </a>
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_2} alt="Panorama del altiplano" />
+      </a>
+
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_3} alt="Mezcal Original sobre mesa" />
+      </a>
+      <a
+        href="https://www.instagram.com/mezcalsalmero?igsh=MXFkY21tMndnajYxNw%3D%3D&utm_source=qr"
+        target="_blank"
+      >
+        <img src={Sociales_4} alt="Shots de mezcal" />
+      </a>
     {/if}
   </section>
 </section>
@@ -194,7 +221,8 @@
     }
   }
 
-  .socials-photo-grid > a > img {
+  .socials-photo-grid > a > img,
+  .socials-photo-grid img {
     width: 100%;
     height: 100%;
     object-fit: cover;

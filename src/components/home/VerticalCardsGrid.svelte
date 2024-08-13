@@ -6,14 +6,15 @@
   import Original from '../../assets/img/Original.png';
 
   import IntersectionObserver from 'svelte-intersection-observer';
+  import { t, _ } from 'svelte-i18n';
 
   let element: HTMLElement;
   let intersecting: boolean;
 
   interface Card {
     index: number;
-    color: 'salmon' | 'green' | 'red';
-    caption: string;
+    color: string;
+    caption: any;
     title: string;
     description: string;
     image: string;
@@ -22,28 +23,25 @@
     {
       index: 1,
       color: 'salmon',
-      caption: 'Hecho en México',
-      title: 'Guadalupe',
-      description:
-        'Salmiana y Espadín. Un exuberante olor floral con notas herbales.',
+      caption: 'common.hecho_en_mex',
+      title: 'common.guadalupe',
+      description: 'homepage_vertical_cards.guadalupe_description',
       image: Guadalupe,
     },
     {
       index: 3,
       color: 'red',
-      caption: 'Hecho en México',
-      title: 'Panamericano',
-      description:
-        'Salmiana, Espadín y Mexicano. Intenso, de carácter fuerte, con un sabor único.',
+      caption: 'common.hecho_en_mex',
+      title: 'common.panamericano',
+      description: 'homepage_vertical_cards.panamericano_description',
       image: Panamericano,
     },
     {
       index: 2,
       color: 'green',
-      caption: 'Hecho en México',
+      caption: 'common.hecho_en_mex',
       title: 'Original',
-      description:
-        'Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino.',
+      description: 'homepage_vertical_cards.original_description',
       image: Original,
     },
   ];
@@ -53,10 +51,10 @@
   <section class="vertical-cards-grid" bind:this={element}>
     {#each cards as card}
       <VerticalCard
-        title={card.title}
-        description={card.description}
-        caption={card.caption}
-        bgColor={card.color}
+        title={$_(card.title)}
+        description={$_(card.description)}
+        caption={$_(card.caption)}
+        bgColor={$_(card.color)}
         {intersecting}
       >
         <ImageComponent

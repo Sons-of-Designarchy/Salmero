@@ -1,18 +1,20 @@
 <script lang="ts">
-  import IntersectionObserver from "svelte-intersection-observer";
+  import IntersectionObserver from 'svelte-intersection-observer';
+  import { _, t } from 'svelte-i18n';
+  import '../../i18n';
 
-  import Header from "../../components/Header.svelte";
-  import ImageComponent from "../../utils/ImageComponent.svelte";
+  import Header from '../../components/Header.svelte';
+  import ImageComponent from '../../utils/ImageComponent.svelte';
 
-  import ProcesoImg from "../../assets/img/Proceso_header.png";
-  import Jabali from "../../assets/svg/Jabali.svelte";
-  import Proceso_1 from "../../assets/img/Proceso_1.png";
-  import Proceso_2 from "../../assets/img/Proceso_2.png";
-  import Proceso_3 from "../../assets/img/Proceso_3.png";
-  import HotStones from "../../assets/svg/HotStones.svelte";
-  import Destilacion from "../../assets/svg/Destilacion.svelte";
-  import Fermentacion from "../../assets/svg/Fermentacion.svelte";
-  import Agave from "../../assets/svg/Agave.svelte";
+  import ProcesoImg from '../../assets/img/Proceso_header.png';
+  import Jabali from '../../assets/svg/Jabali.svelte';
+  import Proceso_1 from '../../assets/img/Proceso_1.png';
+  import Proceso_2 from '../../assets/img/Proceso_2.png';
+  import Proceso_3 from '../../assets/img/Proceso_3.png';
+  import HotStones from '../../assets/svg/HotStones.svelte';
+  import Destilacion from '../../assets/svg/Destilacion.svelte';
+  import Fermentacion from '../../assets/svg/Fermentacion.svelte';
+  import Agave from '../../assets/svg/Agave.svelte';
 
   let element: HTMLElement;
   let header: HTMLElement;
@@ -30,13 +32,10 @@
     >
       <div bind:this={header}>
         {#if intersectingHeader}
-          <h1 class="animate">Nuestro proceso</h1>
+          <h1 class="animate">{$_('nuestro_proceso.title')}</h1>
           <div class="animate"><Jabali /></div>
           <p class="animate">
-            Nuestro proceso de producción respeta las <span class="bold-text"
-              >tradiciones de más de 200 años,</span
-            >
-            nuestro mezcal está hecho por las manos de esta tierra.
+            {@html $t('nuestro_proceso.subtitle')}
           </p>
         {/if}
         <div class="bg-image" />
@@ -57,45 +56,33 @@
       <article class="animate">
         <div class="proceso-steps-img"><Agave /></div>
         <p>1</p>
-        <h3>Selección</h3>
+        <h3>{$_('nuestro_proceso.seleccion_title')}</h3>
         <p>
-          LA SELECCIÓN DEL AGAVE SALMIANA SE REALIZA CUANDO LA PLANTA LLEGA A SU
-          MADUREZ QUE CONLLEVA HASTA 15 AÑOS DE VIDA SILVESTRE. AL MADURAR EL
-          AGAVE ES CAPADO CON EL OBJETIVO DE CONCENTRAR LA MAYOR CANTIDAD DE
-          AZÚCARES. PASADO UN AÑO, ESTOS AGAVES SON FINALMENTE COSECHADOS Y SE
-          LLEVAN AL HORNO PARA SU COCCIÓN.
+          {$_('nuestro_proceso.seleccion_description')}
         </p>
       </article>
       <article class="animate">
         <div class="proceso-steps-img"><HotStones /></div>
         <p>2</p>
-        <h3>Cocción</h3>
+        <h3>{$_('nuestro_proceso.coccion_title')}</h3>
         <p>
-          La cocción se realiza en hornos de mampostería de más de 200 años,
-          utilizando vapor durante aproximadamente 3 días, dando al mezcal del
-          Altiplano Potosino un perfil herbal y vegetal. Además, preserva el
-          delicado equilibrio de la flora y fauna del Altiplano.
+          {$_('nuestro_proceso.coccion_description')}
         </p>
       </article>
       <article class="animate">
         <div class="proceso-steps-img"><Fermentacion /></div>
         <p>3</p>
-        <h3>Fermentación</h3>
+        <h3>{$_('nuestro_proceso.fermentacion_title')}</h3>
         <p>
-          Nuestro proceso 100% Natural se ve determinado por las fluctuaciones
-          de temperatura en el Altiplano y por consecuencia la fermentación se
-          logra desde 2 días en los veranos, hasta 5 días en los inviernos.
+          {$_('nuestro_proceso.fermentacion_description')}
         </p>
       </article>
       <article class="animate">
         <div class="proceso-steps-img"><Destilacion /></div>
         <p>4</p>
-        <h3>Destilación</h3>
+        <h3>{$_('nuestro_proceso.destilacion_title')}</h3>
         <p>
-          La destilación se realiza en Alambiques de Cobre y Alambiques de
-          Platillos. Con este método se logra la separación de alcoholes óptimos
-          para crear el sabor que hace único a Mezcal Salmero en sus tres
-          presentaciones.
+          {$_('nuestro_proceso.destilacion_description')}
         </p>
       </article>
     {/if}
@@ -134,7 +121,7 @@
   }
 
   .proceso-intro .bold-text {
-    font-family: "Univers LT Std 75 Black";
+    font-family: 'Univers LT Std 75 Black';
   }
 
   .proceso-intro h1 {
@@ -149,7 +136,7 @@
     width: 95%;
     height: 100%;
     position: absolute;
-    background-image: url("../../assets/img/agave_bg.png");
+    background-image: url('../../assets/img/agave_bg.png');
     background-repeat: no-repeat;
     background-position: 25% -2rem;
     background-size: cover;

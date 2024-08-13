@@ -1,5 +1,6 @@
 <script lang="ts">
   import OrigenesImage from './OrigenesImage.svelte';
+  import { _ } from 'svelte-i18n';
 
   import IntersectionObserver from 'svelte-intersection-observer';
   let element: HTMLElement;
@@ -11,12 +12,10 @@
     <div class="origenes">
       <section class="container-min-paddings">
         {#if intersecting}
-          <p class="caption animate">Del norte de México</p>
-          <h1 class="animate">ORÍGENES DEL ALTIPLANO POTOSINO</h1>
+          <p class="caption animate">{$_('common.norte_de_mex')}</p>
+          <h1 class="animate">{$_('homepage_origenes.title')}</h1>
           <p class="origenes-intro animate">
-            Hace más de 200 años, donde comienza el gran desierto de chihuahua,
-            su gente comenzó a transformar un agave que sobrevivía al igual que
-            ellos a esa dura tierra: el salmiana.
+            {$_('homepage_origenes.description')}
           </p>
         {/if}
       </section>

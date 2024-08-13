@@ -1,0 +1,90 @@
+{
+  "common": {
+    "original": "Original",
+    "guadalupe": "Guadalupe",
+    "panamericano": "Panamericano",
+    "hecho_en_mex": "Hecho en México",
+    "norte_de_mex": "Del norte de México",
+    "fb": "Facebook",
+    "ig": "Instagram",
+    "nuestros_mezcales": "Nuestros mezcales"
+  },
+  "nav": {
+    "home": "Home",
+    "origenes": "Orígenes",
+    "nuestros_mezcales": "Nuestros mezcales",
+    "procesos": "Nuestros procesos",
+    "encuentranos": "Encuéntranos"
+  },
+  "homepage": {
+    "title": "Tradición y sabor auténtico del Altiplano",
+    "description": "El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su agave Salmiana silvestre, destilado con respeto y tradición."
+  },
+  "homepage_vertical_cards": {
+    "guadalupe_description": "Salmiana y Espadín. Un exuberante olor floral con notas herbales.",
+    "panamericano_description": "Salmiana, Espadín y Mexicano. Intenso, de carácter fuerte, con un sabor único.",
+    "original_description": "Salmiana. Un mezcal brillante, cristalino como el cielo del Altiplano Potosino."
+  },
+  "homepage_origenes": {
+    "title": "ORÍGENES DEL ALTIPLANO POTOSINO",
+    "description": "Hace más de 200 años, donde comienza el gran desierto de chihuahua, su gente comenzó a transformar un agave que sobrevivía al igual que ellos a esa dura tierra: el salmiana.",
+    "second_title": "nuestro agave salmiana es enaltecido por su esencia resiliente,",
+    "second_description": "Los Sabores que puedes apreciar en el Mezcal Salmero son fruto de las condiciones donde crece el Salmiana de forma Silvestre"
+  },
+  "homepage_origenes_extended": {
+    "first_paragraph": "En El Altiplano, el <span class=\"bold-text accent-text\">agave Salmiana</span> vive <span class=\"bold-text\">besando el rocío de cada mañana</span>, porque sabe que no contará con lluvia.",
+    "second_paragraph": "Amanece siempre a dos mil metros de altura, donde pasa frío en el alba y donde aguanta el sol de esas alturas.",
+    "third_paragraph": "En este <span class=\"bold-text accent-text\">Idilio Salvaje</span>, el Agave Salmiana <span class=\"bold-text\">se nutre por más de 12 años</span> de la rica tierra Agreste que tiene a sus pies.",
+    "fourth_paragraph": "Así, solo así, se logra tener un agave capaz de darnos el <span class=\"bold-text accent-text\"> Mezcal Salmero</span>, digno representante del <span class=\"bold-text\">Altiplano</span>."
+  },
+  "expresion_tradiciones": {
+    "caption": "Nuestro proceso de producción",
+    "title": "Expresión de nuestras tradiciones",
+    "description": "Salmero se produce en el histórico límite de mesoamérica con aridoamérica, donde se unen las avanzadas civilizaciones con las nómadas. <br/><br/> realizado con respeto a sus tradiciones, salmero es nuestro mezcal para el mundo."
+  },
+  "socials": {
+    "caption": "Nuestros amigos",
+    "title": "Síguenos en nuestras redes sociales"
+  },
+  "nuestros_mezcales": {
+    "caption": "Conoce la familia",
+    "title": "Nuestros mezcales",
+    "description": "El Mezcal Potosino Salmero respeta sus procesos ancestrales honrando su agave Salmiana silvestre, destilado con respeto y tradición.",
+    "guadalupe_description": "<p>Guadalupe, escuchaste la noticia del concurso.</p><p>Sabías que tu novio Francisco Bocanegra tenía el talento para ganarlo.</p><p>En tu honor, nombramos este mezcal que une dos regiones mezcaleras del país en un ensamble de Salmiana potosino con Espadín oaxaqueño.</p><p>Por ti, y por el resto de mexicanas y mexicanos que siguen construyendo nuestra historia, ¡Brindamos con orgullo con este Salmero Guadalupe en mano!</p>",
+    "panamericano_description": "<p>La carretera panamericana nace de un sueño colectivo de unir el continente más bello del mundo...</p><p>Este ensamble de mezcales, como la carretera panamericana, unen el mezcal Salmiana potosino con el mezcal mexicano oaxaqueño, de tal forma, a las personas de dichos estados se les brinda respeto y admiración con este ensamble hecho para ti.</p>",
+    "original_description": " <p>Era mi destino.</p><p> En una tierra de poca agua, apagaría algunas sedes, despertaría otras.</p><p>De joven no tengo nada, pues más de 200 años llevo en mi andar.</p><p>Fusión de dos mundos, tenacidad y supervivencia, arte agreste en evolución.</p><p>Soy el mezcal del Altiplano Potosino, tradición mexicana por excelencia.</p>"
+  },
+  "origenes": {
+    "caption": "origenes salmero",
+    "second_caption": "Expresión pura de tradiciones",
+    "third_caption": "Expresión de nuestras tradiciones",
+    "title": "Nuestro Agave",
+    "second_title": "Nuestra Tierra",
+    "third_title": "Nuestra historia",
+    "first_paragraph": "SAGRADO PARA NUESTROS ANCESTROS, <span class=\"accent-text bold-text\">AGAVE SALMIANA</span> PERDURA EN EL DESIERTO COMO LAS LEYENDAS CONTADAS EN SU NOMBRE.",
+    "second_paragraph": "CON SUS <span class=\"bold-text\">PENCAS GRUESAS Y CARNOSAS</span>,QUE NACEN DEL TALLO Y REMATAN EN UNA ESPINA FUERTE Y OSCURA.",
+    "third_paragraph": "PERFUMES FLORALES QUE TRASCIENDEN EN CUALQUIER LUGAR, FORMAN <span class=\"bold-text accent-text\">CARÁCTER Y ESENCIA</span>EL DE NUESTRO <span class=\"bold-text\">MEZCAL SALMERO</span>.",
+    "fourth_paragraph": "EL LÍMITE DE <span class=\"bold-text\">MESOAMÉRICA Y ARIDOAMÉRICA</span>, DONDE LOS BRAVOS SE JUNTAN CON LOS CIVILIZADOS, DONDE EL DESIERTO IMPONE SU LEY Y DEJA VIVIR SOLO A LOS MÁS RESILIENTES.",
+    "fifth_paragraph": "<span class=\"bold-text\">ORgULLO POTOSINO</span> QUE RINDE HOMENAJE A LA UNIÓN DE DOS MUNDOS COMO EL MISMO SAN LUIS.<span class=\"bold-text accent-text\">SALMERO</span> ES LA REPRESENTACIÓN COMPLETA DEL<span class=\"bold-text\">ALTIPLANO</span>.",
+    "sixth_paragraph": "<p>Fue en el <span class=\"bold-text\">Siglo XVII</span> que los Monjes Carmelitos Descalzos llegaron al <span class=\"bold-text accent-text\">Altiplano Potosino</span>, y ahí, introdujeron el primer alambique para procesar Mezcal en México, donde no solamente fue el primer Mezcal de México si no probablemente el primer destilado en todo el continente americano. De esta forma <span class=\"bold-text\">San Luis Potosí se convirtió</span> hasta las épocas de la revolución <span class=\"bold-text\">en el productor más grande de destilados en el país y en el continente</span>. Como toda buena historia, sufre su tragedia después de la revolución, donde más de 200 fábricas se vieron forzadas a cerrar sus puertas ya que la reforma agraria no fue compatible con el modelo económico que terminaba, el de las Haciendas.</br></br> </p> <p class=\"animate\"> Ahora, 100 años después, <span class=\"bold-text\">Mezcal Salmero está presente para recordar Nuestra Historia</span> y no dejarnos olvidar de dónde viene este Mezcal tan tradicional no solo en su elaboración, sino en la cultura de nuestro Estado y nuestro País.</p></p>"
+  },
+  "nuestro_proceso": {
+    "title": "Nuestro Proceso",
+    "subtitle": "Nuestro proceso de producción respeta las <span class=\"bold-text\"> tradiciones de más de 200 años,</span> nuestro mezcal está hecho por las manos de esta tierra.",
+    "seleccion_title": "Selección",
+    "seleccion_description": "LA SELECCIÓN DEL AGAVE SALMIANA SE REALIZA CUANDO LA PLANTA LLEGA A SU MADUREZ QUE CONLLEVA HASTA 15 AÑOS DE VIDA SILVESTRE. AL MADURAR EL AGAVE ES CAPADO CON EL OBJETIVO DE CONCENTRAR LA MAYOR CANTIDAD DE AZÚCARES. PASADO UN AÑO, ESTOS AGAVES SON FINALMENTE COSECHADOS Y SE LLEVAN AL HORNO PARA SU COCCIÓN.",
+    "coccion_title": "Cocción",
+    "coccion_description": "La cocción se realiza en hornos de mampostería de más de 200 años, utilizando vapor durante aproximadamente 3 días, dando al mezcal del Altiplano Potosino un perfil herbal y vegetal. Además, preserva el delicado equilibrio de la flora y fauna del Altiplano.",
+    "fermentacion_title": "Fermentación",
+    "fermentacion_description": "Nuestro proceso 100% Natural se ve determinado por las fluctuaciones de temperatura en el Altiplano y por consecuencia la fermentación se logra desde 2 días en los veranos, hasta 5 días en los inviernos.",
+    "destilacion_title": "Destilación",
+    "destilacion_description": "La destilación se realiza en Alambiques de Cobre y Alambiques de Platillos. Con este método se logra la separación de alcoholes óptimos para crear el sabor que hace único a Mezcal Salmero en sus tres presentaciones."
+  },
+  "age_wall": {
+    "title": "Bienvenido al Altiplano",
+    "description": "¿Eres mayor de edad para beber en tu país?",
+    "si": "si",
+    "no": "no",
+    "cookies": "Al ingresar a este sitio web, aceptas el uso de cookies. Conoce más sobre nuestra Política de privacidad y uso de tu información."
+  }
+}
